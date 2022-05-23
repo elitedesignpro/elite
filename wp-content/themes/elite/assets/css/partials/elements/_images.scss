@@ -1,0 +1,62 @@
+/* -------------------------------------------------
+>> Base Styles
+---------------------------------------------------
+>> Do not edit these styles
+------------------------------------------------- */
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+a {
+
+	img {
+		border: none;
+		outline: none;
+		margin-bottom: 0;
+	}
+}
+
+/* -------------------------------------------------
+>> Project Styles
+---------------------------------------------------
+>> Edit these styles as required
+------------------------------------------------- */
+
+figure {
+	margin: 0 0 3rem;
+
+	figcaption {
+		color: map-get( $map: $variable_colors, $key: caption-color );
+		font-size: 90%;
+		margin: 0 0 3rem;
+	}
+}
+
+picture {
+	margin: 0 0 3rem;
+	display: inline-block;
+}
+
+svg {
+	margin: 0 0 3rem;
+}
+
+.gallery .gallery-item a {
+	border-bottom: none;
+}
+
+figure.wp-block-image {
+
+	&.alignfull.size-thumbnail {
+		margin-left: calc( -100vw / 2 + 100% / 2 );
+		margin-right: calc( -100vw / 2 + 100% / 2 );
+		max-width: 100vw;
+	}
+
+	&.alignwide.size-thumbnail {
+		margin: 0 -200px;
+		max-width: 140%;
+	}
+}

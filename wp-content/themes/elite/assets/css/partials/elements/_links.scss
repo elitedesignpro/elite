@@ -1,0 +1,36 @@
+/* -------------------------------------------------
+>> Base Styles
+---------------------------------------------------
+>> Do not edit these styles
+------------------------------------------------- */
+
+a {
+	text-decoration: none;
+
+	@include transition(all, 0.4s, ease-in-out);
+
+	outline: none;
+	position: relative;
+}
+
+/* -------------------------------------------------
+>> Project Styles
+---------------------------------------------------
+>> Edit these styles as required
+------------------------------------------------- */
+
+.page-section,
+.hero-section {
+
+	a,
+	&:visited {
+		color: map-get( $map: $variable_colors, $key: link-color );
+		border-bottom: 1px solid map-get( $map: $variable_colors, $key: link-border-color );
+
+		&:hover,
+		&:active {
+			color: map-get( $map: $variable_colors, $key: link-color-hover );
+			border-color: map-get( $map: $variable_colors, $key: link-border-color-hover );
+		}
+	}
+}

@@ -1,0 +1,57 @@
+/* -------------------------------------------------
+>> Base Styles
+---------------------------------------------------
+>> Edit these styles as required
+------------------------------------------------- */
+
+.page-section .pagination,
+.pagination {
+	text-align: center;
+	margin: 2rem 0 0;
+
+	a,
+	a:visited,
+	span {
+		background-color: map-get( $map: $variable_colors, $key: pagination-bgcolor );
+		color: map-get( $map: $variable_colors, $key: pagination-color );
+		border: 1px solid map-get( $map: $variable_colors, $key: pagination-border );
+		display: inline-block;
+		padding: 6px 12px 7px;
+
+		@include font-size(1.5);
+
+		line-height: 20px;
+
+		@include font(pg, med);
+
+		margin: 0 5px;
+
+		@include transition(all, 0.4s, ease-in-out);
+
+		&:hover {
+			background-color: map-get( $map: $variable_colors, $key: pagination-bgcolor-hover );
+			color: map-get( $map: $variable_colors, $key: pagination-color-hover );
+		}
+	}
+
+	span.current {
+		background-color: map-get( $map: $variable_colors, $key: pagination-bgcolor-current );
+		color: map-get( $map: $variable_colors, $key: pagination-color-current );
+		border: 1px solid map-get( $map: $variable_colors, $key: pagination-current-border );
+
+		&:hover {
+			background-color: map-get( $map: $variable_colors, $key: pagination-bgcolor-current );
+			color: map-get( $map: $variable_colors, $key: pagination-color-current );
+			border: 1px solid map-get( $map: $variable_colors, $key: pagination-current-border );
+		}
+	}
+
+	>span {
+		border: none;
+
+		&:hover {
+			background-color: map-get( $map: $variable_colors, $key: pagination-first-bgcolor );
+			color: map-get( $map: $variable_colors, $key: pagination-first-color );
+		}
+	}
+}

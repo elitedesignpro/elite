@@ -1,0 +1,168 @@
+/* -------------------------------------------------
+>> Base Styles
+---------------------------------------------------
+>> Edit these styles as required
+------------------------------------------------- */
+
+#commentform {
+
+	label {
+		display: block;
+	}
+
+	p.comment-form-author,
+	p.comment-form-url,
+	p.comment-form-email {
+		width: 32%;
+		display: inline-block;
+		margin-right: 1.5%;
+		margin-bottom: 0rem;
+	}
+
+	p.comment-form-comment {
+		margin-bottom: 0rem;
+	}
+
+	p.comment-form-comment textarea {
+		margin-bottom: 1rem;
+	}
+
+	p.comment-form-url,
+	.url-comments,
+	li.middle {
+		margin-right: 0 !important;
+	}
+}
+
+.comment-meta,
+.comment-author {
+	margin-bottom: 1.5rem;
+}
+
+.comments-closed {
+	margin: 3rem 0;
+}
+
+.comment-meta {
+	margin-bottom: 3rem;
+	color: map-get( $map: $variable_colors, $key: comment-meta-color );
+}
+
+.comment-author.vcard {
+	margin-bottom: 2px;
+
+	a {
+		border-bottom: none;
+	}
+
+	span {
+
+		@include font(pg, reg);
+	}
+}
+
+.comment-metadata {
+	font-size: 90%;
+
+	a {
+		color: map-get( $map: $variable_colors, $key: comment-metadata-color );
+		border-bottom: transparent;
+	}
+}
+
+.comment-content {
+
+	p {
+		margin-bottom: 2rem;
+	}
+
+	a {
+		word-wrap: break-word;
+	}
+}
+
+.comment-body {
+	margin-bottom: 3rem;
+}
+
+ol.commentlist {
+
+	li.comment {
+		margin-bottom: 3rem;
+		padding: 3rem 0 0;
+		border-top: 1px solid map-get( $map: $variable_colors, $key: comments-list-border-color );
+
+		&::before {
+			display: none !important;
+		}
+
+		&.pingback {
+			margin: 0 0 3rem;
+		}
+
+		div {
+
+			&.vcard cite.fn {
+				font-style: normal;
+			}
+
+			&.vcard img.avatar {
+				float: left;
+				margin: 0 1rem 0 0;
+				width: 64px;
+			}
+
+			&.commentmetadata {
+				padding: 0.8rem 0 1.4rem;
+			}
+		}
+
+		ul.children,
+		ol.children {
+			list-style: none;
+			margin: 5rem 0 0;
+
+			li {
+				padding: 3rem 0 0;
+
+				&.depth-2,
+				&.depth-3,
+				&.depth-4,
+				&.depth-5 {
+					margin: 0 0 3rem 6rem;
+				}
+			}
+		}
+	}
+}
+
+a.comment-reply-link {
+	background-color: map-get( $map: $variable_colors, $key: comments-reply-btn-bgcolor );
+	color: map-get( $map: $variable_colors, $key: comments-reply-btn-color );
+	padding: 4px 11px 5px;
+	font-size: 90%;
+	height: 37px;
+	box-sizing: border-box;
+	display: inline-block;
+	border: 2px solid transparent;
+
+	&:hover {
+		border: 2px solid map-get( $map: $variable_colors, $key: comments-reply-btn-border-color-hover );
+		background-color: map-get( $map: $variable_colors, $key: comments-reply-btn-bgcolor-hover );
+		color: map-get( $map: $variable_colors, $key: comments-reply-btn-color-hover );
+	}
+}
+
+// .bypostauthor {
+// 	display: block;
+// }
+
+// #respond {
+// 	ul {
+// 		list-style-type: none;
+// 	}
+
+// 	.logged-in {
+// 		margin: 0 0 1.2rem;
+// 	}
+// }

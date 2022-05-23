@@ -1,0 +1,28 @@
+.wp-block-latest-posts__featured-image {
+
+	a {
+		border-bottom: none;
+	}
+
+	&.alignleft {
+		margin: 0 2rem 1rem 0;
+	}
+
+	&.alignright {
+		margin: 0 0 1rem 2rem;
+	}
+
+	&.aligncenter {
+		margin: 0 auto 1rem;
+	}
+}
+
+.wp-block-latest-posts__post-author,
+.wp-block-latest-posts__post-date {
+	font-size: 90%;
+	color: map-get( $map: $variable_colors, $key: widget-latest-post-meta-color );
+}
+
+.wp-block-latest-posts.is-grid li {
+	margin-bottom: 1.2rem;
+}

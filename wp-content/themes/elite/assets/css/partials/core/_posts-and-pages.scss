@@ -1,0 +1,48 @@
+/* -------------------------------------------------
+>> Base Styles
+---------------------------------------------------
+>> Do not edit these styles
+------------------------------------------------- */
+.sticky {
+	display: block;
+}
+
+.sticky {
+
+	.post-title {
+		padding-left: 3rem;
+	}
+
+	.ac-post-title {
+		position: relative;
+		padding-left: 4rem;
+
+		&::before {
+			content: "";
+			background-image: url( ../img/pushpin.svg );
+			background-repeat: no-repeat;
+			position: absolute;
+			top: 1px;
+			left: 0;
+			height: 35px;
+			width: 30px;
+		}
+	}
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* -------------------------------------------------
+>> Project Styles
+---------------------------------------------------
+>> Edit following styles or write your own
+------------------------------------------------- */

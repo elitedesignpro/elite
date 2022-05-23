@@ -1,0 +1,253 @@
+// Project Colors 
+$colors: (white: #fff,
+	black: #000,
+	mblack: #222,
+	lblack: #444,
+	gray: #ddd,
+	mgray: rgba(#ddd, 0.8),
+	lgray: rgba(#ddd, 0.6),);
+
+// Base Theme Colors (Extracted from project colors)
+$base_colors: ( //
+	// Body
+	body-color: #000000,
+	selection-color: #ffffff,
+	selection-bgcolor: #000000,
+	//
+	//
+	// Captions
+	caption-color: #999999,
+	//
+	//
+	// Links
+	link-color: #000000,
+	link-border-color: #000000,
+	link-color-hover: #000000,
+	link-border-color-hover: transparent,
+	//
+	//
+	// Lists Colors
+	list-before-bgcolor: #000000,
+	ol-list-before-color: #000000,
+	//
+	//
+	// BlockQuote Colors
+	blockquote-color: #000000,
+	blockquote-border-color: #000000,
+	quote-color: #000000,
+	blockqoute-cite-color: #999999,
+	//
+	//
+	// Tables Even Row Color
+	table-border-color: #cccccc,
+	table-head-border-color: #000000,
+	table-foot-border-color: #cccccc,
+	//
+	//
+	// Headings Colors
+	headings-color: #000000,
+	//
+	//
+	// Formatting Colors
+	abbr-border-color: #000000,
+	strong-color: #000000,
+	underline-border-color: #000000,
+	delete-color: #e74c3c,
+	insert-color: #27ae60,
+	insert-border-color: #27ae60,
+	code-color: #ffffff,
+	code-bgcolor: #000000,
+	pre-color: #ffffff,
+	pre-bgcolor: #000000,
+	hr-bgcolor: #cccccc,
+	mark-bgcolor: #000000,
+	mark-color: #ffffff,
+	//
+	//
+	// Defaults Fields
+	// Common
+	input-color: #000000,
+	input-bgcolor: #ffffff,
+	input-border-color: #cccccc,
+	input-focus-border-color: #000000,
+	// Disabled Feild
+	disabled-input-bgcolor: #d5d3d3,
+	disabled-input-border-color: #cccccc,
+	// Placeholder
+	placeholder-color: #999999,
+	// Range Field
+	range-track-bgcolor: #cccccc,
+	range-thumb-bgcolor: #000000,
+	// Color Field
+	color-field-border-color: #cccccc,
+	color-field-bgcolor: #ffffff,
+	// Radio Buttons
+	radio-color: #000000,
+	radio-border-color: #cccccc,
+	radio-bgcolor: #ffffff,
+	radio-after-bgcolor: #000000,
+	// Checkbox
+	checkbox-color: #000000,
+	checkbox-border-color: #cccccc,
+	checkbox-bgcolor: #ffffff,
+	checkbox-after-bgcolor: #000000,
+	// Progress Bar
+	progress-bgcolor: #cccccc,
+	progress-value-bgcolor: #000000,
+	// Meter
+	meter-bgcolor: #cccccc,
+	meter-value-bgcolor: #000000,
+	//
+	//
+	// Form Buttons
+	button-bgcolor: #000000,
+	button-color: #ffffff,
+	button-color-hover: #000000,
+	button-bgcolor-hover: #ffffff,
+	button-border-color-hover: #000000,
+	// Reset Button
+	reset-button-bgcolor: #cccccc,
+	reset-button-color: #000000,
+	reset-button-border-color-hover: #000000,
+	//
+	//
+	// Gravity Forms Fields Colors
+	// Datepicker
+	datepicker-bg-color: #ffffff,
+	datepicker-select-bgcolor: #ffffff,
+	datepicker-link-color: #ffffff,
+	datepicker-calendar: #ffffff,
+	datepicker-th-bgcolor: #dddddd,
+	datepicker-even-tr-td-bgcolor: #dddddd,
+	datepicker-border-color: #cccccc,
+	datepicker-date-color: #000000,
+	// Validation Error Colors
+	valiation-error-bgcolor: #e74c3c,
+	valiation-error-border-color: #e74c3c,
+	valiation-error-bg-color: #ffe2df,
+	valiation-message-color: #e74c3c,
+	error-field-border-color: #e74c3c,
+	valiation-error-color: #ffffff,
+	// Confirmation
+	confirmation-message-bgcolor: #ffffff,
+	confirmation-message-color: #000000,
+	confirmation-message-border-color: #000000,
+	// Required
+	required-text-color: #e74c3c,
+	// file upload
+	fileupload_rule_color: #999999,
+	//
+	//
+	// Hubspot Form Fields Colors
+	invalid-error-border-color: #e74c3c,
+	hubspot-error-label-color: #e74c3c,
+	hubspot-required-color: #e74c3c,
+	//
+	// Accessibility Button
+	acc-btn-color: #ffffff,
+	acc-btn-bgcolor: #000000,
+	acc-btn-shadow: #999999,
+	//
+	//
+	// Comments System
+	comments-reply-btn-bgcolor: #000000,
+	comments-reply-btn-color: #ffffff,
+	comments-reply-btn-bgcolor-hover: #ffffff,
+	comments-reply-btn-color-hover: #000000,
+	comments-reply-btn-border-color-hover: #000000,
+	comment-meta-color: #000000,
+	comment-metadata-color: #444444,
+	comments-list-border-color: #cccccc,
+	//
+	//
+	// Pagination Colors
+	pagination-bgcolor: #ffffff,
+	pagination-color: #000000,
+	pagination-border: #000000,
+	pagination-bgcolor-hover: #000000,
+	pagination-color-hover: #ffffff,
+	pagination-bgcolor-current: #000000,
+	pagination-color-current: #ffffff,
+	pagination-current-border: #000000,
+	pagination-first-bgcolor: #ffffff,
+	pagination-first-color: #000000,
+	//
+	//
+	// Blocks Widgets
+	widget-comments-meta-color: #999999,
+	widget-latest-post-meta-color: #999999,
+	widget-rss-feed-meta-color: #999999,
+	widget-search-button-color: #000000,
+	//
+	//
+	//
+	//
+	//
+	// wp tables block
+	wp-table-block-stripe-bg-color:#ffffff,
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	// Helpers Classes Colors
+	black-text-color: #000000,
+	white-text-color: #ffffff,
+	// Breadcrumbs Colors
+	breadcrumb-color: #000000,
+	breadcrumb-link-color: #000000,
+	breadcrumb-border-color: transparent,
+	breadcrumb-border-color-hover: #000000,
+	breadcrumb-span-color: #000000,
+	// Theme Button Colors
+	theme-btn-color: #ffffff,
+	theme-btn-bgcolor: #000000,
+	theme-btn-border-color: #000000,
+	theme-btn-bgcolor-hover: #ffffff,
+	theme-btn-border-color-hover: #000000,
+	theme-btn-color-hover: #000000,
+	// Button Variation
+	red-btn-border-color: #ff0000,
+	red-btn-bgcolor: #ff0000,
+	red-btn-color: #ffffff,
+	red-btn-border-color-hover: #000000,
+	red-btn-bgcolor-hover: #ffffff,
+	red-btn-color-hover: #000000,
+	// Wordpress Button
+	wp-btn-border-color: #000000,
+	wp-btn-color: #000000,
+	wp-btn-bgcolor: transparent,
+	wp-outline-btn-border-color: #000000,
+	wp-outline-btn-color: #ffffff,
+	wp-outline-btn-bgcolor: #000000,
+	// Error Menu Color
+	error-menu-color: #000000,
+	// Footer Color
+	footer-bgcolor: #000000,
+	footer-color: #ffffff,
+	f-widget-border-color: #ffffff,
+	f-nav-color: #ffffff,
+	f-nav-after-bgcolor: #ffffff,
+	copyright-color: #ffffff,
+	legal-nav-color: #ffffff,
+	legal-nav-after-bgcolor: #ffffff,
+	legal-text-color: #ffffff,
+	// Header Color
+	header-fixed-bg-color: #dddddd,
+	header-bgcolor: #ffffff,
+	header-nav-color: #000000,
+	header-nav-after-bgcolor: #000000,
+	header-nav-second-ul-bgcolor: #ffffff,
+	header-nav-second-link-color: #000000,
+	header-nav-second-link-color-hover: #000000,
+	// Mobile Menu
+	mobile-nav-color: #000000,
+	mobile-nav-sub-link-color: #000000,
+	nav-overlay-bgcolor: #dddddd,
+	// abbreviation
+	abbr-border: #cccccc,
+);

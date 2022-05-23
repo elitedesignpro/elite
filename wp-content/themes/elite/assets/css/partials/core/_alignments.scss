@@ -1,0 +1,61 @@
+/* -------------------------------------------------
+>> Base Styles
+---------------------------------------------------
+>> Edit these styles as required
+------------------------------------------------- */
+
+.alignnone {
+	margin: 1.5rem 0 3rem;
+}
+
+.aligncenter {
+	display: block;
+	margin: 1.5rem auto 3rem;
+	clear: both;
+	text-align: center;
+}
+
+.alignright {
+	float: right;
+	margin: 1.5rem 0 3rem 2rem;
+}
+
+
+.alignleft {
+	float: left;
+	margin: 1.5rem 2rem 3rem 0;
+}
+
+a img {
+
+	&.alignright {
+		float: right;
+		margin: 1.5rem 0 3rem 2rem;
+	}
+
+	&.alignnone {
+		margin: 1.5rem 0 3rem;
+	}
+
+	&.alignleft {
+		float: left;
+		margin: 1.5rem 2rem 3rem 0;
+	}
+
+	&.aligncenter {
+		display: block;
+		margin: 1.5rem auto 3rem;
+		text-align: center;
+		clear: both;
+	}
+}
+
+
+// // clear
+// .wp-block-image {
+// 	&::after {
+// 		content: "";
+// 		clear: both;
+// 		display: table;
+// 	}
+// }

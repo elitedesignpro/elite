@@ -1,0 +1,208 @@
+.footer-ctn {
+	background-color: map-get( $map: $variable_colors, $key: footer-bgcolor );
+	padding: 14rem 0 12rem;
+	box-sizing: border-box;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	ul {
+		color: map-get( $map: $variable_colors, $key: footer-color );
+	}
+}
+
+.footer-logo {
+	line-height: 0.65;
+	margin-bottom: 5.6rem;
+
+	a,
+	a:visited {
+		border: none;
+		display: inline-block;
+	}
+}
+
+.footer-widgets {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding-bottom: 9rem;
+	margin-bottom: 6rem;
+	border-bottom: 1px solid map-get( $map: $variable_colors, $key: f-widget-border-color );
+
+	.single-widget {
+		width: 22.96%;
+
+		&:first-child {
+			width: 48.6%;
+
+			h4 {
+				margin-top: 6px;
+			}
+		}
+	}
+}
+
+.footer-nav {
+
+	ul {
+		padding: 0;
+		margin: 0;
+
+		li {
+			padding: 0;
+			margin: 0 0 1.1rem;
+			list-style-type: none;
+			line-height: 1;
+
+			a,
+			a:visited {
+				padding-bottom: 2px;
+
+				@include font-size(1.4);
+
+				line-height: 1;
+				position: relative;
+				display: inline-block;
+				text-transform: uppercase;
+				color: map-get( $map: $variable_colors, $key: f-nav-color );
+
+				&::after {
+					content: "";
+					position: absolute;
+					width: 100%;
+					height: 1px;
+					bottom: 0;
+					left: 0;
+					background-color: map-get( $map: $variable_colors, $key: f-nav-after-bgcolor );
+					opacity: 0.8;
+					transform: scaleX( 0 );
+					transform-origin: bottom right;
+					transition: transform 0.3s;
+				}
+			}
+
+			&.current-menu-item > a,
+			&.current-menu-parent > a,
+			a:hover {
+				border: 0;
+
+				&::after {
+					transform-origin: bottom left;
+					transform: scaleX( 1 );
+				}
+			}
+		}
+
+		ul {
+			padding: 2rem 0 1rem;
+
+			li {
+				display: block;
+				margin: 0 0 14px;
+				padding: 0 15px;
+
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+.footer-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.copy-right {
+	width: 35%;
+	color: map-get( $map: $variable_colors, $key: copyright-color );
+
+	@include font-size(1.4);
+
+	text-transform: uppercase;
+}
+
+.legal-nav {
+	width: 70%;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		display: flex;
+		justify-content: end;
+		align-items: center;
+		flex-wrap: wrap;
+
+		li {
+			padding: 0;
+			margin-bottom: 0;
+			margin-left: 3rem;
+
+			@include font-size(1.4);
+			@include font(pg, reg);
+
+			a,
+			a:visited {
+				line-height: 1;
+				padding-bottom: 2px;
+				text-transform: uppercase;
+				color: map-get( $map: $variable_colors, $key: legal-nav-color );
+				position: relative;
+				display: block;
+
+				&::after {
+					content: "";
+					position: absolute;
+					width: 100%;
+					height: 1px;
+					bottom: 0;
+					left: 0;
+					background-color: map-get( $map: $variable_colors, $key: legal-nav-after-bgcolor );
+					transform: scaleX( 0 );
+					transform-origin: bottom right;
+					transition: transform 0.3s;
+				}
+
+				&:hover {
+
+					&::after {
+						transform-origin: bottom left;
+						transform: scaleX( 1 );
+					}
+				}
+			}
+
+			&.current-menu-item a {
+
+				&::after {
+					transform-origin: bottom left;
+					transform: scaleX( 1 );
+				}
+			}
+
+			&:first-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.legal-text {
+
+	@include font-size(1.5);
+
+	color: map-get( $map: $variable_colors, $key: legal-text-color );
+
+	@include font(pg, med);
+
+	margin-right: 3rem;
+}

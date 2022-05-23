@@ -1,0 +1,117 @@
+/* -------------------------------------------------
+>> Base Styles
+---------------------------------------------------
+>> Edit these styles as required
+------------------------------------------------- */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0 0 3rem;
+	width: 100%;
+	table-layout: fixed;
+	text-align: left;
+	box-sizing: border-box;
+
+	p {
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	caption {
+		color: map-get( $map: $variable_colors, $key: caption-color );
+		font-size: 90%;
+		margin: 0 0 2rem;
+	}
+}
+
+
+tr,
+tbody tr {
+	border-bottom: 1px solid map-get( $map: $variable_colors, $key: table-border-color );
+
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+td,
+th {
+	padding: 10px 15px;
+	vertical-align: middle;
+}
+
+thead {
+
+	tr {
+		border: none;
+	}
+
+	tr:last-child {
+		border-bottom: 3px solid map-get( $map: $variable_colors, $key: table-head-border-color );
+	}
+
+	th {
+		font-weight: bold;
+	}
+}
+
+tfoot {
+
+	tr {
+		border: none;
+	}
+
+	tr:first-child {
+		border-top: 3px solid map-get( $map: $variable_colors, $key: table-foot-border-color );
+	}
+
+	td {
+		font-weight: bold;
+	}
+}
+
+
+.wp-block-table {
+
+	tbody td {
+		border: 2px solid map-get( $map: $variable_colors, $key: table-border-color );
+	}
+
+	&.is-style-stripes {
+
+		tbody {
+
+
+			tr,
+			td {
+				border: none;
+			}
+		}
+
+		tfoot {
+
+			tr {
+				border-top: 3px solid map-get( $map: $variable_colors, $key: table-head-border-color );
+			}
+		}
+
+		.has-background tbody tr:nth-child(odd) {
+			background-color: transparent;
+		}
+	}
+
+	table.has-background {
+
+		tbody td,
+		tbody tr {
+			border: none;
+		}
+
+		tfoot tr {
+			border-top: 3px solid map-get( $map: $variable_colors, $key: table-head-border-color );
+		}
+	}
+}

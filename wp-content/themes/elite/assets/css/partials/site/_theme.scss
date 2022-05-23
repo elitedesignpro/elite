@@ -1,0 +1,324 @@
+/****
+ *
+ * body
+ *
+****/
+
+.two-columns {
+	display: flex;
+	flex-wrap: wrap;
+
+	.column {
+		width: calc( 50% - 16px );
+		margin-right: 3.2rem;
+
+		&:nth-child(2) {
+			margin-right: 0;
+		}
+	}
+}
+
+.three-columns {
+
+	.column {
+		display: inline-block;
+		width: calc( 33.33% - 20px );
+		margin-right: 25px;
+
+		&:nth-child(3n + 3) {
+			margin-right: 0;
+		}
+	}
+}
+
+/****
+ *
+ * Valign-wrapper Style
+ *
+ ****/
+.valign-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+/****
+ *
+ * helper classes
+ *
+****/
+
+.large-text {
+	font-size: 2.6rem;
+	line-height: 1.3;
+}
+
+.small-text {
+	font-size: 1.4rem;
+	line-height: 1;
+}
+
+.black-text {
+	color: map-get( $map: $variable_colors, $key: black-text-color );
+}
+
+.white-text {
+	color: map-get( $map: $variable_colors, $key: white-text-color );
+}
+
+.float-right {
+	float: right;
+}
+
+.float-left {
+	float: left;
+	padding-right: 10px;
+}
+
+/****
+ *
+ * breadcrumbs
+ *
+****/
+#breadcrumbs {
+	color: map-get( $map: $variable_colors, $key: breadcrumb-color );
+	text-transform: uppercase;
+	margin-bottom: 23px;
+
+	@include font-size(1.4);
+
+	span {
+
+		@include font-size(1.8);
+	}
+
+	span.breadcrumb_last {
+
+		@include font-size(1.4);
+
+		font-weight: 500;
+		margin-left: 10px;
+	}
+
+	a,
+	&:visited {
+		color: map-get( $map: $variable_colors, $key: breadcrumb-link-color );
+		font-weight: 700;
+		margin: 0 10px;
+		border-bottom: 1px solid map-get( $map: $variable_colors, $key: breadcrumb-border-color );
+
+		@include font-size(1.4);
+
+		&:hover {
+			border-bottom: 1px solid map-get( $map: $variable_colors, $key: breadcrumb-border-color-hover );
+		}
+	}
+}
+
+.single-post #breadcrumbs span span span span span span {
+	color: map-get( $map: $variable_colors, $key: breadcrumb-span-color );
+}
+
+.single-post #breadcrumbs span span span span span span a {
+	color: map-get( $map: $variable_colors, $key: breadcrumb-link-color );
+}
+
+.single-post #breadcrumbs {
+
+	span.breadcrumb_last {
+		display: none;
+	}
+}
+
+/****
+ *
+ * buttons
+ *
+****/
+
+a.button,
+a.button:visited {
+	box-sizing: border-box;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	padding: 11px 30px;
+	text-decoration: none;
+	color: map-get( $map: $variable_colors, $key: theme-btn-color );
+	background-color: map-get( $map: $variable_colors, $key: theme-btn-bgcolor );
+	border: 2px solid map-get( $map: $variable_colors, $key: theme-btn-border-color );
+	transition: all 0.35s ease-in-out;
+	margin-right: 9px;
+
+	@include border-radius(0px);
+	@include font(pg, med);
+	@include font-size(1.6);
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&:hover {
+		background-color: map-get( $map: $variable_colors, $key: theme-btn-bgcolor-hover );
+		border: solid 2px map-get( $map: $variable_colors, $key: theme-btn-border-color-hover );
+		color: map-get( $map: $variable_colors, $key: theme-btn-color-hover );
+	}
+
+	&.red-btn {
+		border: 2px solid map-get( $map: $variable_colors, $key: red-btn-border-color );
+		background-color: map-get( $map: $variable_colors, $key: red-btn-bgcolor );
+		color: map-get( $map: $variable_colors, $key: red-btn-color );
+
+		&:hover {
+			border: 2px solid map-get( $map: $variable_colors, $key: red-btn-border-color-hover );
+			background-color: map-get( $map: $variable_colors, $key: red-btn-bgcolor-hover );
+			color: map-get( $map: $variable_colors, $key: red-btn-color-hover );
+		}
+	}
+}
+
+a.wp-block-button__link,
+a.wp-block-button__link:visited,
+a.wp-block-button__link {
+	box-sizing: border-box;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	padding: 11px 30px;
+	text-decoration: none;
+	color: map-get( $map: $variable_colors, $key: theme-btn-color );
+	background-color: map-get( $map: $variable_colors, $key: theme-btn-bgcolor );
+	border: 2px solid map-get( $map: $variable_colors, $key: theme-btn-border-color );
+	transition: all 0.35s ease-in-out;
+	margin-right: 9px;
+
+	@include font(pg, med);
+	@include font-size(1.6);
+	@include border-radius(100px);
+
+	&:hover {
+		background-color: map-get( $map: $variable_colors, $key: theme-btn-bgcolor-hover );
+		border: 2px solid map-get( $map: $variable_colors, $key: theme-btn-border-color-hover );
+		color: map-get( $map: $variable_colors, $key: theme-btn-color-hover );
+	}
+
+	&.has-background {
+		border: none;
+
+		&:hover {
+			border: none;
+			color: unset;
+		}
+	}
+
+	&.has-text-color.has-background {
+		border: none;
+
+		&:hover {
+			border: none;
+		}
+	}
+}
+
+/****
+ *
+ * WordPress buttons
+ *
+****/
+
+a.wp-block-button__link,
+a.wp-block-button__link:visited,
+.wp-block-button__link {
+
+	&:hover {
+		// border: 2px solid map-get($map: $variable_colors, $key: wp-btn-border-color);
+		// color: map-get($map: $variable_colors, $key: wp-btn-color);
+		// background-color: map-get($map: $variable_colors, $key: wp-btn-bgcolor);
+	}
+}
+
+.wp-block-button.is-style-outline {
+
+	a.wp-block-button__link,
+	a.wp-block-button__link:visited {
+		border: 2px solid map-get( $map: $variable_colors, $key: wp-outline-btn-border-color );
+
+		&:hover {
+			background-color: map-get( $map: $variable_colors, $key: wp-outline-btn-bgcolor );
+			color: map-get( $map: $variable_colors, $key: wp-outline-btn-color );
+		}
+
+		&.has-text-color,
+		&.has-background {
+
+			&:hover {
+				background-color: unset;
+				color: unset;
+			}
+		}
+
+		&.has-text-color.has-background {
+			border: none;
+
+			&:hover {
+				border: none;
+			}
+		}
+	}
+}
+
+.no-visible {
+	visibility: hidden;
+}
+
+/****
+ *
+ * 404 page
+ *
+****/
+.not-found {
+	text-align: center;
+	padding: 50px 0;
+}
+
+.error {
+	text-align: center;
+	margin: 2rem 0;
+	width: 100%;
+
+	.menu {
+		margin: 0;
+	}
+
+	ul li {
+		display: inline-block;
+		margin: 0 0 0 20px;
+		font-weight: 700;
+		padding: 0;
+
+		&::before {
+			display: none;
+		}
+
+		a {
+			padding: 1rem;
+			border-bottom: 0px;
+
+			&:hover {
+				color: map-get( $map: $variable_colors, $key: error-menu-color );
+			}
+		}
+
+		ul {
+			display: none;
+		}
+	}
+}
+
+.form-404 {
+	margin: 5rem auto 0;
+	max-width: 720px;
+
+	p {
+		margin-bottom: 2rem;
+	}
+}

@@ -1,0 +1,352 @@
+@media (max-width: 1003px) {
+
+	header {
+		padding: 19px 0;
+
+		.header-wrapper {
+			padding: 0 20px;
+		}
+
+		&.shrink {
+			padding: 15px 0;
+		}
+	}
+
+	// .header-nav {
+	// 	width: 100%;
+	// 	text-align: left;
+	// 	position: relative;
+	// }
+
+	// .header-btns {
+	// 	float: none;
+	// 	width: 100%;
+	// 	text-align: center;
+	// 	display: block;
+	// }
+
+	.right-heade {
+		width: 100%;
+		float: none;
+	}
+
+	.left-header {
+		width: 70%;
+
+		.logo {
+			margin: 0;
+			width: 167px;
+		}
+	}
+
+	.nav-overlay .header-nav {
+
+		ul {
+			margin: 0;
+			padding: 0;
+			background: transparent;
+			width: 100%;
+
+			li {
+				padding: 0;
+				margin: 0 0 3rem;
+				position: relative;
+				display: block;
+				opacity: 1;
+				line-height: 1;
+
+				a,
+				a:visited {
+					color: map-get( $map: $variable_colors, $key: mobile-nav-color );
+					line-height: 1;
+					text-transform: uppercase;
+					font-weight: 700;
+					display: inline-block;
+					border-bottom: none;
+					position: relative;
+				}
+
+				&.current-menu-item > a,
+				&.current-menu-parent > a,
+				a:hover {
+					border-bottom: none;
+				}
+			}
+
+			ul {
+				transition: none;
+				display: none;
+				padding: 15px 0 15px 20px;
+				position: relative;
+				top: initial;
+				left: initial;
+				opacity: initial;
+				visibility: initial;
+				overflow: visible;
+				box-shadow: none;
+
+				li {
+					margin: 0 0 2rem;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+
+					a,
+					a:visited {
+						padding: initial;
+						text-transform: inherit;
+
+						@include font(pg, reg);
+					}
+
+					&.current-menu-item > a,
+					&.current-menu-parent > a {
+						color: map-get( $map: $variable_colors, $key: mobile-nav-sub-link-color );
+					}
+				}
+			}
+		}
+	}
+
+	.header-nav ul li.menu-item-has-children > a {
+		background-image: none;
+		padding-right: 0;
+	}
+
+	.nav-overlay {
+		position: fixed;
+		background-color: map-get( $map: $variable_colors, $key: nav-overlay-bgcolor );
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		height: 100vh;
+		opacity: 0;
+		visibility: hidden;
+		overflow: visible;
+		box-sizing: border-box;
+		z-index: 8;
+
+		@include transition(all, 0.3s, ease-in-out);
+	}
+
+	.nav-overlay.open {
+		opacity: 1;
+		visibility: visible;
+		overflow: visible;
+	}
+
+	header .nav-container {
+		padding: 95px 3% 1rem;
+		opacity: 0;
+		height: 100%;
+
+		@include transition(all, 0.4s, ease-in-out);
+
+		transition-delay: 0.25s;
+		box-sizing: border-box;
+	}
+
+	header .nav-overlay.open .nav-container {
+		opacity: 1;
+		padding: 93px 20px 1rem;
+		display: block;
+
+		.header-nav {
+			text-align: left;
+		}
+	}
+
+	header.shrink .nav-container {
+		padding: 93px 20px 1rem;
+	}
+
+	header.shrink .nav-overlay.open .nav-container {
+		opacity: 1;
+		padding: 93px 20px 1rem;
+	}
+
+	.nav-content {
+		height: 100%;
+		max-height: 100%;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		box-sizing: border-box;
+	}
+
+	.nav-content::-webkit-scrollbar-track {
+		box-shadow: none;
+		background-color: transparent;
+	}
+
+	.nav-content::-webkit-scrollbar {
+		width: 3px;
+		background-color: transparent;
+		position: relative;
+		left: 5px;
+		box-shadow: none;
+	}
+
+	.nav-content::-webkit-scrollbar-thumb {
+		box-shadow: none;
+		border-radius: 2px;
+	}
+
+	.header-btns {
+		display: none;
+
+		// float: none;
+		// width: 100%;
+		// text-align: center;
+		// display: block;
+		// opacity: 0;
+
+		// @include transition(all, 0.55s, ease-in-out);
+
+		// transition-delay: 0.4s;
+		// padding-top: 10px;
+	}
+
+	// .nav-overlay.open .header-btns {
+	// 	opacity: 1;
+	// 	padding-top: 0px;
+	// 	max-width: 335px;
+	// 	margin: 0 auto 3rem;
+
+	// 	.button {
+	// 		width: 100%;
+	// 	}
+	// }
+
+	.menu-btn {
+		// display: block;
+		// position: fixed;
+		// top: 17px;
+		right: 21px;
+		height: 22px;
+		width: 32px;
+		cursor: pointer;
+		z-index: 9999;
+		display: inline-flex;
+		flex-direction: column;
+		position: relative;
+
+		@include transition(all, 0.3s, ease-in-out);
+	}
+
+	// header.shrink .menu-btn {
+	// 	top: 12px;
+	// }
+
+	.menu-btn.active .top {
+		transform: translateY( 11px ) translateX( 0 ) rotate( -45deg );
+		transform: translateY( 11px ) translateX( 0 ) rotate( -45deg );
+		background-color: map-get( $map: $variable_colors, $key: mobile-nav-icon-bgcolor );
+
+		@include transition(all, 0.3s, ease-in-out);
+
+		top: 5px;
+	}
+
+	.menu-btn.active .bottom {
+		transform: translateY( -11px ) translateX( 0 ) rotate( 45deg );
+		transform: translateY( -11px ) translateX( 0 ) rotate( 45deg );
+		background-color: map-get( $map: $variable_colors, $key: mobile-nav-icon-bgcolor );
+
+		@include transition(all, 0.3s, ease-in-out);
+
+		top: 26px;
+	}
+
+	.menu-btn span {
+		// background-color: map-get( $map: $variable_colors, $key: mobile-nav-icon-bgcolor );
+		background-color: black;
+
+		// border: none;
+		height: 2px;
+		width: 28px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+
+		@include transition(all, 0.3s, ease-in-out);
+	}
+
+	// .menu-btn.active span {
+	// 	left: 3px;
+	// }
+
+	.menu-btn span:nth-of-type(2) {
+		top: auto;
+		bottom: 0;
+	}
+
+	li.menu-item-has-children .submenu-icon {
+		position: absolute;
+		z-index: 9999;
+		right: -8px;
+		top: 5px;
+		display: block;
+		height: 30px;
+		width: 30px;
+		cursor: pointer;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-image: url( ../img/submenu-icon.svg );
+	}
+
+	li.menu-item-has-children.active > .submenu-icon::before {
+		height: 0;
+		top: 18px;
+	}
+}
+
+.logged-in.admin-bar header .menu-btn {
+	top: 50px;
+}
+
+.logged-in.admin-bar header.shrink .menu-btn {
+	top: 46px;
+}
+
+.no-overflow .logged-in.admin-bar .left-header {
+	top: 32px;
+}
+
+.no-overflow .logged-in.admin-bar .nav-overlay {
+	top: 32px;
+	height: calc( 100vh - 32px );
+}
+
+@media (max-width: 782px) {
+
+	.logged-in.admin-bar header .menu-btn {
+		top: 62px;
+	}
+
+	.logged-in.admin-bar header.shrink .menu-btn {
+		top: 58px;
+	}
+
+	.no-overflow .logged-in.admin-bar .left-header {
+		top: 46px;
+	}
+
+	.no-overflow .logged-in.admin-bar .nav-overlay {
+		top: 46px;
+		height: calc( 100vh - 46px );
+	}
+
+	#wpadminbar {
+		position: fixed !important;
+	}
+
+	body.logged-in.admin-bar {
+
+		header {
+			top: 46px;
+		}
+	}
+}
