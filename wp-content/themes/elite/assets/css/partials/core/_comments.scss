@@ -5,7 +5,6 @@
 ------------------------------------------------- */
 
 #commentform {
-
 	label {
 		display: block;
 	}
@@ -45,7 +44,7 @@
 
 .comment-meta {
 	margin-bottom: 3rem;
-	color: map-get( $map: $variable_colors, $key: comment-meta-color );
+	color: map-get($map: $base_colors, $key: comment-meta-color);
 }
 
 .comment-author.vcard {
@@ -56,8 +55,7 @@
 	}
 
 	span {
-
-		@include font(pg, reg);
+		@include font(bt, reg);
 	}
 }
 
@@ -65,13 +63,12 @@
 	font-size: 90%;
 
 	a {
-		color: map-get( $map: $variable_colors, $key: comment-metadata-color );
+		color: map-get($map: $base_colors, $key: comment-metadata-color);
 		border-bottom: transparent;
 	}
 }
 
 .comment-content {
-
 	p {
 		margin-bottom: 2rem;
 	}
@@ -86,11 +83,10 @@
 }
 
 ol.commentlist {
-
 	li.comment {
 		margin-bottom: 3rem;
 		padding: 3rem 0 0;
-		border-top: 1px solid map-get( $map: $variable_colors, $key: comments-list-border-color );
+		border-top: 1px solid map-get($map: $base_colors, $key: comments-list-border-color);
 
 		&::before {
 			display: none !important;
@@ -101,7 +97,6 @@ ol.commentlist {
 		}
 
 		div {
-
 			&.vcard cite.fn {
 				font-style: normal;
 			}
@@ -137,8 +132,8 @@ ol.commentlist {
 }
 
 a.comment-reply-link {
-	background-color: map-get( $map: $variable_colors, $key: comments-reply-btn-bgcolor );
-	color: map-get( $map: $variable_colors, $key: comments-reply-btn-color );
+	background-color: map-get($map: $base_colors, $key: comments-reply-btn-bgcolor);
+	color: map-get($map: $base_colors, $key: comments-reply-btn-color);
 	padding: 4px 11px 5px;
 	font-size: 90%;
 	height: 37px;
@@ -147,9 +142,9 @@ a.comment-reply-link {
 	border: 2px solid transparent;
 
 	&:hover {
-		border: 2px solid map-get( $map: $variable_colors, $key: comments-reply-btn-border-color-hover );
-		background-color: map-get( $map: $variable_colors, $key: comments-reply-btn-bgcolor-hover );
-		color: map-get( $map: $variable_colors, $key: comments-reply-btn-color-hover );
+		border: 2px solid map-get($map: $base_colors, $key: comments-reply-btn-border-color-hover);
+		background-color: map-get($map: $base_colors, $key: comments-reply-btn-bgcolor-hover);
+		color: map-get($map: $base_colors, $key: comments-reply-btn-color-hover);
 	}
 }
 

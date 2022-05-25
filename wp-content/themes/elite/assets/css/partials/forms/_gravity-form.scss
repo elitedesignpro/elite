@@ -32,13 +32,13 @@
 .gfield_time_hour,
 .gfield_time_minute,
 .gfield_time_ampm {
-	width: calc( 33.33% - 3px );
+	width: calc(33.33% - 3px);
 	display: inline-block;
 }
 
 .gfield_time_minute {
 	margin: 0 10px;
-	width: calc( 33.33% - 23px );
+	width: calc(33.33% - 23px);
 }
 
 .below.hour_minute_colon {
@@ -53,7 +53,7 @@
 
 .gfield.half-input-field {
 	width: 48%;
-	margin-right: calc( 4% - 5px );
+	margin-right: calc(4% - 5px);
 	display: inline-block;
 
 	&.last {
@@ -66,7 +66,6 @@
 }
 
 button {
-
 	&.add_list_item,
 	&.delete_list_item {
 		margin: 0 10px 1rem 0;
@@ -78,20 +77,20 @@ button {
 	}
 
 	&.delete_list_item {
-		background-color: map-get( $map: $variable_colors, $key: reset-button-bgcolor );
-		color: map-get( $map: $variable_colors, $key: reset-button-color );
+		background-color: map-get($map: $base_colors, $key: reset-button-bgcolor);
+		color: map-get($map: $base_colors, $key: reset-button-color);
 		border: 2px solid transparent;
 
 		&:hover {
 			background-color: transparent;
-			border: 2px solid map-get( $map: $variable_colors, $key: reset-button-border-color-hover );
+			border: 2px solid map-get($map: $base_colors, $key: reset-button-border-color-hover);
 		}
 	}
 }
 
 .gform_fileupload_rules {
 	font-size: 90%;
-	color: map-get( $map: $variable_colors, $key: fileupload_rule_color );
+	color: map-get($map: $base_colors, $key: fileupload_rule_color);
 	margin-bottom: 1rem;
 	display: inline-block;
 	position: relative;
@@ -103,12 +102,12 @@ button {
 ============================================= */
 
 #ui-datepicker-div {
-	background-color: map-get( $map: $variable_colors, $key: datepicker-bg-color );
-	border: 2px solid map-get( $map: $variable_colors, $key: datepicker-border-color );
+	background-color: map-get($map: $base_colors, $key: datepicker-bg-color);
+	border: 2px solid map-get($map: $base_colors, $key: datepicker-border-color);
 }
 
 .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
-	background-color: map-get( $map: $variable_colors, $key: datepicker-bg-color );
+	background-color: map-get($map: $base_colors, $key: datepicker-bg-color);
 	padding: 1rem 1.2rem;
 }
 
@@ -118,7 +117,7 @@ button {
 	margin-right: 2%;
 	height: 46px;
 	padding: 0 35px 0 18px;
-	background-color: map-get( $map: $variable_colors, $key: datepicker-select-bgcolor );
+	background-color: map-get($map: $base_colors, $key: datepicker-select-bgcolor);
 }
 
 a.ui-datepicker-prev.ui-corner-all,
@@ -131,10 +130,8 @@ a.ui-datepicker-next.ui-corner-all {
 }
 
 .ui-datepicker-header {
-
 	a,
 	a:visited {
-
 		@include font-size(1.6);
 
 		cursor: pointer;
@@ -156,10 +153,9 @@ select.ui-datepicker-year {
 }
 
 .ui-datepicker-calendar a {
-
 	@include font-size(1.6);
 
-	color: map-get( $map: $variable_colors, $key: datepicker-date-color );
+	color: map-get($map: $base_colors, $key: datepicker-date-color);
 }
 
 .ginput_container_date {
@@ -174,7 +170,6 @@ select.ui-datepicker-year {
 }
 
 .gfield_radio {
-
 	.gchoice {
 		display: inline-block;
 	}
@@ -182,17 +177,17 @@ select.ui-datepicker-year {
 
 table.ui-datepicker-calendar {
 	max-width: 410px;
-	background-color: map-get( $map: $variable_colors, $key: datepicker-calendar );
+	background-color: map-get($map: $base_colors, $key: datepicker-calendar);
 }
 
 /* =====  End of Date Picker Style for Gravity Form ====== */
 
 .validation_error {
-	background-color: map-get( $map: $variable_colors, $key: valiation-error-bgcolor );
+	background-color: map-get($map: $base_colors, $key: valiation-error-bgcolor);
 
 	@include font-size(1.4);
 
-	color: map-get( $map: $variable_colors, $key: valiation-error-color );
+	color: map-get($map: $base_colors, $key: valiation-error-color);
 	text-align: center;
 	padding: 2px 10px 6px;
 	margin-bottom: 2rem;
@@ -200,40 +195,38 @@ table.ui-datepicker-calendar {
 }
 
 .validation_message {
-
 	@include font-size(1.4);
 
 	text-align: center;
 	display: inline-block;
-	color: map-get( $map: $variable_colors, $key: valiation-message-color );
+	color: map-get($map: $base_colors, $key: valiation-message-color);
 	position: absolute;
 	bottom: 0;
 }
 
 .gfield_error {
-
 	input {
-		border-color: map-get( $map: $variable_colors, $key: error-field-border-color );
+		border-color: map-get($map: $base_colors, $key: error-field-border-color);
 	}
 }
 
 .gform_confirmation_message {
-	background-color: map-get( $map: $variable_colors, $key: confirmation-message-bgcolor );
+	background-color: map-get($map: $base_colors, $key: confirmation-message-bgcolor);
 	padding: 20px;
 	text-align: center;
-	color: map-get( $map: $variable_colors, $key: confirmation-message-color );
-	border: 1px solid map-get( $map: $variable_colors, $key: confirmation-message-border-color );
+	color: map-get($map: $base_colors, $key: confirmation-message-color);
+	border: 1px solid map-get($map: $base_colors, $key: confirmation-message-border-color);
 }
 
 .gform_validation_errors {
-	background-color: map-get( $map: $variable_colors, $key: valiation-error-bg-color );
+	background-color: map-get($map: $base_colors, $key: valiation-error-bg-color);
 	margin: 1rem 0 3rem;
 	padding: 7px 14px;
 	font-weight: bold;
 	font-size: 105%;
 
 	h2 {
-		color: map-get( $map: $variable_colors, $key: valiation-message-color );
+		color: map-get($map: $base_colors, $key: valiation-message-color);
 		margin-bottom: 0;
 
 		@include font-size(2.4);
@@ -243,7 +236,7 @@ table.ui-datepicker-calendar {
 }
 
 .gfield_required_text {
-	color: map-get( $map: $variable_colors, $key: required-text-color );
+	color: map-get($map: $base_colors, $key: required-text-color);
 	position: relative;
 	margin-left: 5px;
 }

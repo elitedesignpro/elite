@@ -1,18 +1,20 @@
-// Project Colors 
-$colors: (white: #fff,
-	black: #000,
-	mblack: #222,
-	lblack: #444,
-	gray: #ddd,
-	mgray: rgba(#ddd, 0.8),
-	lgray: rgba(#ddd, 0.6),);
+// Project Colors
+$colors: (
+	white: #fff,
+	black: #0b090a,
+	red: #ff1d1d,
+	eblue: #219ebc,
+	yellow: #ffb703,
+	bwhale: #011240,
+	lblue: #8ecae6,
+);
 
 // Base Theme Colors (Extracted from project colors)
-$base_colors: ( //
+$base_colors: (
+	//
 	// Body
-	body-color: #000000,
-	selection-color: #ffffff,
-	selection-bgcolor: #000000,
+	selection-color: #fff,
+	selection-bgcolor: #011240,
 	//
 	//
 	// Captions
@@ -20,56 +22,56 @@ $base_colors: ( //
 	//
 	//
 	// Links
-	link-color: #000000,
-	link-border-color: #000000,
-	link-color-hover: #000000,
-	link-border-color-hover: transparent,
+	link-color: #ffb703,
+	link-border-color: #ffb703,
+	link-color-hover: #219ebc,
+	link-border-color-hover: #219ebc,
 	//
 	//
 	// Lists Colors
-	list-before-bgcolor: #000000,
-	ol-list-before-color: #000000,
+	list-before-bgcolor: #ff1d1d,
+	ol-list-before-color: #ff1d1d,
 	//
 	//
 	// BlockQuote Colors
-	blockquote-color: #000000,
-	blockquote-border-color: #000000,
-	quote-color: #000000,
+	blockquote-color: #0b090a,
+	blockquote-border-color: #0b090a,
+	quote-color: #0b090a,
 	blockqoute-cite-color: #999999,
 	//
 	//
 	// Tables Even Row Color
 	table-border-color: #cccccc,
-	table-head-border-color: #000000,
+	table-head-border-color: #0b090a,
 	table-foot-border-color: #cccccc,
 	//
 	//
 	// Headings Colors
-	headings-color: #000000,
+	headings-color: #0b090a,
 	//
 	//
 	// Formatting Colors
-	abbr-border-color: #000000,
-	strong-color: #000000,
-	underline-border-color: #000000,
+	abbr-border-color: #0b090a,
+	strong-color: #0b090a,
+	underline-border-color: #0b090a,
 	delete-color: #e74c3c,
 	insert-color: #27ae60,
 	insert-border-color: #27ae60,
 	code-color: #ffffff,
-	code-bgcolor: #000000,
+	code-bgcolor: #0b090a,
 	pre-color: #ffffff,
-	pre-bgcolor: #000000,
+	pre-bgcolor: #0b090a,
 	hr-bgcolor: #cccccc,
-	mark-bgcolor: #000000,
+	mark-bgcolor: #0b090a,
 	mark-color: #ffffff,
 	//
 	//
 	// Defaults Fields
 	// Common
-	input-color: #000000,
+	input-color: #0b090a,
 	input-bgcolor: #ffffff,
 	input-border-color: #cccccc,
-	input-focus-border-color: #000000,
+	input-focus-border-color: #0b090a,
 	// Disabled Feild
 	disabled-input-bgcolor: #d5d3d3,
 	disabled-input-border-color: #cccccc,
@@ -77,38 +79,38 @@ $base_colors: ( //
 	placeholder-color: #999999,
 	// Range Field
 	range-track-bgcolor: #cccccc,
-	range-thumb-bgcolor: #000000,
+	range-thumb-bgcolor: #0b090a,
 	// Color Field
 	color-field-border-color: #cccccc,
 	color-field-bgcolor: #ffffff,
 	// Radio Buttons
-	radio-color: #000000,
+	radio-color: #0b090a,
 	radio-border-color: #cccccc,
 	radio-bgcolor: #ffffff,
-	radio-after-bgcolor: #000000,
+	radio-after-bgcolor: #0b090a,
 	// Checkbox
-	checkbox-color: #000000,
+	checkbox-color: #0b090a,
 	checkbox-border-color: #cccccc,
 	checkbox-bgcolor: #ffffff,
-	checkbox-after-bgcolor: #000000,
+	checkbox-after-bgcolor: #0b090a,
 	// Progress Bar
 	progress-bgcolor: #cccccc,
-	progress-value-bgcolor: #000000,
+	progress-value-bgcolor: #0b090a,
 	// Meter
 	meter-bgcolor: #cccccc,
-	meter-value-bgcolor: #000000,
+	meter-value-bgcolor: #0b090a,
 	//
 	//
 	// Form Buttons
-	button-bgcolor: #000000,
+	button-bgcolor: #0b090a,
 	button-color: #ffffff,
-	button-color-hover: #000000,
+	button-color-hover: #0b090a,
 	button-bgcolor-hover: #ffffff,
-	button-border-color-hover: #000000,
+	button-border-color-hover: #0b090a,
 	// Reset Button
 	reset-button-bgcolor: #cccccc,
-	reset-button-color: #000000,
-	reset-button-border-color-hover: #000000,
+	reset-button-color: #0b090a,
+	reset-button-border-color-hover: #0b090a,
 	//
 	//
 	// Gravity Forms Fields Colors
@@ -120,7 +122,7 @@ $base_colors: ( //
 	datepicker-th-bgcolor: #dddddd,
 	datepicker-even-tr-td-bgcolor: #dddddd,
 	datepicker-border-color: #cccccc,
-	datepicker-date-color: #000000,
+	datepicker-date-color: #0b090a,
 	// Validation Error Colors
 	valiation-error-bgcolor: #e74c3c,
 	valiation-error-border-color: #e74c3c,
@@ -130,8 +132,8 @@ $base_colors: ( //
 	valiation-error-color: #ffffff,
 	// Confirmation
 	confirmation-message-bgcolor: #ffffff,
-	confirmation-message-color: #000000,
-	confirmation-message-border-color: #000000,
+	confirmation-message-color: #0b090a,
+	confirmation-message-border-color: #0b090a,
 	// Required
 	required-text-color: #e74c3c,
 	// file upload
@@ -145,46 +147,46 @@ $base_colors: ( //
 	//
 	// Accessibility Button
 	acc-btn-color: #ffffff,
-	acc-btn-bgcolor: #000000,
+	acc-btn-bgcolor: #0b090a,
 	acc-btn-shadow: #999999,
 	//
 	//
 	// Comments System
-	comments-reply-btn-bgcolor: #000000,
+	comments-reply-btn-bgcolor: #0b090a,
 	comments-reply-btn-color: #ffffff,
 	comments-reply-btn-bgcolor-hover: #ffffff,
-	comments-reply-btn-color-hover: #000000,
-	comments-reply-btn-border-color-hover: #000000,
-	comment-meta-color: #000000,
+	comments-reply-btn-color-hover: #0b090a,
+	comments-reply-btn-border-color-hover: #0b090a,
+	comment-meta-color: #0b090a,
 	comment-metadata-color: #444444,
 	comments-list-border-color: #cccccc,
 	//
 	//
 	// Pagination Colors
 	pagination-bgcolor: #ffffff,
-	pagination-color: #000000,
-	pagination-border: #000000,
-	pagination-bgcolor-hover: #000000,
+	pagination-color: #0b090a,
+	pagination-border: #0b090a,
+	pagination-bgcolor-hover: #0b090a,
 	pagination-color-hover: #ffffff,
-	pagination-bgcolor-current: #000000,
+	pagination-bgcolor-current: #0b090a,
 	pagination-color-current: #ffffff,
-	pagination-current-border: #000000,
+	pagination-current-border: #0b090a,
 	pagination-first-bgcolor: #ffffff,
-	pagination-first-color: #000000,
+	pagination-first-color: #0b090a,
 	//
 	//
 	// Blocks Widgets
 	widget-comments-meta-color: #999999,
 	widget-latest-post-meta-color: #999999,
 	widget-rss-feed-meta-color: #999999,
-	widget-search-button-color: #000000,
+	widget-search-button-color: #0b090a,
 	//
 	//
 	//
 	//
 	//
 	// wp tables block
-	wp-table-block-stripe-bg-color:#ffffff,
+	wp-table-block-stripe-bg-color: #ffffff,
 	//
 	//
 	//
@@ -195,39 +197,39 @@ $base_colors: ( //
 	//
 	//
 	// Helpers Classes Colors
-	black-text-color: #000000,
+	black-text-color: #0b090a,
 	white-text-color: #ffffff,
 	// Breadcrumbs Colors
-	breadcrumb-color: #000000,
-	breadcrumb-link-color: #000000,
+	breadcrumb-color: #0b090a,
+	breadcrumb-link-color: #0b090a,
 	breadcrumb-border-color: transparent,
-	breadcrumb-border-color-hover: #000000,
-	breadcrumb-span-color: #000000,
+	breadcrumb-border-color-hover: #0b090a,
+	breadcrumb-span-color: #0b090a,
 	// Theme Button Colors
 	theme-btn-color: #ffffff,
-	theme-btn-bgcolor: #000000,
-	theme-btn-border-color: #000000,
+	theme-btn-bgcolor: #0b090a,
+	theme-btn-border-color: #0b090a,
 	theme-btn-bgcolor-hover: #ffffff,
-	theme-btn-border-color-hover: #000000,
-	theme-btn-color-hover: #000000,
+	theme-btn-border-color-hover: #0b090a,
+	theme-btn-color-hover: #0b090a,
 	// Button Variation
 	red-btn-border-color: #ff0000,
 	red-btn-bgcolor: #ff0000,
 	red-btn-color: #ffffff,
-	red-btn-border-color-hover: #000000,
+	red-btn-border-color-hover: #0b090a,
 	red-btn-bgcolor-hover: #ffffff,
-	red-btn-color-hover: #000000,
+	red-btn-color-hover: #0b090a,
 	// Wordpress Button
-	wp-btn-border-color: #000000,
-	wp-btn-color: #000000,
+	wp-btn-border-color: #0b090a,
+	wp-btn-color: #0b090a,
 	wp-btn-bgcolor: transparent,
-	wp-outline-btn-border-color: #000000,
+	wp-outline-btn-border-color: #0b090a,
 	wp-outline-btn-color: #ffffff,
-	wp-outline-btn-bgcolor: #000000,
+	wp-outline-btn-bgcolor: #0b090a,
 	// Error Menu Color
-	error-menu-color: #000000,
+	error-menu-color: #0b090a,
 	// Footer Color
-	footer-bgcolor: #000000,
+	footer-bgcolor: #0b090a,
 	footer-color: #ffffff,
 	f-widget-border-color: #ffffff,
 	f-nav-color: #ffffff,
@@ -239,15 +241,15 @@ $base_colors: ( //
 	// Header Color
 	header-fixed-bg-color: #dddddd,
 	header-bgcolor: #ffffff,
-	header-nav-color: #000000,
-	header-nav-after-bgcolor: #000000,
+	header-nav-color: #0b090a,
+	header-nav-after-bgcolor: #0b090a,
 	header-nav-second-ul-bgcolor: #ffffff,
-	header-nav-second-link-color: #000000,
-	header-nav-second-link-color-hover: #000000,
+	header-nav-second-link-color: #0b090a,
+	header-nav-second-link-color-hover: #0b090a,
 	// Mobile Menu
-	mobile-nav-color: #000000,
-	mobile-nav-sub-link-color: #000000,
+	mobile-nav-color: #0b090a,
+	mobile-nav-sub-link-color: #0b090a,
 	nav-overlay-bgcolor: #dddddd,
 	// abbreviation
-	abbr-border: #cccccc,
+	abbr-border: #cccccc
 );

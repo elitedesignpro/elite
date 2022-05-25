@@ -12,7 +12,7 @@ progress {
 	width: 100%;
 	height: 6px;
 	border: none;
-	background-color: map-get( $map: $variable_colors, $key: progress-bgcolor );
+	background-color: map-get($map: $base_colors, $key: progress-bgcolor);
 
 	@include border-radius(0);
 
@@ -20,19 +20,19 @@ progress {
 }
 
 progress::-webkit-progress-bar {
-	background-color: map-get( $map: $variable_colors, $key: progress-bgcolor );
+	background-color: map-get($map: $base_colors, $key: progress-bgcolor);
 
 	@include border-radius(0);
 }
 
 progress::-webkit-progress-value {
-	background-color: map-get( $map: $variable_colors, $key: progress-value-bgcolor );
+	background-color: map-get($map: $base_colors, $key: progress-value-bgcolor);
 
 	@include border-radius(0);
 }
 
 progress::-moz-progress-bar {
-	background-color: map-get( $map: $variable_colors, $key: progress-value-bgcolor );
+	background-color: map-get($map: $base_colors, $key: progress-value-bgcolor);
 
 	@include border-radius(0);
 }

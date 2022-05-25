@@ -23,7 +23,7 @@ samp {
 
 abbr,
 acronym {
-	border-bottom: 1px dotted map-get( $map: $variable_colors, $key: abbr-border-color );
+	border-bottom: 1px dotted map-get($map: $base_colors, $key: abbr-border-color);
 	text-decoration: none;
 	cursor: help;
 }
@@ -37,8 +37,8 @@ address {
 }
 
 mark {
-	background-color: map-get( $map: $variable_colors, $key: mark-bgcolor );
-	color: map-get( $map: $variable_colors, $key: mark-color );
+	background-color: map-get($map: $base_colors, $key: mark-bgcolor);
+	color: map-get($map: $base_colors, $key: mark-color);
 	padding: 3px 7px;
 }
 
@@ -59,21 +59,21 @@ del {
 b,
 strong {
 	font-weight: bold;
-	color: map-get( $map: $variable_colors, $key: strong-color );
+	color: map-get($map: $base_colors, $key: strong-color);
 }
 
 u {
-	border-bottom: 1px solid map-get( $map: $variable_colors, $key: underline-border-color );
+	border-bottom: 1px solid map-get($map: $base_colors, $key: underline-border-color);
 	text-decoration: none;
 }
 
 del {
-	color: map-get( $map: $variable_colors, $key: delete-color );
+	color: map-get($map: $base_colors, $key: delete-color);
 }
 
 ins {
-	color: map-get( $map: $variable_colors, $key: insert-color );
-	border-bottom: 1px solid map-get( $map: $variable_colors, $key: insert-border-color );
+	color: map-get($map: $base_colors, $key: insert-color);
+	border-bottom: 1px solid map-get($map: $base_colors, $key: insert-border-color);
 	text-decoration: none;
 }
 
@@ -105,20 +105,20 @@ tt {
 code,
 kbd,
 tt {
-	color: map-get( $map: $variable_colors, $key: code-color );
-	background-color: map-get( $map: $variable_colors, $key: code-bgcolor );
+	color: map-get($map: $base_colors, $key: code-color);
+	background-color: map-get($map: $base_colors, $key: code-bgcolor);
 	padding: 3px 7px;
 }
 
 pre {
-	color: map-get( $map: $variable_colors, $key: pre-color );
-	background-color: map-get( $map: $variable_colors, $key: pre-bgcolor );
+	color: map-get($map: $base_colors, $key: pre-color);
+	background-color: map-get($map: $base_colors, $key: pre-bgcolor);
 	padding: 2rem 2.5rem;
 	overflow-x: scroll;
 }
 
 hr {
-	background-color: map-get( $map: $variable_colors, $key: hr-bgcolor );
+	background-color: map-get($map: $base_colors, $key: hr-bgcolor);
 	border: 0;
 	height: 1px;
 	margin-bottom: 3rem;

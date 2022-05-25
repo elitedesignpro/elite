@@ -6,7 +6,7 @@
 
 .wp-block-latest-comments__comment-date {
 	margin: 0.5rem 0;
-	color: map-get( $map: $variable_colors, $key: widget-comments-meta-color );
+	color: map-get($map: $base_colors, $key: widget-comments-meta-color);
 }
 
 .wp-block-latest-comments__comment-excerpt p {

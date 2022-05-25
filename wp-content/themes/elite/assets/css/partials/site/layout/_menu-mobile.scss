@@ -1,5 +1,4 @@
 @media (max-width: 1003px) {
-
 	header {
 		padding: 19px 0;
 
@@ -40,7 +39,6 @@
 	}
 
 	.nav-overlay .header-nav {
-
 		ul {
 			margin: 0;
 			padding: 0;
@@ -57,7 +55,7 @@
 
 				a,
 				a:visited {
-					color: map-get( $map: $variable_colors, $key: mobile-nav-color );
+					color: map-get($map: $base_colors, $key: mobile-nav-color);
 					line-height: 1;
 					text-transform: uppercase;
 					font-weight: 700;
@@ -97,12 +95,12 @@
 						padding: initial;
 						text-transform: inherit;
 
-						@include font(pg, reg);
+						@include font(bt, reg);
 					}
 
 					&.current-menu-item > a,
 					&.current-menu-parent > a {
-						color: map-get( $map: $variable_colors, $key: mobile-nav-sub-link-color );
+						color: map-get($map: $base_colors, $key: mobile-nav-sub-link-color);
 					}
 				}
 			}
@@ -116,7 +114,7 @@
 
 	.nav-overlay {
 		position: fixed;
-		background-color: map-get( $map: $variable_colors, $key: nav-overlay-bgcolor );
+		background-color: map-get($map: $base_colors, $key: nav-overlay-bgcolor);
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -240,9 +238,9 @@
 	// }
 
 	.menu-btn.active .top {
-		transform: translateY( 11px ) translateX( 0 ) rotate( -45deg );
-		transform: translateY( 11px ) translateX( 0 ) rotate( -45deg );
-		background-color: map-get( $map: $variable_colors, $key: mobile-nav-icon-bgcolor );
+		transform: translateY(11px) translateX(0) rotate(-45deg);
+		transform: translateY(11px) translateX(0) rotate(-45deg);
+		background-color: map-get($map: $base_colors, $key: mobile-nav-icon-bgcolor);
 
 		@include transition(all, 0.3s, ease-in-out);
 
@@ -250,9 +248,9 @@
 	}
 
 	.menu-btn.active .bottom {
-		transform: translateY( -11px ) translateX( 0 ) rotate( 45deg );
-		transform: translateY( -11px ) translateX( 0 ) rotate( 45deg );
-		background-color: map-get( $map: $variable_colors, $key: mobile-nav-icon-bgcolor );
+		transform: translateY(-11px) translateX(0) rotate(45deg);
+		transform: translateY(-11px) translateX(0) rotate(45deg);
+		background-color: map-get($map: $base_colors, $key: mobile-nav-icon-bgcolor);
 
 		@include transition(all, 0.3s, ease-in-out);
 
@@ -260,7 +258,7 @@
 	}
 
 	.menu-btn span {
-		// background-color: map-get( $map: $variable_colors, $key: mobile-nav-icon-bgcolor );
+		// background-color: map-get( $map: $base_colors, $key: mobile-nav-icon-bgcolor );
 		background-color: black;
 
 		// border: none;
@@ -294,7 +292,7 @@
 		cursor: pointer;
 		background-position: center;
 		background-repeat: no-repeat;
-		background-image: url( ../img/submenu-icon.svg );
+		background-image: url(../img/submenu-icon.svg);
 	}
 
 	li.menu-item-has-children.active > .submenu-icon::before {
@@ -317,11 +315,10 @@
 
 .no-overflow .logged-in.admin-bar .nav-overlay {
 	top: 32px;
-	height: calc( 100vh - 32px );
+	height: calc(100vh - 32px);
 }
 
 @media (max-width: 782px) {
-
 	.logged-in.admin-bar header .menu-btn {
 		top: 62px;
 	}
@@ -336,7 +333,7 @@
 
 	.no-overflow .logged-in.admin-bar .nav-overlay {
 		top: 46px;
-		height: calc( 100vh - 46px );
+		height: calc(100vh - 46px);
 	}
 
 	#wpadminbar {
@@ -344,7 +341,6 @@
 	}
 
 	body.logged-in.admin-bar {
-
 		header {
 			top: 46px;
 		}

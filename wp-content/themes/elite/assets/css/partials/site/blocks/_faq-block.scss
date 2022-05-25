@@ -10,7 +10,7 @@
 		line-height: 30px;
 
 		color: map-get($colors, eg);
-		@include font(pg, reg);
+		@include font(bt, reg);
 		cursor: pointer;
 		position: relative;
 		padding: 3.7rem 0 3.6rem 0;
@@ -75,7 +75,7 @@
 		text-transform: uppercase;
 		@include font-size(1.6);
 		line-height: 22px;
-		@include font(pg, med);
+		@include font(bt, reg);
 		padding: 10px;
 		color: map-get($map: $colors, $key: black);
 		margin: 0 4px 12px 0;
@@ -97,7 +97,7 @@
 	background-color: rgba(40, 28, 60, 0.04);
 	@include font-size(1.5);
 	line-height: 20px;
-	@include font(pg, med);
+	@include font(bt, reg);
 }
 .glossary-content {
 	padding: 2.4rem 0;
@@ -122,7 +122,7 @@
 			border-top: 0;
 			font-size: 20px;
 			line-height: 32px;
-			@include font(pg, med);
+			@include font(bt, reg);
 			&::after {
 				width: 20px;
 				height: 20px;

@@ -14,23 +14,21 @@ table {
 	box-sizing: border-box;
 
 	p {
-
 		&:last-child {
 			margin-bottom: 0;
 		}
 	}
 
 	caption {
-		color: map-get( $map: $variable_colors, $key: caption-color );
+		color: map-get($map: $base_colors, $key: caption-color);
 		font-size: 90%;
 		margin: 0 0 2rem;
 	}
 }
 
-
 tr,
 tbody tr {
-	border-bottom: 1px solid map-get( $map: $variable_colors, $key: table-border-color );
+	border-bottom: 1px solid map-get($map: $base_colors, $key: table-border-color);
 
 	&:last-child {
 		border-bottom: none;
@@ -44,13 +42,12 @@ th {
 }
 
 thead {
-
 	tr {
 		border: none;
 	}
 
 	tr:last-child {
-		border-bottom: 3px solid map-get( $map: $variable_colors, $key: table-head-border-color );
+		border-bottom: 3px solid map-get($map: $base_colors, $key: table-head-border-color);
 	}
 
 	th {
@@ -59,13 +56,12 @@ thead {
 }
 
 tfoot {
-
 	tr {
 		border: none;
 	}
 
 	tr:first-child {
-		border-top: 3px solid map-get( $map: $variable_colors, $key: table-foot-border-color );
+		border-top: 3px solid map-get($map: $base_colors, $key: table-foot-border-color);
 	}
 
 	td {
@@ -73,18 +69,13 @@ tfoot {
 	}
 }
 
-
 .wp-block-table {
-
 	tbody td {
-		border: 2px solid map-get( $map: $variable_colors, $key: table-border-color );
+		border: 2px solid map-get($map: $base_colors, $key: table-border-color);
 	}
 
 	&.is-style-stripes {
-
 		tbody {
-
-
 			tr,
 			td {
 				border: none;
@@ -92,9 +83,8 @@ tfoot {
 		}
 
 		tfoot {
-
 			tr {
-				border-top: 3px solid map-get( $map: $variable_colors, $key: table-head-border-color );
+				border-top: 3px solid map-get($map: $base_colors, $key: table-head-border-color);
 			}
 		}
 
@@ -104,14 +94,13 @@ tfoot {
 	}
 
 	table.has-background {
-
 		tbody td,
 		tbody tr {
 			border: none;
 		}
 
 		tfoot tr {
-			border-top: 3px solid map-get( $map: $variable_colors, $key: table-head-border-color );
+			border-top: 3px solid map-get($map: $base_colors, $key: table-head-border-color);
 		}
 	}
 }

@@ -31,58 +31,58 @@ h5,
 .heading-5,
 h6,
 .heading-6 {
-
-	@include font(pg, med);
-
-	margin: 0 0 2rem;
-	color: map-get( $map: $variable_colors, $key: headings-color );
-	line-height: 1.1;
+	@include font(bt, bold);
+	margin: 0 0 3rem;
+	color: map-get($map: $colors, $key: black);
+	line-height: 1.15;
 }
 
 h1,
 .heading-1 {
-
-	@include font-size(5.4);
-
-	line-height: 1;
+	@include font-size(9.9);
 }
 
 h2,
 .heading-2 {
-
-	@include font-size(4.2);
-
-	line-height: 1.1;
+	@include font-size(7.3);
 }
 
 h3,
 .heading-3 {
-
-	@include font-size(3);
-
-	line-height: 1.2;
+	@include font-size(5.4);
 }
 
 h4,
 .heading-4 {
-
-	@include font-size(2.4);
-
-	line-height: 1.3;
+	@include font-size(4);
 }
 
 h5,
 .heading-5 {
-
-	@include font-size(2);
-
-	line-height: 1.4;
+	@include font-size(2.9);
 }
 
 h6,
 .heading-6 {
+	@include font-size(2.2);
+}
 
-	@include font-size(1.8);
-
-	line-height: 1.5;
+/**
+ *
+ * Helper Classess
+ *
+ */
+.big-body {
+	font-size: 25px;
+}
+.large-text {
+	font-size: 40px;
+}
+.overline {
+	font-size: 20px;
+	@include font(bt, bold);
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: map-get($map: $colors, $key: red);
+	margin-bottom: 1.6rem;
 }

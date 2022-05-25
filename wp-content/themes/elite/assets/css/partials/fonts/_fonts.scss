@@ -1,34 +1,34 @@
 $base-url: "../";
 $used-fonts: ();
 $base-font-stack: (
-	pg: (
+	bt: (
+		light: (
+			family: (
+				"Brandon Text",
+				Arial,
+				sans-serif,
+			),
+			weight: 300,
+			style: normal,
+			font-face: (
+				family: "Brandon Text",
+				path: "BrandonText-Light",
+				formats: (
+					woff2,
+				),
+			),
+		),
 		reg: (
 			family: (
-				"PostGrotesk-Book",
+				"Brandon Text",
 				Arial,
 				sans-serif,
 			),
 			weight: 400,
 			style: normal,
 			font-face: (
-				family: "PostGrotesk-Book",
-				path: "PostGrotesk-Book",
-				formats: (
-					woff2,
-				),
-			),
-		),
-		med: (
-			family: (
-				"PostGrotesk-Medium",
-				Arial,
-				sans-serif,
-			),
-			weight: 500,
-			style: normal,
-			font-face: (
-				family: "PostGrotesk-Medium",
-				path: "PostGrotesk-Medium",
+				family: "Brandon Text",
+				path: "BrandonText-Regular",
 				formats: (
 					woff2,
 				),
@@ -36,15 +36,15 @@ $base-font-stack: (
 		),
 		bold: (
 			family: (
-				"PostGrotesk-Bold",
+				"Brandon Text",
 				Arial,
 				sans-serif,
 			),
 			weight: 700,
 			style: normal,
 			font-face: (
-				family: "PostGrotesk-Bold",
-				path: "PostGrotesk-Bold",
+				family: "Brandon Text",
+				path: "BrandonText-Bold",
 				formats: (
 					woff2,
 				),

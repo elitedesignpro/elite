@@ -30,7 +30,7 @@
 	}
 
 	p.wp-caption-text {
-		@include font(pg, med);
+		@include font(bt, reg);
 		@include font-size(1.8);
 		margin: 0;
 		text-transform: uppercase;

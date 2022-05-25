@@ -11,6 +11,7 @@ a {
 
 	outline: none;
 	position: relative;
+	color: map-get($map: $colors, $key: black);
 }
 
 /* -------------------------------------------------
@@ -21,16 +22,15 @@ a {
 
 .page-section,
 .hero-section {
-
 	a,
 	&:visited {
-		color: map-get( $map: $variable_colors, $key: link-color );
-		border-bottom: 1px solid map-get( $map: $variable_colors, $key: link-border-color );
+		color: map-get($map: $base_colors, $key: link-color);
+		border-bottom: 1px solid map-get($map: $base_colors, $key: link-border-color);
 
 		&:hover,
 		&:active {
-			color: map-get( $map: $variable_colors, $key: link-color-hover );
-			border-color: map-get( $map: $variable_colors, $key: link-border-color-hover );
+			color: map-get($map: $base_colors, $key: link-color-hover);
+			border-color: map-get($map: $base_colors, $key: link-border-color-hover);
 		}
 	}
 }
