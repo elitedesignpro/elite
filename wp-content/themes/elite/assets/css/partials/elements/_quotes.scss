@@ -11,16 +11,18 @@ q {
 
 blockquote {
 	position: relative;
-	color: map-get($map: $base_colors, $key: blockquote-color);
-	border-left: 3px solid map-get($map: $base_colors, $key: blockquote-border-color);
-	padding: 5px 0 5px 20px;
-	margin: 0 0 3rem;
+	padding: 0;
+	margin: 0 0 6rem;
 
 	p {
-		margin-bottom: 1.5rem;
-
-		&:last-child {
-			margin-bottom: 0;
+		font-size: 40px;
+		margin-bottom: 0;
+		&::before {
+			content: " “ ";
+			margin-left: -26px;
+			position: relative;
+			left: 8px;
+			top: -5px;
 		}
 	}
 }

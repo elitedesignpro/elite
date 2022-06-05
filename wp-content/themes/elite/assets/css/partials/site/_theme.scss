@@ -153,17 +153,17 @@ a.button:visited {
 	}
 	&.arrow-btn {
 		background-color: transparent;
-		font-size: 20px;
-		padding: 6px 53px 6px 10px;
+		font-size: 22px;
+		padding: 7px 63px 7px 13px;
 		color: map-get($map: $colors, $key: bwhale);
 		background-image: url(../img/blue-right-arrow.svg);
 		background-repeat: no-repeat;
-		background-position: center right 10px;
+		background-position: center right 15px;
 		@include font(bt, reg);
 		&:after {
 			content: "";
-			width: 40px;
-			height: 42px;
+			width: 48px;
+			height: 100%;
 			border: 2px solid map-get($map: $colors, $key: bwhale);
 			position: absolute;
 			right: 0;
@@ -187,7 +187,7 @@ a.button:visited {
 			&:hover {
 				color: map-get($map: $colors, $key: bwhale);
 				&::after {
-					width: 40px;
+					width: 48px;
 				}
 			}
 		}
@@ -351,4 +351,17 @@ a.wp-block-button__link:visited,
 }
 .image-at-right {
 	flex-direction: row-reverse;
+}
+
+.radius-full {
+	border-radius: 50%;
+	img {
+		border-radius: 50%;
+	}
+}
+
+.bgi-center {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }

@@ -27,12 +27,6 @@
 	}
 }
 
-.full-width-container {
-	.wrapper {
-		max-width: 100%;
-		width: 100%;
-	}
-}
 .container-1000 {
 	.wrapper {
 		max-width: 1000px;
@@ -42,5 +36,11 @@
 .container-760 {
 	.wrapper {
 		max-width: 760px;
+	}
+}
+.full-ctn {
+	.wrapper {
+		max-width: 100%;
+		width: 100%;
 	}
 }
