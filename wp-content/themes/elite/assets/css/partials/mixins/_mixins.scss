@@ -37,3 +37,12 @@ Mixin for transition
 	-moz-border-radius: $radius;
 	-o-border-radius: $radius;
 }
+
+@include wh($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+// if($height = " "){
+// 	$height = $width;
+// }

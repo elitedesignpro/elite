@@ -60,4 +60,14 @@ jQuery(document).ready(function (jQuery) {
 		}
 	});
 
+	/**
+	 *
+	 * Video
+	 *
+	 */
+
+	jQuery('a.video-btn').magnificPopup({
+		type: 'iframe'
+	});
+
 });

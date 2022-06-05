@@ -46,23 +46,6 @@
  *
 ****/
 
-.large-text {
-	font-size: 2.6rem;
-	line-height: 1.3;
-}
-
-.small-text {
-	font-size: 1.4rem;
-	line-height: 1;
-}
-
-.black-text {
-	color: map-get($map: $base_colors, $key: black-text-color);
-}
-
-.white-text {
-	color: map-get($map: $base_colors, $key: white-text-color);
-}
 .center {
 	text-align: center;
 }
@@ -365,4 +348,7 @@ a.wp-block-button__link:visited,
 .flexarea {
 	display: flex;
 	flex-wrap: wrap;
+}
+.image-at-right {
+	flex-direction: row-reverse;
 }

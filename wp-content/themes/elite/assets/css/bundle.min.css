@@ -101,6 +101,7 @@ Mixin for transition
 ---------------------------------------------------
 >> Do not edit these styles
 -------------------------------------------------*/
+@import "vendor/magnific-popup.css";
 html,
 body,
 div,
@@ -2539,6 +2540,18 @@ a.comment-reply-link:hover {
 /* -------------------------------------------------
 >> Accessibility styles for WordPress Coulmns Block
 ------------------------------------------------- */
+.col-645 {
+  width: 49.2%;
+}
+
+.col-595 {
+  width: 45.4%;
+}
+
+.col-538 {
+  width: 43.5%;
+}
+
 /* -------------------------------------------------
 >> Accessibility styles for WordPress Image Block
 ------------------------------------------------- */
@@ -3404,7 +3417,7 @@ footer .wrapper {
  *
 ****/
 .wrapper {
-  max-width: 1180px;
+  max-width: 1310px;
   width: 90%;
   margin: 0 auto;
 }
@@ -3588,24 +3601,6 @@ footer .wrapper {
  * helper classes
  *
 ****/
-.large-text {
-  font-size: 2.6rem;
-  line-height: 1.3;
-}
-
-.small-text {
-  font-size: 1.4rem;
-  line-height: 1;
-}
-
-.black-text {
-  color: #0b090a;
-}
-
-.white-text {
-  color: #ffffff;
-}
-
 .center {
   text-align: center;
 }
@@ -3927,12 +3922,24 @@ a.wp-block-button__link.has-text-color.has-background:hover {
       flex-wrap: wrap;
 }
 
+.image-at-right {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
 /*-------------------------------------------------
 >> Styles for Website Blocks
 -------------------------------------------------*/
 /*-------------------------------------------------
 >> Basic styles for Defualt Block
 -------------------------------------------------*/
+.leadparagraph_ctn {
+  max-width: 862px;
+  margin: 0 auto;
+}
+
 /*-------------------------------------------------
 >> Basic styles for FAQ's Block
 -------------------------------------------------*/
@@ -4095,6 +4102,147 @@ a.wp-block-button__link.has-text-color.has-background:hover {
   max-width: 606px;
 }
 
+/*-------------------------------------------------
+>> Basic styles for Image alongside text
+-------------------------------------------------*/
+.iat-content-area p {
+  width: 85%;
+}
+
+/*-------------------------------------------------
+>> Basic styles for Video Block
+-------------------------------------------------*/
+.video-ctn {
+  height: 800px;
+  position: relative;
+}
+.video-ctn img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.video-btn {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #011240;
+  background-repeat: no-repeat;
+  background-position: left 40px center;
+  background-image: url(../img/play-icon-white.svg);
+  background-size: 36px;
+  display: block;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.video-btn:hover {
+  -webkit-transform: scale(1.15);
+      -ms-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+/**
+ *
+ * Video Close Butto styling
+ *
+ */
+.mfp-image-holder .mfp-close,
+.mfp-iframe-holder .mfp-close {
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  background-color: transparent;
+  right: -11px;
+  background-image: url(../img/cross-icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 0;
+}
+
+.mfp-iframe-holder .mfp-content {
+  max-width: 1640px;
+}
+
+/*-------------------------------------------------
+>> Basic styles for Proccess
+-------------------------------------------------*/
+.design-proccess-ctn {
+  max-width: 1237px;
+  margin: 0 auto;
+}
+
+.single-proccess {
+  padding: 25px 43px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  background-color: #011240;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 34px;
+  position: relative;
+}
+.single-proccess:nth-child(n+3) {
+  margin-top: 67px;
+}
+.single-proccess:nth-child(even)::before {
+  content: url(../img/long-arrow.svg);
+  display: inline-block;
+  position: absolute;
+  top: 40px;
+  left: -130px;
+}
+.single-proccess:nth-child(even):after {
+  content: url(../img/circle-long-arrow.svg);
+  display: inline-block;
+  position: absolute;
+  top: 54px;
+  right: -91px;
+}
+.single-proccess:nth-child(odd):after {
+  content: url(../img/circle-left-arrow.svg);
+  display: inline-block;
+  position: absolute;
+  top: 54px;
+  left: -91px;
+}
+.single-proccess:nth-child(4n+4)::before {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.single-proccess:nth-child(4n+4)::after {
+  display: none;
+}
+.single-proccess:nth-child(1)::after, .single-proccess:nth-child(5)::after, .single-proccess:nth-child(9)::after, .single-proccess:last-child::after {
+  display: none;
+}
+
+.section-head h2 {
+  margin-bottom: 0;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+/*-------------------------------------------------
+>> Basic styles for Testimonial
+-------------------------------------------------*/
 /* ------------------------------------------------------------------
 > Responsive
 ------------------------------------------------------------------ */
@@ -4120,10 +4268,7 @@ a.wp-block-button__link.has-text-color.has-background:hover {
   src: url("../fonts/BrandonText-Regular.woff2") format("woff2");
 }
 /* ------------------------------------------------------------------
-> Vendor CSS Starts Here
------------------------------------------------------------------- */
-/* ------------------------------------------------------------------
-> Vendor CSS Example
+> Magnific Popup CSS
 ------------------------------------------------------------------ */
 /*# sourceMappingURL=bundle.css.map */
 

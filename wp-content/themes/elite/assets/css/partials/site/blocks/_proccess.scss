@@ -1,0 +1,65 @@
+.design-proccess-ctn {
+	max-width: 1237px;
+	margin: 0 auto;
+}
+.single-proccess {
+	padding: 25px 43px;
+	box-sizing: border-box;
+	color: map-get($map: $colors, $key: white);
+	background-color: map-get($map: $colors, $key: bwhale);
+	@include border-radius(5px);
+	font-size: 34px;
+	position: relative;
+	&:nth-child(n + 3) {
+		margin-top: 67px;
+	}
+	&:nth-child(even) {
+		&::before {
+			content: url(../img/long-arrow.svg);
+			display: inline-block;
+			position: absolute;
+			top: 40px;
+			left: -130px;
+		}
+		&:after {
+			content: url(../img/circle-long-arrow.svg);
+			display: inline-block;
+			position: absolute;
+			top: 54px;
+			right: -91px;
+		}
+	}
+	&:nth-child(odd) {
+		&:after {
+			content: url(../img/circle-left-arrow.svg);
+			display: inline-block;
+			position: absolute;
+			top: 54px;
+			left: -91px;
+		}
+	}
+	&:nth-child(4n + 4) {
+		&::before {
+			transform: rotate(-180deg);
+		}
+		&::after {
+			display: none;
+		}
+	}
+	&:nth-child(1),
+	&:nth-child(5),
+	&:nth-child(9),
+	&:last-child {
+		&::after {
+			display: none;
+		}
+	}
+}
+.section-head {
+	h2 {
+		margin-bottom: 0;
+	}
+}
+.mb-70 {
+	margin-bottom: 70px;
+}
