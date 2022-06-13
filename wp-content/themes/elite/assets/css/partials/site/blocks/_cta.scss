@@ -28,3 +28,14 @@
 	z-index: 2;
 	position: relative;
 }
+.mid-page-cta {
+	background-color: map-get($map: $colors, $key: bwhale);
+	padding: 70px 160px;
+	box-sizing: border-box;
+	text-align: center;
+	@include border-radius(10px);
+	h2 {
+		color: map-get($map: $colors, $key: white);
+		margin-bottom: 50px;
+	}
+}

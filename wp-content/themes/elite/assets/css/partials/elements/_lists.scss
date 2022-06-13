@@ -48,7 +48,7 @@ ol li {
 	&::marker {
 	}
 
-	margin: 0 0 1.2rem;
+	margin: 0 0 2rem;
 	box-sizing: border-box;
 }
 
@@ -71,19 +71,17 @@ ol ul {
 		}
 
 		li {
-			padding-left: 16px;
+			padding-left: 33px;
 			position: relative;
 
 			&::before {
 				content: "";
-				width: 6px;
-				height: 6px;
-				background-position: left top;
+				width: 8px;
+				height: 8px;
 				position: absolute;
-				background-color: map-get($map: $base_colors, $key: list-before-bgcolor);
+				background-color: map-get($map: $colors, $key: red);
 				left: 0px;
 				top: 9px;
-
 				@include border-radius(50%);
 			}
 		}
@@ -119,7 +117,7 @@ ol ul {
 			}
 
 			&::before {
-				color: map-get($map: $base_colors, $key: ol-list-before-color);
+				color: map-get($map: $colors, $key: red);
 
 				@include font(bt, reg);
 
