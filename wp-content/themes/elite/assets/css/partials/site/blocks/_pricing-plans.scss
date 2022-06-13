@@ -1,0 +1,24 @@
+.single-price-plan {
+	@include padding(45px 30px);
+	h3 {
+		margin-bottom: 20px;
+	}
+}
+.single-price-plan {
+	ul {
+		margin: 0;
+		li {
+			padding: 0;
+			margin: 0;
+			&::before {
+				display: none;
+			}
+		}
+	}
+}
+.black {
+	color: map-get($map: $colors, $key: black);
+}
+.plan-desc {
+	margin-top: 35px;
+}

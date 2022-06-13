@@ -340,6 +340,10 @@ h6,
  * Helper Classess
  *
  */
+.text-center {
+  text-align: center;
+}
+
 .big-body {
   font-size: 25px;
 }
@@ -2204,6 +2208,12 @@ a img.aligncenter {
   clear: both;
 }
 
+.valign-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /*-------------------------------------------------
 >> Styles for posts and pages
 -------------------------------------------------*/
@@ -2558,6 +2568,32 @@ a.comment-reply-link:hover {
 
 .col-538 {
   width: 43.5%;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.three-cols .col {
+  width: 31.5%;
+  margin-right: 2.75%;
+}
+.three-cols .col:nth-child(3n+3) {
+  margin-right: 0;
+}
+.three-cols .col:nth-child(n+4) {
+  margin-top: 36px;
+}
+
+.four-cols .col {
+  width: 23%;
+  margin-right: 2.6%;
+}
+.four-cols .col:nth-child(4n+4) {
+  margin-right: 0;
+}
+.four-cols .col:nth-child(n+5) {
+  margin-top: 36px;
 }
 
 /* -------------------------------------------------
@@ -3452,6 +3488,24 @@ footer .wrapper {
   width: 100%;
 }
 
+.blue-bg {
+  background-color: #011240;
+}
+.blue-bg .section-head h2,
+.blue-bg .section-head p {
+  color: #fff;
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+.ctn {
+  padding: 86px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 /*-------------------------------------------------
 >> Styles for Spacers
 -------------------------------------------------*/
@@ -3622,6 +3676,10 @@ footer .wrapper {
   padding-right: 10px;
 }
 
+.center-align {
+  margin: auto;
+}
+
 /****
  *
  * breadcrumbs
@@ -3770,6 +3828,19 @@ a.button:visited.arrow-btn.fill:hover {
 a.button.arrow-btn.fill:hover::after,
 a.button:visited.arrow-btn.fill:hover::after {
   width: 48px;
+}
+a.button.arrow-btn.small,
+a.button:visited.arrow-btn.small {
+  font-size: 20px;
+  padding: 3px 56px 3px 7px;
+}
+a.button.arrow-btn.small::after,
+a.button:visited.arrow-btn.small::after {
+  width: 46px;
+}
+a.button.arrow-btn.small:hover::after,
+a.button:visited.arrow-btn.small:hover::after {
+  width: 100%;
 }
 
 a.wp-block-button__link,
@@ -3969,6 +4040,47 @@ a.wp-block-button__link.has-text-color.has-background:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+/**
+ *
+ * Helper Classess
+ *
+ */
+.section-head h2 {
+  margin-bottom: 0;
+}
+.section-head p {
+  margin: 30px 0 0 0;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+.ma-900 {
+  max-width: 900px;
+}
+
+.ma-800 {
+  max-width: 900px;
+}
+
+.bg-cover {
+  background-repeat: no-repeat;
+  background-position: center;
+  background: cover;
+}
+
+.img-cover img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.red {
+  color: #ff1d1d;
 }
 
 /*-------------------------------------------------
@@ -4274,14 +4386,6 @@ a.wp-block-button__link.has-text-color.has-background:hover {
   display: none;
 }
 
-.section-head h2 {
-  margin-bottom: 0;
-}
-
-.mb-70 {
-  margin-bottom: 70px;
-}
-
 /*-------------------------------------------------
 >> Basic styles for Testimonial
 -------------------------------------------------*/
@@ -4329,6 +4433,7 @@ a.wp-block-button__link.has-text-color.has-background:hover {
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 60px;
+  line-height: 1;
 }
 
 .cta-bottom-text {
@@ -4350,7 +4455,6 @@ a.wp-block-button__link.has-text-color.has-background:hover {
 }
 
 .mid-page-cta {
-  background-color: #011240;
   padding: 70px 160px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -4407,7 +4511,6 @@ a.wp-block-button__link.has-text-color.has-background:hover {
   padding: 55px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #011240;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -4416,6 +4519,9 @@ a.wp-block-button__link.has-text-color.has-background:hover {
 }
 .list-column h2 {
   color: #fff;
+}
+.list-column ul li:last-child {
+  margin-bottom: 0;
 }
 
 .list-text {
@@ -4478,7 +4584,164 @@ a.wp-block-button__link.has-text-color.has-background:hover {
 }
 
 .product-image {
-  margin-bottom: 46px;
+  margin-bottom: 36px;
+  height: 515px;
+}
+.product-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.head-content {
+  width: 76%;
+}
+
+/*-------------------------------------------------
+>> Basic styles for Elite Family
+-------------------------------------------------*/
+/*-------------------------------------------------
+>> Basic styles for Three Columns text
+-------------------------------------------------*/
+.tct-column {
+  background-color: #fff;
+  padding: 45px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+.tct-column p:last-child {
+  margin-bottom: 0;
+}
+
+/*-------------------------------------------------
+>> Basic styles for Pricing Plan
+-------------------------------------------------*/
+.single-price-plan {
+  padding: 45px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.single-price-plan h3 {
+  margin-bottom: 20px;
+}
+
+.single-price-plan ul {
+  margin: 0;
+}
+.single-price-plan ul li {
+  padding: 0;
+  margin: 0;
+}
+.single-price-plan ul li::before {
+  display: none;
+}
+
+.black {
+  color: #0b090a;
+}
+
+.plan-desc {
+  margin-top: 35px;
+}
+
+/*-------------------------------------------------
+>> Basic styles for Team
+-------------------------------------------------*/
+.team-blk-content {
+  padding: 0 42px 0 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.team-blk-images {
+  height: 543px;
+  padding: 23px 36px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.member-image {
+  position: absolute;
+  top: 23px;
+  width: 257px;
+  height: 252px;
+  -webkit-clip-path: url(#large-team);
+          clip-path: url(#large-team);
+}
+.member-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.member-image:nth-child(2), .member-image:nth-child(3) {
+  width: 208px;
+  height: 216px;
+  -webkit-clip-path: url(#small-team);
+          clip-path: url(#small-team);
+}
+
+.rd-10 {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.member-image:nth-child(2) {
+  left: auto;
+  right: 36px;
+}
+
+.member-image:nth-child(3) {
+  bottom: 23px;
+  top: auto;
+  left: 62px;
+}
+
+.member-image:nth-child(4) {
+  bottom: 23px;
+  top: auto;
+  left: auto;
+  right: 36px;
+}
+
+.member-image-area {
+  height: 280px;
+}
+
+.team-member-detail {
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.team-member-detail h3,
+.team-member-detail p {
+  margin-bottom: 25px;
+}
+.team-member-detail p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+/*-------------------------------------------------
+>> Basic styles for Stats
+-------------------------------------------------*/
+.stat-numbers {
+  font-size: 73px;
+  font-family: "Brandon Text", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+}
+
+.single-stat h3 {
+  margin: 35px 0 0 0;
 }
 
 /* ------------------------------------------------------------------

@@ -44,3 +44,21 @@
 		width: 100%;
 	}
 }
+
+.blue-bg {
+	background-color: map-get($map: $colors, $key: bwhale);
+
+	.section-head {
+		h2,
+		p {
+			color: map-get($map: $colors, $key: white);
+		}
+	}
+}
+.white-bg {
+	background-color: map-get($map: $colors, $key: white);
+}
+
+.ctn {
+	@include padding(86px 0);
+}

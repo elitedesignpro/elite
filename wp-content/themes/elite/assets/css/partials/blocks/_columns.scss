@@ -7,3 +7,30 @@
 .col-538 {
 	width: 43.5%;
 }
+.col-50 {
+	width: 50%;
+}
+.three-cols {
+	.col {
+		width: 31.5%;
+		margin-right: 2.75%;
+		&:nth-child(3n + 3) {
+			margin-right: 0;
+		}
+		&:nth-child(n + 4) {
+			margin-top: 36px;
+		}
+	}
+}
+.four-cols {
+	.col {
+		width: 23%;
+		margin-right: 2.6%;
+		&:nth-child(4n + 4) {
+			margin-right: 0;
+		}
+		&:nth-child(n + 5) {
+			margin-top: 36px;
+		}
+	}
+}

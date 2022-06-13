@@ -57,7 +57,9 @@
 	float: left;
 	padding-right: 10px;
 }
-
+.center-align {
+	margin: auto;
+}
 /****
  *
  * breadcrumbs
@@ -188,6 +190,18 @@ a.button:visited {
 				color: map-get($map: $colors, $key: bwhale);
 				&::after {
 					width: 48px;
+				}
+			}
+		}
+		&.small {
+			font-size: 20px;
+			padding: 3px 56px 3px 7px;
+			&::after {
+				width: 46px;
+			}
+			&:hover {
+				&::after {
+					width: 100%;
 				}
 			}
 		}
@@ -396,4 +410,42 @@ a.wp-block-button__link:visited,
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+}
+
+/**
+ *
+ * Helper Classess
+ *
+ */
+.section-head {
+	h2 {
+		margin-bottom: 0;
+	}
+	p {
+		margin: 30px 0 0 0;
+	}
+}
+.mb-70 {
+	margin-bottom: 70px;
+}
+.ma-900 {
+	max-width: 900px;
+}
+.ma-800 {
+	max-width: 900px;
+}
+.bg-cover {
+	background-repeat: no-repeat;
+	background-position: center;
+	background: cover;
+}
+.img-cover {
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+.red {
+	color: map-get($map: $colors, $key: red);
 }

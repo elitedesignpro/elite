@@ -37,3 +37,11 @@ Mixin for transition
 	-moz-border-radius: $radius;
 	-o-border-radius: $radius;
 }
+@mixin padding($padding) {
+	padding: $padding;
+	box-sizing: border-box;
+}
+@mixin wh($width, $height) {
+	width: $width;
+	height: $height;
+}

@@ -20,14 +20,12 @@
 	margin: 1.5rem 0 3rem 2rem;
 }
 
-
 .alignleft {
 	float: left;
 	margin: 1.5rem 2rem 3rem 0;
 }
 
 a img {
-
 	&.alignright {
 		float: right;
 		margin: 1.5rem 0 3rem 2rem;
@@ -50,7 +48,6 @@ a img {
 	}
 }
 
-
 // // clear
 // .wp-block-image {
 // 	&::after {
@@ -59,3 +56,6 @@ a img {
 // 		display: table;
 // 	}
 // }
+.valign-center {
+	align-items: center;
+}
