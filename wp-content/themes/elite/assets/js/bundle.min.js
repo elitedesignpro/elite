@@ -103,7 +103,116 @@ jQuery(document).ready(function (jQuery) {
 				items:1
 			}
 		}
-	})
+	});
 
+	/**
+	 *
+	 * Project Slider
+	 *
+	 */
+	 jQuery('.projects-area').owlCarousel({
+		loop:false,
+		nav:false,
+		dots: false,
+		margin: 30,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:2
+			},
+			1000:{
+				items:3
+			}
+		}
+	});
+
+	/**
+	 *
+	 * Testimonial Slider
+	 *
+	 */
+	 jQuery('.testi-ctn').owlCarousel({
+		loop:false,
+		nav:true,
+		dots: false,
+		margin: 30,
+		responsive:{
+			0:{
+				items:1
+			}
+		}
+	});
+
+		  /**
+	 *
+	 *
+	 *	Stat counter
+	 *
+	 *
+	 */
+
+
+
+
+	 if (jQuery(".stats-inner-area").length > 0) {
+		let a = 0;
+		jQuery(window).scroll(function() {
+			const oTop = jQuery(".stats-ctn").offset().top - window.innerHeight;
+			if (a == 0 && jQuery(window).scrollTop() > oTop) {
+				jQuery(".fig-number").each(function() {
+					const $this = jQuery(this),
+						countTo = $this.attr("data-number");
+					jQuery({
+						countNum: $this.text(),
+					}).animate(
+						{
+							countNum: countTo,
+						},
+
+						{
+							duration: 1000,
+							easing: "swing",
+							step() {
+								//$this.text(Math.ceil(this.countNum));
+								$this.text(Math.ceil(this.countNum).toLocaleString("en"));
+							},
+							complete() {
+								$this.text(Math.ceil(this.countNum).toLocaleString("en"));
+							},
+						},
+					);
+				});
+				a = 1;
+			}
+		});
+	}
+	jQuery.noConflict();
+
+	/**
+	 *
+	 *    Scroll Magic For Slider
+	 *
+	 **/
+
+
+	//Create new scrollmagic controller
+    var controller = new ScrollMagic.Controller();
+
+    //Create horizontal scroll slide gsap function
+    var horizontalSlide = new TimelineMax()
+      .to(".horizontal-scroll", 3,   {x: "-65%"}); //Depends on the final width you want to scroll.
+
+    // Create scrollmagic scene to pin and link horzontal scroll animation
+    new ScrollMagic.Scene({
+        triggerElement: ".horizontal-scroll-container", //Div that will trigger the animation.
+        triggerHook: "onLeave", //The animation will start on leaving the .horizontal-scroll-container section.
+        duration: "200%" //Scroll Duration, the amount of pixels you want to scroll to see the entire animation.
+    })
+    .setPin(".horizontal-scroll-container")
+    .setTween(horizontalSlide)
+    .addIndicators() // add indicators (requires scrollmagic indicators plugin)
+    .addTo(controller);
 
 });

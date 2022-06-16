@@ -1,17 +1,25 @@
 .hero-container {
-	padding: 19rem 0 10rem 0;
+	padding: 19rem 0 10rem;
 	text-align: center;
+
 	h1 {
 		margin-bottom: 3.2rem;
 	}
+
 	p {
 		font-size: 22px;
 	}
 }
+
 .hero-content {
 	width: 780px;
 	margin: 0 auto;
 }
+
 .hero-single {
-	padding: 17rem 0 10rem 0;
+	padding: 17rem 0 10rem;
+}
+
+[myattribute] {
+	background-color: red;
 }

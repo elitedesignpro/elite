@@ -1,0 +1,7 @@
+.hat-title {
+	width: 38.3%;
+}
+.hat-text {
+	width: 57.7%;
+	@include padding(0 10px 0 0);
+}

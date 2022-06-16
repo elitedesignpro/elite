@@ -569,16 +569,14 @@ a {
 .page-section a, .page-section:visited,
 .hero-section a,
 .hero-section:visited {
-  color: #ffb703;
-  border-bottom: 1px solid #ffb703;
+  border-bottom: 1px solid transparent;
 }
 .page-section a:hover, .page-section a:active, .page-section:visited:hover, .page-section:visited:active,
 .hero-section a:hover,
 .hero-section a:active,
 .hero-section:visited:hover,
 .hero-section:visited:active {
-  color: #219ebc;
-  border-color: #219ebc;
+  border-color: #0b090a;
 }
 
 /*-------------------------------------------------
@@ -2587,7 +2585,7 @@ a.comment-reply-link:hover {
 
 .four-cols .col {
   width: 23%;
-  margin-right: 2.6%;
+  margin-right: 2.66%;
 }
 .four-cols .col:nth-child(4n+4) {
   margin-right: 0;
@@ -3276,7 +3274,7 @@ body.logged-in.admin-bar header {
 >> Styles for Masthead
 -------------------------------------------------*/
 .hero-container {
-  padding: 19rem 0 10rem 0;
+  padding: 19rem 0 10rem;
   text-align: center;
 }
 .hero-container h1 {
@@ -3292,7 +3290,11 @@ body.logged-in.admin-bar header {
 }
 
 .hero-single {
-  padding: 17rem 0 10rem 0;
+  padding: 17rem 0 10rem;
+}
+
+[myattribute] {
+  background-color: red;
 }
 
 /*-------------------------------------------------
@@ -3411,7 +3413,7 @@ footer .wrapper {
 }
 
 .site-socials ul {
-  margin: 36px 0 0 0;
+  margin: 36px 0 0;
 }
 .site-socials ul li {
   margin: 0 30px 0 0;
@@ -3437,6 +3439,7 @@ footer .wrapper {
 .animated-hover ul li a,
 .animated-hover a {
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: -webkit-gradient(linear, left top, right top, from(#ff2500), color-stop(50%, #ff2500), color-stop(50%, #212629));
   background-image: -o-linear-gradient(left, #ff2500, #ff2500 50%, #212629 50%);
@@ -3504,6 +3507,10 @@ footer .wrapper {
   padding: 86px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.overflow-hidden {
+  overflow-x: hidden;
 }
 
 /*-------------------------------------------------
@@ -3792,8 +3799,8 @@ a.button:visited.arrow-btn {
   font-weight: 400;
   font-style: normal;
 }
-a.button.arrow-btn:after,
-a.button:visited.arrow-btn:after {
+a.button.arrow-btn::after,
+a.button:visited.arrow-btn::after {
   content: "";
   width: 48px;
   height: 100%;
@@ -3806,8 +3813,8 @@ a.button:visited.arrow-btn:after {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-a.button.arrow-btn:hover:after,
-a.button:visited.arrow-btn:hover:after {
+a.button.arrow-btn:hover::after,
+a.button:visited.arrow-btn:hover::after {
   width: 100%;
 }
 a.button.arrow-btn.fill,
@@ -3815,8 +3822,8 @@ a.button:visited.arrow-btn.fill {
   background-image: url(../img/white-right-arrow.svg);
   color: #fff;
 }
-a.button.arrow-btn.fill:after,
-a.button:visited.arrow-btn.fill:after {
+a.button.arrow-btn.fill::after,
+a.button:visited.arrow-btn.fill::after {
   background-color: #011240;
   width: 100%;
   z-index: -1;
@@ -3841,6 +3848,14 @@ a.button:visited.arrow-btn.small::after {
 a.button.arrow-btn.small:hover::after,
 a.button:visited.arrow-btn.small:hover::after {
   width: 100%;
+}
+a.button.arrow-btn.small.fill-trp::after,
+a.button:visited.arrow-btn.small.fill-trp::after {
+  width: 100%;
+}
+a.button.arrow-btn.small.fill-trp:hover::after,
+a.button:visited.arrow-btn.small.fill-trp:hover::after {
+  width: 46px;
 }
 
 a.wp-block-button__link,
@@ -4051,11 +4066,15 @@ a.wp-block-button__link.has-text-color.has-background:hover {
   margin-bottom: 0;
 }
 .section-head p {
-  margin: 30px 0 0 0;
+  margin: 30px 0 0;
 }
 
 .mb-70 {
   margin-bottom: 70px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
 }
 
 .ma-900 {
@@ -4083,20 +4102,24 @@ a.wp-block-button__link.has-text-color.has-background:hover {
   color: #ff1d1d;
 }
 
+.red-bg {
+  background-color: #ff1d1d;
+}
+
 /*-------------------------------------------------
 >> Styles for Website Blocks
 -------------------------------------------------*/
-/*-------------------------------------------------
+/* -------------------------------------------------
 >> Basic styles for Defualt Block
--------------------------------------------------*/
+------------------------------------------------- */
 .leadparagraph_ctn {
   max-width: 862px;
   margin: 0 auto;
 }
 
-/*-------------------------------------------------
+/* -------------------------------------------------
 >> Basic styles for FAQ's Block
--------------------------------------------------*/
+------------------------------------------------- */
 .faq-block {
   max-width: 825px;
   margin: 0 auto;
@@ -4256,16 +4279,16 @@ a.wp-block-button__link.has-text-color.has-background:hover {
   max-width: 606px;
 }
 
-/*-------------------------------------------------
+/* -------------------------------------------------
 >> Basic styles for Image alongside text
--------------------------------------------------*/
+------------------------------------------------- */
 .iat-content-area p {
   width: 85%;
 }
 
-/*-------------------------------------------------
+/* -------------------------------------------------
 >> Basic styles for Video Block
--------------------------------------------------*/
+------------------------------------------------- */
 .video-ctn {
   height: 800px;
   position: relative;
@@ -4329,9 +4352,9 @@ a.wp-block-button__link.has-text-color.has-background:hover {
   max-width: 1640px;
 }
 
-/*-------------------------------------------------
+/* -------------------------------------------------
 >> Basic styles for Proccess
--------------------------------------------------*/
+------------------------------------------------- */
 .design-proccess-ctn {
   max-width: 1237px;
   margin: 0 auto;
@@ -4386,9 +4409,9 @@ a.wp-block-button__link.has-text-color.has-background:hover {
   display: none;
 }
 
-/*-------------------------------------------------
+/* -------------------------------------------------
 >> Basic styles for Testimonial
--------------------------------------------------*/
+------------------------------------------------- */
 .testi-author-img {
   width: 113px;
   height: 113px;
@@ -4413,11 +4436,47 @@ a.wp-block-button__link.has-text-color.has-background:hover {
 
 .single-testi {
   max-width: 1055px;
+  padding: 0 0 0 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-/*-------------------------------------------------
+.owl-carousel.testi-ctn .owl-nav {
+  text-align: left;
+  margin-top: 60px;
+  padding-left: 18px;
+}
+.owl-carousel.testi-ctn .owl-nav button[type=button] {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #011240;
+  margin: 0 10px 0 0;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-image: url(../img/white-long-arrow.svg);
+}
+.owl-carousel.testi-ctn .owl-nav button[type=button]:hover {
+  background-color: #ff1d1d;
+}
+.owl-carousel.testi-ctn .owl-nav button.owl-next {
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.owl-carousel.testi-ctn .owl-nav button.disabled {
+  opacity: 0.7;
+}
+.owl-carousel.testi-ctn .owl-nav button.disabled:hover {
+  background-color: #011240;
+}
+
+/* -------------------------------------------------
 >> Basic styles for CTA
--------------------------------------------------*/
+------------------------------------------------- */
 .large-heading-ctn {
   background-color: #011240;
   padding: 90px 0 422px;
@@ -4469,9 +4528,9 @@ a.wp-block-button__link.has-text-color.has-background:hover {
   margin-bottom: 50px;
 }
 
-/*-------------------------------------------------
+/* -------------------------------------------------
 >> Basic styles for Images Slider
--------------------------------------------------*/
+------------------------------------------------- */
 .single-slide {
   height: calc(100vh - 100px);
 }
@@ -4482,9 +4541,9 @@ a.wp-block-button__link.has-text-color.has-background:hover {
      object-fit: cover;
 }
 
-/*-------------------------------------------------
+/* -------------------------------------------------
 >> Basic styles for Two Cols Text
--------------------------------------------------*/
+------------------------------------------------- */
 .single-text-col {
   padding: 70px 49px;
   -webkit-box-sizing: border-box;
@@ -4504,9 +4563,9 @@ a.wp-block-button__link.has-text-color.has-background:hover {
   row-gap: 20px;
 }
 
-/*-------------------------------------------------
+/* -------------------------------------------------
 >> Basic styles for List Columns
--------------------------------------------------*/
+------------------------------------------------- */
 .list-column {
   padding: 55px;
   -webkit-box-sizing: border-box;
@@ -4528,9 +4587,9 @@ a.wp-block-button__link.has-text-color.has-background:hover {
   margin-bottom: 4rem;
 }
 
-/*-------------------------------------------------
+/* -------------------------------------------------
 >> Basic styles for Gallrey Images
--------------------------------------------------*/
+------------------------------------------------- */
 .gallrey-images {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4570,9 +4629,9 @@ a.wp-block-button__link.has-text-color.has-background:hover {
   margin: 0 auto;
 }
 
-/*-------------------------------------------------
+/* -------------------------------------------------
 >> Basic styles for Products
--------------------------------------------------*/
+------------------------------------------------- */
 .single-product:nth-child(n+3) {
   margin-top: 60px;
 }
@@ -4598,12 +4657,12 @@ a.wp-block-button__link.has-text-color.has-background:hover {
   width: 76%;
 }
 
-/*-------------------------------------------------
+/* -------------------------------------------------
 >> Basic styles for Elite Family
--------------------------------------------------*/
-/*-------------------------------------------------
+------------------------------------------------- */
+/* -------------------------------------------------
 >> Basic styles for Three Columns text
--------------------------------------------------*/
+------------------------------------------------- */
 .tct-column {
   background-color: #fff;
   padding: 45px 30px;
@@ -4615,9 +4674,9 @@ a.wp-block-button__link.has-text-color.has-background:hover {
   margin-bottom: 0;
 }
 
-/*-------------------------------------------------
+/* -------------------------------------------------
 >> Basic styles for Pricing Plan
--------------------------------------------------*/
+------------------------------------------------- */
 .single-price-plan {
   padding: 45px 30px;
   -webkit-box-sizing: border-box;
@@ -4646,9 +4705,9 @@ a.wp-block-button__link.has-text-color.has-background:hover {
   margin-top: 35px;
 }
 
-/*-------------------------------------------------
+/* -------------------------------------------------
 >> Basic styles for Team
--------------------------------------------------*/
+------------------------------------------------- */
 .team-blk-content {
   padding: 0 42px 0 100px;
   -webkit-box-sizing: border-box;
@@ -4729,10 +4788,10 @@ a.wp-block-button__link.has-text-color.has-background:hover {
   overflow: hidden;
 }
 
-/*-------------------------------------------------
+/* -------------------------------------------------
 >> Basic styles for Stats
--------------------------------------------------*/
-.stat-numbers {
+------------------------------------------------- */
+.fig-number {
   font-size: 73px;
   font-family: "Brandon Text", Arial, sans-serif;
   font-weight: 700;
@@ -4742,6 +4801,148 @@ a.wp-block-button__link.has-text-color.has-background:hover {
 
 .single-stat h3 {
   margin: 35px 0 0 0;
+}
+
+/* -------------------------------------------------
+>> Basic styles for Heading Alongside Text
+------------------------------------------------- */
+.hat-title {
+  width: 38.3%;
+}
+
+.hat-text {
+  width: 57.7%;
+  padding: 0 10px 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* -------------------------------------------------
+>> Basic styles for Positions
+------------------------------------------------- */
+.single-position {
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 35px rgba(1, 18, 64, 0.25);
+          box-shadow: 0px 0px 35px rgba(1, 18, 64, 0.25);
+}
+
+/* -------------------------------------------------
+>> Basic styles for Projects
+------------------------------------------------- */
+.projects-area {
+  max-width: 1920px;
+  min-width: 1596px;
+}
+
+a.project-image,
+a.project-image:visited {
+  height: 373px;
+  margin-bottom: 30px;
+  display: block;
+  border: 0;
+}
+a.project-image::before,
+a.project-image:visited::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 29, 29, 0.15);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+a.project-image:hover::before,
+a.project-image:visited:hover::before {
+  opacity: 1;
+}
+
+.project-desc h3 {
+  margin-bottom: 20px;
+}
+.project-cat {
+  font-size: 22px;
+  opacity: 0.6;
+}
+
+.bg-link-hover, .project-desc h3 a,
+.project-desc h3 a:visited {
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff2500), color-stop(50%, #ff2500), color-stop(50%, #212629));
+  background-image: -o-linear-gradient(left, #ff2500, #ff2500 50%, #212629 50%);
+  background-image: linear-gradient(to right, #ff2500, #ff2500 50%, #212629 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+  border: 0;
+}
+.bg-link-hover:hover, .project-desc h3 a:hover {
+  -webkit-transition: background 0.4s cubic-bezier(0.215, 0, 0, 0.995);
+  -o-transition: background 0.4s cubic-bezier(0.215, 0, 0, 0.995);
+  transition: background 0.4s cubic-bezier(0.215, 0, 0, 0.995);
+  background-position: 0%;
+}
+
+.projects-ctn {
+  padding-top: 100px;
+}
+
+/* -------------------------------------------------
+>> Basic styles for Services
+------------------------------------------------- */
+.service-icon {
+  width: 110px;
+  height: 110px;
+  border: 2px solid #011240;
+  margin-bottom: 36px;
+  display: grid;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.service-icon img {
+  margin: auto;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.service-desc h3 {
+  margin-bottom: 26px;
+}
+.service-desc h3 a,
+.service-desc h3 a:visited {
+  border: 0;
+}
+
+.services-area.three-cols .col:nth-child(n+4) {
+  margin-top: 60px;
+}
+
+/* -------------------------------------------------
+>> Basic styles for Image Collage
+------------------------------------------------- */
+.image-collage-ctn {
+  max-width: 1180px;
+  margin: 0 auto;
+  row-gap: 36px;
+}
+
+.collage-image {
+  height: 430px;
+}
+.collage-image:nth-child(3n+1) {
+  margin-top: -8.5rem !important;
+}
+.collage-image:nth-child(3n+2) {
+  margin-top: 0 !important;
+}
+.collage-image:nth-child(3n+3) {
+  margin-top: -18.5rem !important;
 }
 
 /* ------------------------------------------------------------------

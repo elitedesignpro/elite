@@ -1,7 +1,10 @@
 .tct-column {
-	background-color: map-get($map: $colors, $key: white);
+	background-color: map-get( $map: $colors, $key: white );
+
 	@include padding(45px 30px);
+
 	text-align: center;
+
 
 	p:last-child {
 		margin-bottom: 0;

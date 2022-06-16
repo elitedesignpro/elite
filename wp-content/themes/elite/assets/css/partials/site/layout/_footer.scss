@@ -8,18 +8,22 @@
 		display: inline-block;
 	}
 }
+
 .footer-menu-widgets {
 	margin-bottom: 57px;
 }
+
 .footer-widget {
 	width: 40%;
 	margin-right: 20%;
+
 	&:nth-child(2) {
 		margin-right: 0;
 	}
 }
 
 .footer-nav {
+
 	ul {
 		padding: 0;
 		margin: 0;
@@ -31,7 +35,9 @@
 
 			a,
 			a:visited {
+
 				@include font-size(2.4);
+
 				line-height: 1.2;
 				position: relative;
 				display: inline-block;
@@ -61,6 +67,7 @@
 }
 
 .legal-nav {
+
 	ul {
 		margin: 0;
 		padding: 0;
@@ -79,9 +86,10 @@
 			}
 
 			&.current-menu-item a {
+
 				&::after {
 					transform-origin: bottom left;
-					transform: scaleX(1);
+					transform: scaleX( 1 );
 				}
 			}
 
@@ -91,43 +99,55 @@
 		}
 	}
 }
+
 footer {
+
 	.wrapper {
 		max-width: 1350px;
 	}
 }
+
 .cta-ctn {
-	background-color: map-get($map: $colors, $key: bwhale);
+	background-color: map-get( $map: $colors, $key: bwhale );
 	padding: 52px 55px;
 	box-sizing: border-box;
 	border-radius: 10px;
 	margin-bottom: 75px;
+
 	h4 {
-		color: map-get($map: $colors, $key: white);
+		color: map-get( $map: $colors, $key: white );
 		margin-bottom: 0;
 		width: 80%;
 	}
 }
+
 .footer-left {
 	width: 34%;
 	margin-right: 7%;
 }
+
 .footer-right {
 	width: 42%;
 }
+
 .site-socials {
+
 	ul {
-		margin: 36px 0 0 0;
+		margin: 36px 0 0;
+
 		li {
 			margin: 0 30px 0 0;
 			line-height: 1;
 		}
 	}
 }
+
 .elitedesign-contact {
+
 	a,
 	a:visited {
 	}
+
 	.big-body {
 		margin-bottom: 10px;
 	}
@@ -136,24 +156,30 @@ footer {
 .footer-ctn {
 	margin-bottom: 190px;
 }
+
 .footer-bottom {
 	padding-bottom: 50px;
 }
+
 .copyright-area {
+
 	p:last-child {
 		margin-bottom: 0;
 	}
 }
+
 .animated-hover {
+
 	ul li a,
 	a {
-		-webkit-background-clip: text;
+		background-clip: text;
 		-webkit-text-fill-color: transparent;
-		background-image: linear-gradient(to right, #ff2500, #ff2500 50%, #212629 50%);
+		background-image: linear-gradient( to right, #ff2500, #ff2500 50%, #212629 50% );
 		background-size: 200% 100%;
 		background-position: 100%;
+
 		&:hover {
-			transition: background 0.4s cubic-bezier(0.215, 0, 0, 0.995);
+			transition: background 0.4s cubic-bezier( 0.215, 0, 0, 0.995 );
 			background-position: 0%;
 		}
 	}
