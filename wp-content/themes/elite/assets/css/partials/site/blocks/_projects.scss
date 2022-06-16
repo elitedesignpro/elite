@@ -1,6 +1,6 @@
 .projects-area {
-	max-width: 1920px;
-	min-width: 1596px;
+	width: 292%;
+	display: flow-root;
 }
 
 a.project-image,
@@ -25,6 +25,17 @@ a.project-image:visited {
 		&::before {
 			opacity: 1;
 		}
+	}
+}
+
+.single-project {
+	width: 39%;
+	max-width: 512px;
+	float: left;
+	margin-right: 40px;
+
+	&:last-child {
+		margin-right: 0;
 	}
 }
 
@@ -61,5 +72,5 @@ a.project-image:visited {
 }
 
 .projects-ctn {
-	padding-top: 100px;
+	padding-top: 120px;
 }

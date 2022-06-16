@@ -1,8 +1,47 @@
 .single-slide {
-	height: calc(100vh - 100px);
+	height: calc( 100vh - 100px );
+
 	img {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+	}
+}
+
+.images-slider-ctn {
+
+	.owl-dots {
+		margin-top: -65px !important;
+		position: relative;
+
+		input[type="submit"],
+		button,
+		input[type="button"],
+		input[type="reset"] {
+			padding: 0;
+			height: 8px;
+			margin: 0;
+			width: 60px;
+			background-color: map-get( $map: $colors, $key: white );
+
+			&.active {
+				background-color: map-get( $map: $colors, $key: bwhale ) !important;
+			}
+
+			&:nth-child(1) {
+
+				@include border-radius(5px 0 0 5px);
+			}
+
+			&:last-child {
+
+				@include border-radius(0 5px 5px 0);
+			}
+
+
+			span {
+				display: none !important;
+			}
+		}
 	}
 }

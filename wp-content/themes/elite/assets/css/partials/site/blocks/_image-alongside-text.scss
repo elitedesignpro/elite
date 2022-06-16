@@ -1,5 +1,22 @@
 .iat-content-area {
+
 	p {
 		width: 85%;
+	}
+}
+
+.iat-ctn:hover {
+
+	.iat-img-area img {
+		transform: scale( 1.115 );
+	}
+}
+
+.iat-img-area {
+	height: 545px;
+	overflow: hidden;
+
+	img {
+		transition: all 5s ease-in-out 1.5s;
 	}
 }

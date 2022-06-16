@@ -1,18 +1,20 @@
 .large-heading-ctn {
-	background-color: map-get($map: $colors, $key: bwhale);
+	background-color: map-get( $map: $colors, $key: bwhale );
 	padding: 90px 0 422px;
 	box-sizing: border-box;
 	text-align: center;
 	position: relative;
 	overflow: hidden;
 }
+
 .large-cta-title {
 	font-size: 272px;
 	text-transform: uppercase;
-	color: map-get($map: $colors, $key: white);
+	color: map-get( $map: $colors, $key: white );
 	margin-bottom: 60px;
 	line-height: 1;
 }
+
 .cta-bottom-text {
 	font-size: 600px;
 	text-transform: uppercase;
@@ -23,18 +25,24 @@
 	bottom: 0;
 	white-space: nowrap;
 	-webkit-text-stroke-width: 2px;
-	-webkit-text-stroke-color: map-get($map: $colors, $key: white);
+	-webkit-text-stroke-color: map-get( $map: $colors, $key: white );
 }
+
 .cta-content-area {
 	z-index: 2;
 	position: relative;
 }
+
 .mid-page-cta {
+
 	@include padding(70px 160px);
+
 	text-align: center;
+
 	@include border-radius(10px);
+
 	h2 {
-		color: map-get($map: $colors, $key: white);
+		color: map-get( $map: $colors, $key: white );
 		margin-bottom: 50px;
 	}
 }

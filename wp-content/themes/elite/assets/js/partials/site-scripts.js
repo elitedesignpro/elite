@@ -94,34 +94,14 @@ jQuery(document).ready(function (jQuery) {
 		}
 	});
 
-	/**
-	 *
-	 * Project Slider
-	 *
-	 */
-	 jQuery('.projects-area').owlCarousel({
-		loop:false,
-		nav:false,
-		dots: false,
-		margin: 30,
-		responsive:{
-			0:{
-				items:1
-			},
-			600:{
-				items:2
-			},
-			1000:{
-				items:3
-			}
-		}
-	});
+
 
 	/**
 	 *
 	 * Testimonial Slider
 	 *
 	 */
+
 	 jQuery('.testi-ctn').owlCarousel({
 		loop:false,
 		nav:true,
@@ -130,6 +110,29 @@ jQuery(document).ready(function (jQuery) {
 		responsive:{
 			0:{
 				items:1
+			}
+		}
+	});
+
+
+	/**
+	 *
+	 * Large Text Slider
+	 *
+	 */
+
+	 jQuery('.cta-bottom-text').owlCarousel({
+		loop:true,
+		nav:false,
+		dots: false,
+		autowwidth: true,
+		autoplay:true,
+		slideTransition: "linear",
+		autoplayTimeout: 10000,
+		autoplaySpeed: 10000,
+		responsive:{
+			0:{
+				items:1,
 			}
 		}
 	});
