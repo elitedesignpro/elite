@@ -1,54 +1,79 @@
 .team-blk-content {
+
 	@include padding(0 42px 0 100px);
 }
+
 .team-blk-images {
 	height: 543px;
+
 	@include padding(23px 36px);
+
 	position: relative;
 }
+
 .member-image {
 	position: absolute;
-
 	top: 23px;
+
 	@include wh(257px, 252px);
-	clip-path: url(#large-team);
+
+	clip-path: url( #large-team );
+
 	img {
+
 		@include wh(100%, 100%);
+
 		object-fit: cover;
 	}
+
 	&:nth-child(2),
 	&:nth-child(3) {
+
 		@include wh(208px, 216px);
-		clip-path: url(#small-team);
+
+		clip-path: url( #small-team );
 	}
 }
+
 .rd-10 {
+
 	@include border-radius(10px);
 }
+
 .member-image:nth-child(2) {
 	left: auto;
 	right: 36px;
 }
+
 .member-image:nth-child(3) {
 	bottom: 23px;
 	top: auto;
 	left: 62px;
 }
+
 .member-image:nth-child(4) {
 	bottom: 23px;
 	top: auto;
 	left: auto;
 	right: 36px;
 }
+
 .member-image-area {
 	height: 280px;
+
+	@include border-radius( 10px 10px  0 0);
 }
+
 .team-member-detail {
+
 	@include padding(30px);
+	@include border-radius( 0 0 10px 10px);
+
 	h3,
 	p {
 		margin-bottom: 25px;
 	}
+
 	p {
 		display: -webkit-box;
 		-webkit-box-orient: vertical;

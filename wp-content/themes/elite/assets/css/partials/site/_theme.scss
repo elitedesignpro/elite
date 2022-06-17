@@ -262,6 +262,31 @@ a.button:visited {
 		// 	}
 		// }
 	}
+
+	&.bdr-btn {
+		background-color: transparent;
+		border: 2px solid transparent;
+	}
+
+	&.red {
+		color: map-get( $map: $colors, $key: red );
+		border-color: map-get( $map: $colors, $key: red );
+
+		&:hover {
+			background-color: map-get( $map: $colors, $key: red );
+			color: map-get( $map: $colors, $key: white );
+		}
+	}
+
+	&.blue {
+		color: map-get( $map: $colors, $key: bwhale );
+		border-color: map-get( $map: $colors, $key: bwhale );
+
+		&:hover {
+			background-color: map-get( $map: $colors, $key: bwhale );
+			color: map-get( $map: $colors, $key: white );
+		}
+	}
 }
 
 a.wp-block-button__link,

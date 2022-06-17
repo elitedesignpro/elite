@@ -3857,6 +3857,31 @@ a.button.arrow-btn.small.fill-trp:hover::after,
 a.button:visited.arrow-btn.small.fill-trp:hover::after {
   width: 46px;
 }
+a.button.bdr-btn,
+a.button:visited.bdr-btn {
+  background-color: transparent;
+  border: 2px solid transparent;
+}
+a.button.red,
+a.button:visited.red {
+  color: #ff1d1d;
+  border-color: #ff1d1d;
+}
+a.button.red:hover,
+a.button:visited.red:hover {
+  background-color: #ff1d1d;
+  color: #fff;
+}
+a.button.blue,
+a.button:visited.blue {
+  color: #011240;
+  border-color: #011240;
+}
+a.button.blue:hover,
+a.button:visited.blue:hover {
+  background-color: #011240;
+  color: #fff;
+}
 
 a.wp-block-button__link,
 a.wp-block-button__link:visited,
@@ -4833,12 +4858,20 @@ a.video-btn:hover {
 
 .member-image-area {
   height: 280px;
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
 }
 
 .team-member-detail {
   padding: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -o-border-radius: 0 0 10px 10px;
 }
 .team-member-detail h3,
 .team-member-detail p {
