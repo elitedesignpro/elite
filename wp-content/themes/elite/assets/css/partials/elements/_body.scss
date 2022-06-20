@@ -15,9 +15,11 @@ body {
 ------------------------------------------------- */
 
 body {
+
 	@include font(bt, reg, family weight);
 	@include font-size(2);
-	color: map-get($map: $colors, $key: black);
+
+	color: map-get( $map: $colors, $key: black );
 	line-height: 1.6;
 }
 
@@ -26,6 +28,6 @@ p {
 }
 
 ::selection {
-	color: map-get($map: $base_colors, $key: selection-color);
-	background-color: map-get($map: $base_colors, $key: selection-bgcolor);
+	color: map-get( $map: $base_colors, $key: selection-color );
+	background-color: map-get( $map: $base_colors, $key: selection-bgcolor );
 }

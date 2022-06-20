@@ -10,3 +10,24 @@
 		margin-bottom: 0;
 	}
 }
+
+.text-column {
+
+	@include padding(0 5% 0 0);
+
+	h3 {
+		margin-bottom: 25px;
+	}
+
+	&:nth-child(n + 3) {
+		margin-top: 60px;
+	}
+
+	p {
+		width: 90%;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

@@ -33,6 +33,17 @@
 	position: relative;
 }
 
+.cta-ctn {
+
+	a.button,
+	a.button:visited {
+
+		&:hover {
+			background-color: rgb( 224 0 0 );
+		}
+	}
+}
+
 .mid-page-cta {
 
 	@include padding(70px 160px);
@@ -44,5 +55,21 @@
 	h2 {
 		color: map-get( $map: $colors, $key: white );
 		margin-bottom: 50px;
+	}
+
+	a.button,
+	a.button:visited {
+
+		&:hover {
+			background-color: rgb( 224 0 0 );
+		}
+	}
+}
+
+.job-cta {
+
+	p {
+		max-width: 80%;
+		margin: 0 auto 30px;
 	}
 }

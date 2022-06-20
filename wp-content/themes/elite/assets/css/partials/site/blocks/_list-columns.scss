@@ -1,16 +1,20 @@
 .list-column {
+
 	@include padding(55px);
 	@include border-radius(10px);
-	color: map-get($map: $colors, $key: white);
-	h2 {
-		color: map-get($map: $colors, $key: white);
-	}
+
 	ul li {
+
 		&:last-child {
 			margin-bottom: 0;
 		}
 	}
+
+	&:nth-child(n + 3) {
+		margin-top: 36px;
+	}
 }
+
 .list-text {
 	margin-bottom: 4rem;
 }

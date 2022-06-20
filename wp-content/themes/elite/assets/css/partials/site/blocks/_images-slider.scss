@@ -22,8 +22,9 @@
 			height: 8px;
 			margin: 0;
 			width: 60px;
-			background-color: map-get( $map: $colors, $key: white );
+			background-color: map-get( $map: $colors, $key: cat );
 
+			&:hover,
 			&.active {
 				background-color: map-get( $map: $colors, $key: bwhale ) !important;
 			}

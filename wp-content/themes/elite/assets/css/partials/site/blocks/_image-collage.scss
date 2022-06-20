@@ -1,7 +1,7 @@
 .image-collage-ctn {
-	max-width: 1180px;
-	margin: 0 auto;
 	row-gap: 36px;
+
+	@include padding(18.5rem 0 0 0);
 }
 
 .collage-image {

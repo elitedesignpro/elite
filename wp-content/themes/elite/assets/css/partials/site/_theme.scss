@@ -449,6 +449,10 @@ a.wp-block-button__link:visited,
 	flex-wrap: wrap;
 }
 
+.align-start {
+	align-items: flex-start;
+}
+
 .image-at-right {
 	flex-direction: row-reverse;
 }

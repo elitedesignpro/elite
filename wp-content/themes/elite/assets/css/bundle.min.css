@@ -2759,6 +2759,7 @@ header {
 
 .header-logo a {
   display: inline-block;
+  width: 202px;
 }
 
 .no-overflow {
@@ -3503,6 +3504,18 @@ footer .wrapper {
   background-color: #fff;
 }
 
+.cat-bg {
+  background-color: #ecf6fc;
+}
+
+.lyellow-bg {
+  background-color: #fde285;
+}
+
+.pink-bg {
+  background-color: #f3c8c8;
+}
+
 .ctn {
   padding: 86px 0;
   -webkit-box-sizing: border-box;
@@ -4041,6 +4054,12 @@ a.wp-block-button__link.has-text-color.has-background:hover {
       flex-wrap: wrap;
 }
 
+.align-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .image-at-right {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -4556,6 +4575,11 @@ a.video-btn:hover {
   position: relative;
 }
 
+.cta-ctn a.button:hover,
+.cta-ctn a.button:visited:hover {
+  background-color: #e00000;
+}
+
 .mid-page-cta {
   padding: 70px 160px;
   -webkit-box-sizing: border-box;
@@ -4569,6 +4593,15 @@ a.video-btn:hover {
 .mid-page-cta h2 {
   color: #fff;
   margin-bottom: 50px;
+}
+.mid-page-cta a.button:hover,
+.mid-page-cta a.button:visited:hover {
+  background-color: #e00000;
+}
+
+.job-cta p {
+  max-width: 80%;
+  margin: 0 auto 30px;
 }
 
 /* -------------------------------------------------
@@ -4596,11 +4629,14 @@ a.video-btn:hover {
   height: 8px;
   margin: 0;
   width: 60px;
-  background-color: #fff;
+  background-color: #ecf6fc;
 }
-.images-slider-ctn .owl-dots input[type=submit].active,
+.images-slider-ctn .owl-dots input[type=submit]:hover, .images-slider-ctn .owl-dots input[type=submit].active,
+.images-slider-ctn .owl-dots button:hover,
 .images-slider-ctn .owl-dots button.active,
+.images-slider-ctn .owl-dots input[type=button]:hover,
 .images-slider-ctn .owl-dots input[type=button].active,
+.images-slider-ctn .owl-dots input[type=reset]:hover,
 .images-slider-ctn .owl-dots input[type=reset].active {
   background-color: #011240 !important;
 }
@@ -4662,13 +4698,12 @@ a.video-btn:hover {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -o-border-radius: 10px;
-  color: #fff;
-}
-.list-column h2 {
-  color: #fff;
 }
 .list-column ul li:last-child {
   margin-bottom: 0;
+}
+.list-column:nth-child(n+3) {
+  margin-top: 36px;
 }
 
 .list-text {
@@ -4759,6 +4794,24 @@ a.video-btn:hover {
   text-align: center;
 }
 .tct-column p:last-child {
+  margin-bottom: 0;
+}
+
+.text-column {
+  padding: 0 5% 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.text-column h3 {
+  margin-bottom: 25px;
+}
+.text-column:nth-child(n+3) {
+  margin-top: 60px;
+}
+.text-column p {
+  width: 90%;
+}
+.text-column p:last-child {
   margin-bottom: 0;
 }
 
@@ -4858,6 +4911,8 @@ a.video-btn:hover {
 
 .member-image-area {
   height: 280px;
+}
+.member-image-area img {
   border-radius: 10px 10px 0 0;
   -webkit-border-radius: 10px 10px 0 0;
   -moz-border-radius: 10px 10px 0 0;
@@ -4868,10 +4923,6 @@ a.video-btn:hover {
   padding: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 0 0 10px 10px;
-  -webkit-border-radius: 0 0 10px 10px;
-  -moz-border-radius: 0 0 10px 10px;
-  -o-border-radius: 0 0 10px 10px;
 }
 .team-member-detail h3,
 .team-member-detail p {
@@ -4882,6 +4933,24 @@ a.video-btn:hover {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   overflow: hidden;
+}
+
+.cleints-area .member-image-area img {
+  border-radius: 0;
+}
+.cleints-area .team-member-detail {
+  padding: 25px 0 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.cleints-area .team-member-detail h3 {
+  margin-bottom: 10px;
+}
+.cleints-area .team-member-detail p {
+  opacity: 0.7;
+}
+.cleints-area .team-member-detail p:last-child {
+  margin-bottom: 0;
 }
 
 /* -------------------------------------------------
@@ -5033,9 +5102,10 @@ a.project-image:visited:hover::before {
 >> Basic styles for Image Collage
 ------------------------------------------------- */
 .image-collage-ctn {
-  max-width: 1180px;
-  margin: 0 auto;
   row-gap: 36px;
+  padding: 18.5rem 0 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .collage-image {
