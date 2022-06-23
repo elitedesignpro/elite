@@ -200,23 +200,26 @@ jQuery(document).ready(function (jQuery) {
 	 *
 	 **/
 
+		if(jQuery(window).width() <= 748){
 
-	//Create new scrollmagic controller
-    var controller = new ScrollMagic.Controller();
+			//Create new scrollmagic controller
+			var controller = new ScrollMagic.Controller();
 
-    //Create horizontal scroll slide gsap function
-    var horizontalSlide = new TimelineMax()
-      .to(".horizontal-scroll", 3,   {x: "-65%"}); //Depends on the final width you want to scroll.
+			//Create horizontal scroll slide gsap function
+			var horizontalSlide = new TimelineMax()
+			.to(".horizontal-scroll", 3,   {x: "-65%"}); //Depends on the final width you want to scroll.
 
-    // Create scrollmagic scene to pin and link horzontal scroll animation
-    new ScrollMagic.Scene({
-        triggerElement: ".horizontal-scroll-container", //Div that will trigger the animation.
-        triggerHook: "onLeave", //The animation will start on leaving the .horizontal-scroll-container section.
-        duration: "200%" //Scroll Duration, the amount of pixels you want to scroll to see the entire animation.
-    })
-    .setPin(".horizontal-scroll-container")
-    .setTween(horizontalSlide)
-    .addIndicators() // add indicators (requires scrollmagic indicators plugin)
-    .addTo(controller);
+			// Create scrollmagic scene to pin and link horzontal scroll animation
+			new ScrollMagic.Scene({
+				triggerElement: ".horizontal-scroll-container", //Div that will trigger the animation.
+				triggerHook: "onLeave", //The animation will start on leaving the .horizontal-scroll-container section.
+				duration: "200%" //Scroll Duration, the amount of pixels you want to scroll to see the entire animation.
+			})
+			.setPin(".horizontal-scroll-container")
+			.setTween(horizontalSlide)
+			.addIndicators() // add indicators (requires scrollmagic indicators plugin)
+			.addTo(controller);
+
+		}
 
 });

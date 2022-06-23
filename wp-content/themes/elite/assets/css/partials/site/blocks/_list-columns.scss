@@ -3,10 +3,14 @@
 	@include padding(55px);
 	@include border-radius(10px);
 
-	ul li {
+	ul {
+		margin-bottom: 0;
 
-		&:last-child {
-			margin-bottom: 0;
+		li {
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 	}
 
