@@ -30,7 +30,7 @@ if (function_exists('get_fields') && function_exists('get_fields_escaped')) {
 
 // Default Footer Options
 
-$footer_scripts 			= (isset($option_fields['footer_scripts'])) ? $option_fields['footer_scripts'] : null;
+$footer_scripts = (isset($option_fields['footer_scripts'])) ? $option_fields['footer_scripts'] : null;
 
 
 
@@ -58,19 +58,37 @@ if($basethemevar_schema_check){
 // Custom - ACF variables.
 
 $basethemevar_ftrop_title = ( isset( $option_fields['basethemevar_ftrop_title'] ) ) ? $option_fields['basethemevar_ftrop_title'] : null;
+$basethemevar_ftrop_text = html_entity_decode($option_fields['basethemevar_ftrop_text']);
+$basethemevar_ftrop_copyright = html_entity_decode($option_fields['basethemevar_ftrop_copyright']);
+$basethemevar_social_fb = ( isset( $option_fields['basethemevar_social_fb'] ) ) ? $option_fields['basethemevar_social_fb'] : null;
+$basethemevar_social_tw = ( isset( $option_fields['basethemevar_social_tw'] ) ) ? $option_fields['basethemevar_social_tw'] : null;
+$basethemevar_social_li = ( isset( $option_fields['basethemevar_social_li'] ) ) ? $option_fields['basethemevar_social_li'] : null;
+$basethemevar_social_in = ( isset( $option_fields['basethemevar_social_in'] ) ) ? $option_fields['basethemevar_social_in'] : null;
+
 ?> <?php get_template_part( 'partials/cta' ); ?> </main>
 <footer id="footer-section" class="footer-section">
 	<!-- Footer Start -->
 	<div class="footer-ctn">
 		<div class="wrapper">
-			<div class="footer-logo">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-					<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/footer-logo.svg" alt="Logo" />
-				</a>
-			</div>
-			<div class="footer-widgets">
-				<div class="single-widget"> <?php if ( $basethemevar_ftrop_title ) { ?> <h4>
-						<?php echo html_entity_decode( $basethemevar_ftrop_title ); ?></h4> <?php } ?> </div>
+
+			<div class="footer-widgets d-flex justify-content-between flex-wrap">
+				<div class="single-widget"> <?php if ( $basethemevar_ftrop_title ) { ?>
+					<div class="footer-logo">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/site-logo-white.svg" alt="Logo" />
+						</a>
+					</div>
+					<h5> <?php echo html_entity_decode( $basethemevar_ftrop_title ); ?></h5> <?php } ?>
+					<?php if($basethemevar_ftrop_text){ ?>
+						<div class="address"><?php echo $basethemevar_ftrop_text; ?></div>
+					<?php } ?>
+					<div class="social-icons d-flex">
+						<?php if($basethemevar_social_fb){ ?><a href="<?php echo $basethemevar_social_fb; ?>" target="_blank" class="facebook flex-center"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/facebook-icon.svg" alt="Facebook Icon" /></a><?php } ?>
+						<?php if($basethemevar_social_tw){ ?><a href="<?php echo $basethemevar_social_tw; ?>" target="_blank" class="tweeter flex-center"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/linkedin-icon.svg" alt="LinkedIn Icon" /></a><?php } ?>
+						<?php if($basethemevar_social_li){ ?><a href="<?php echo $basethemevar_social_li; ?>" target="_blank" class="linkdhin flex-center"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/twitter-icon.svg" alt="Twitter Icon" /></a><?php } ?>
+						<?php if($basethemevar_social_in){ ?><a href="<?php echo $basethemevar_social_in; ?>" target="_blank" class="instagram flex-center"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/instagram-icon.svg" alt="Instagram Icon" /></a><?php } ?>
+					</div>
+				</div>
 				<div class="single-widget">
 					<div class="footer-nav"> <?php
 							wp_nav_menu(
@@ -91,10 +109,22 @@ $basethemevar_ftrop_title = ( isset( $option_fields['basethemevar_ftrop_title'] 
 							);
 							?> </div>
 				</div>
+				<div class="single-widget">
+					<div class="footer-nav"> <?php
+							wp_nav_menu(
+								array(
+									'theme_location' => 'footer-nav-three',
+									'fallback_cb'    => 'nav_fallback',
+								)
+							);
+							?> </div>
+				</div>
 			</div>
-			<div class="footer-bottom">
-				<div class="copy-right"><?php echo date( 'Y' ); ?>
-					<?php _e( 'aperiam bio, All right reserved.', 'aperiambio_td' ); ?></div>
+			<div class="s-80"></div>
+			<div class="footer-bottom d-flex align-items-center justify-content-between">
+				<?php if($basethemevar_ftrop_copyright){ ?>
+					<div class="copy-right"><?php echo $basethemevar_ftrop_copyright; ?></div>
+				<?php } ?>
 				<div class="legal-nav"> <?php
 						wp_nav_menu(
 							array(

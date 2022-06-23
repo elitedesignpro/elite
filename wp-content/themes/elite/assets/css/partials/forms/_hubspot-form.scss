@@ -31,12 +31,11 @@
 	}
 
 	ul.hs-error-msgs {
+
 		li {
 			padding-left: 0;
-			color: map-get($map: $base_colors, $key: hubspot-error-label-color);
-
-			@include font-size(1.6);
-
+			color: map-get( $map: $base_colors, $key: hubspot_error_label_color );
+			font-size: 16px;
 			margin: -18px 0 15px;
 		}
 	}
@@ -48,7 +47,9 @@
 	.hs-fieldtype-checkbox,
 	.hs-fieldtype-booleancheckbox,
 	.hs-fieldtype-radio {
+
 		ul.hs-error-msgs {
+
 			li {
 				margin: -6px 0 8px;
 			}
@@ -56,10 +57,12 @@
 	}
 
 	.hs_error_rollup {
+
 		ul {
+
 			li {
-				background-color: map-get($map: $base_colors, $key: valiation-error-bg-color);
-				margin: 1rem 0 3rem;
+				background-color: map-get( $map: $base_colors, $key: valiation_error_bg_color );
+				margin: 10px 0 30px;
 				padding: 7px 14px;
 				font-weight: bold;
 				font-size: 105%;
@@ -68,7 +71,7 @@
 	}
 
 	.hs-form-required {
-		color: map-get($map: $base_colors, $key: hubspot-required-color);
+		color: map-get( $map: $base_colors, $key: hubspot_required_color );
 	}
 }
 
@@ -77,10 +80,11 @@
 }
 
 .form-columns-2 {
+
 	.hs-form-field {
 		display: inline-block;
 		width: 49%;
-		margin-right: calc(2% - 5px);
+		margin-right: calc( 2% - 5px );
 
 		&:nth-child(2n + 2) {
 			margin-right: 0;

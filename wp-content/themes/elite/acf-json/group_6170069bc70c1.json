@@ -5,7 +5,7 @@
         {
             "key": "field_617007cdbe35b",
             "label": "Custom Author Avatar",
-            "name": "basthemevar_author_avatar",
+            "name": "basethemevar_author_avatar",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -32,7 +32,7 @@
             {
                 "param": "user_role",
                 "operator": "==",
-                "value": "all"
+                "value": "author"
             }
         ]
     ],
@@ -44,5 +44,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1635330525
+    "show_in_rest": 0,
+    "modified": 1651010603
 }

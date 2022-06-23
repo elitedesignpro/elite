@@ -13,8 +13,8 @@
 
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="wrapper">
+
 		<?php get_template_part( 'partials/content' ); ?>
-	</div>
+
 
 </div>

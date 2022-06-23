@@ -19,6 +19,7 @@ global $fields;
 // 404 Page - Advanced custom fields variables
 $basethemevar_error_headline		 	= html_entity_decode($option_fields['basethemevar_error_headline']);
 $basethemevar_error_sub_headline 		= html_entity_decode($option_fields['basethemevar_error_sub_headline']);
+
 $basethemevar_error_text 				= html_entity_decode($option_fields['basethemevar_error_text']);
 $basethemevar_error_menu 				= html_entity_decode($option_fields['basethemevar_error_menu']);
 $basethemevar_error_menu_bottom_text 	= html_entity_decode($option_fields['basethemevar_error_menu_bottom_text']);
@@ -43,14 +44,14 @@ $basethemevar_error_search 				= html_entity_decode($option_fields['basethemevar
 	<div class="m-section">
 		<div class="wrapper">
 			<section class="error-404 not-found">
-				<div class="page-content"> <?php if ( $basethemevar_error_text ) { ?> <?php echo $basethemevar_error_text; ?>
+				<div class="inner-content"> <?php if ( $basethemevar_error_text ) { ?> <?php echo $basethemevar_error_text; ?>
 					<?php } ?> <?php if ( $basethemevar_error_menu ) { ?> <div class="error">
 						<?php echo $basethemevar_error_menu; ?> </div> <?php } ?> <div class="clear"></div>
 					<div class="form-404"> <?php if ( $basethemevar_error_menu_bottom_text ) { ?>
 						<?php echo $basethemevar_error_menu_bottom_text; ?> <?php } ?>
 						<?php if ( $basethemevar_error_search != 1 ) { ?> <?php get_search_form(); ?> <?php } ?> </div>
 					<!--404-form-->
-				</div><!-- .page-content -->
+				</div><!-- .inner-content -->
 			</section><!-- .error-404 -->
 			<div class="ts-80"></div>
 		</div>

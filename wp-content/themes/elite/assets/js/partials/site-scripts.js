@@ -77,6 +77,7 @@ jQuery(document).ready(function (jQuery) {
 	 * Images Slider
 	 *
 	 */
+
 	 jQuery('.images-slider-ctn').owlCarousel({
 		loop:true,
 		nav:false,

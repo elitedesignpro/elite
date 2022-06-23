@@ -20,7 +20,6 @@ global $option_fields;
 global $pID;
 global $fields;
 
-
 $basethemevar_pagetitle = (isset($fields['basethemevar_pagetitle']) && $fields['basethemevar_pagetitle']!='' ) ? $fields['basethemevar_pagetitle'] : get_the_title();
 
 ?> <section id="hero-section" class="hero-section">

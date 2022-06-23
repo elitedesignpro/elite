@@ -34,7 +34,8 @@ const count = require( 'gulp-count' );
  * Custom Error Handler.
  *
  * @param  r
- */
+*/
+
 const errorHandler = ( r ) => {
 	 notify.onError( '\n\n❌  ===> ERROR: <%= error.message %>\n' )( r ); // Message to be displayed when error function is called
 	 beep( 2 ); // Beep two times on error
@@ -109,6 +110,54 @@ gulp.task( 'styles', () => {
 } );
 
 /**
+ * Task: `Editor styles`.
+ */
+ gulp.task( 'editor-style', () => {
+	const plugins = [
+		autoprefixer( {
+			overrideBrowserslist: config.BROWSERS_LIST,
+		} ),
+	];
+	return gulp
+		.src( config.editorStyleSRC, {
+			allowEmpty: false,
+		} )
+		.pipe( plumber( errorHandler ) )
+		.pipe( sourcemaps.init() )
+		.pipe(
+			sass( {
+				errLogToConsole: config.errLogToConsole,
+				precision: config.precision,
+			} ),
+		)
+		.on( 'error', sass.logError )
+		.pipe( postcss( plugins ) )
+		.pipe( sourcemaps.write( './' ) )
+		.pipe( lineec() )
+		.pipe( gulp.dest( config.editorStyleDestination ) )
+		.pipe( filter( '**/*.css' ) )
+		.pipe( browserSync.stream() )
+		.pipe( sourcemaps.init( { loadMaps: true } ) )
+	   //  .pipe( cssnano() )
+		.pipe(
+		   rename( {
+			   suffix: '.min',
+		  } ),
+		   )
+	   .pipe( sourcemaps.write( './' ) )
+	   .pipe( lineec() )
+	   .pipe( gulp.dest( config.editorStyleDestination ) )
+	   .pipe( filter( '**/*.css' ) )
+	   .pipe( browserSync.stream() )
+		.pipe(
+			notify( {
+				message: '\n\n✅ ===> Styles ✅ completed!\n',
+				onLast: true,
+			} ),
+		);
+} );
+
+/**
  * Task: `Scripts`.
  */
 gulp.task( 'scripts', () => {
@@ -149,11 +198,23 @@ gulp.task( 'scripts', () => {
  */
 gulp.task(
 	 'default',
-	 gulp.series( 'styles', 'scripts', browsersync, () => {
+	 gulp.series( 'styles', 'editor-style',  'scripts',  browsersync, () => {
 		 gulp.watch( config.watchPhp, reload );
 		 gulp.watch(
 			 [ config.watchStyles, '!assets/css/bundle.css', '!assets/css/bundle.css.map', '!assets/css/bundle.min.css', '!assets/css/bundle.min.css.map' ],
 			 gulp.parallel( 'styles' ),
+		 );
+		 gulp.watch(
+			 [ config.watchStyles, '!assets/css/editor-style.css', '!assets/css/editor-style.css.map','!assets/css/editor-style.min.css', '!assets/css/editor-style.min.css.map'],
+			 gulp.parallel( 'editor-style' ),
+		 );
+		 gulp.watch(
+			 [ config.watchEditorStyles, '!assets/css/bundle.css', '!assets/css/bundle.css.map', '!assets/css/bundle.min.css', '!assets/css/bundle.min.css.map' ],
+			 gulp.parallel( 'styles' ),
+		 );
+		 gulp.watch(
+			 [ config.watchEditorStyles, '!assets/css/editor-style.css', '!assets/css/editor-style.css.map','!assets/css/editor-style.min.css', '!assets/css/editor-style.min.css.map'],
+			 gulp.parallel( 'editor-style' ),
 		 );
 		 gulp.watch(
 			 [ config.watchJs, '!assets/js/bundle.js', '!assets/js/bundle.min.js' ],

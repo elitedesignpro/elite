@@ -3,7 +3,7 @@
  */
 module.exports = {
 	// Project options.
-	projectName: "BaseTheme Package",
+	projectName: "Sample Theme",
 	projectURL: "http://basetheme.local/",
 	projectVersion: "1.0.0",
 
@@ -13,7 +13,9 @@ module.exports = {
 
 	// Styles.
 	styleSRC: "assets/css/bundle.scss",
+	editorStyleSRC: "assets/css/editor-style.scss",
 	styleDestination: "assets/css/",
+	editorStyleDestination: "assets/css/",
 	outputStyle: "compact",
 	errLogToConsole: true,
 	precision: 10,
@@ -29,6 +31,7 @@ module.exports = {
 
 	// Watch file paths.
 	watchStyles: "assets/css/partials/**/*",
+	watchEditorStyles: "assets/css/editor-style.scss",
 	watchJs: "assets/js/**/*",
 	watchPhp: "**/*.php",
 	watchHtml: "**/*.html",

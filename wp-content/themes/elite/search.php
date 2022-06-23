@@ -25,7 +25,7 @@ global $fields;
  */
 ?> <section id="hero-section" class="hero-section">
 	<!-- Hero Start -->
-	<div class="hero-single">
+	<div class="hero-single search-hero">
 		<div class="wrapper">
 			<h1><?php _e( 'Search Results', 'aperiambio_td' ); ?></h1>
 			<p> <?php
@@ -41,25 +41,25 @@ global $fields;
 </section>
 <section id="page-section" class="page-section">
 	<!-- Content Start -->
-	<div class="wrapper"> <?php
-			if ( have_posts() ) {
-				while ( have_posts() ) {
-					the_post();
-
-					// Include specific template for the content
-					get_template_part( 'partials/content-archive',get_post_type() );
-				}
-				?> <div class="clear"></div> <?php
-			}else {
-
-				// If no content, include the "No posts found" template.
-				get_template_part( 'partials/content', 'none' );
-			}
-
-		?> <div class="clear"></div> <?php
-			if ( function_exists( 'glide_pagination' ) ) {
+	<div class="wrapper">
+			<div class="post-archive three-columns">
+				<?php if ( have_posts() ) {
+					while ( have_posts() ) {
+						the_post();
+						// Include specific template for the content
+						get_template_part( 'partials/content-archive',get_post_type() );
+					} ?>
+				<?php }else {
+					// If no content, include the "No posts found" template.
+					get_template_part( 'partials/content', 'none' );
+				} ?>
+			</div>
+			<div class="ts-40"></div>
+			<?php if ( function_exists( 'glide_pagination' ) ) {
 				glide_pagination( $wp_query->max_num_pages );
-			}
-		?> </div>
+			} ?>
+			<div class="ts-80"></div>
+
+	</div>
 	<!-- Content End -->
 </section> <?php get_footer(); ?>

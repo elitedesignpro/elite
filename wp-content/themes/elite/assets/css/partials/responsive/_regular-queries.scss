@@ -1,16 +1,611 @@
 @media only screen and (min-width: 1180px) and (max-width: 1345px) {
+	// .header-nav ul li {
+	// 	margin: 0 7px;
+	// }
+
+	a.button,
+	a.button:visited {
+		font-size: 18px;
+	}
+
+	/**
+	 *
+	 * Containers Style
+	 *
+	 */
+
+
+	.ctn {
+		padding: 66px 0;
+	}
+
+
+	/**
+	 *
+	 * Typography
+	 *
+	 */
+
+
+	.overline {
+		font-size: 18px;
+	}
+
+	h1,
+	.heading-1 {
+		font-size: 80px;
+	}
+
+	h2,
+	.heading-2 {
+		font-size: 60px;
+	}
+
+	h3,
+	.heading-3 {
+		font-size: 44px;
+	}
+
+	h4,
+	.heading-4 {
+		font-size: 40px;
+		font-size: 34px;
+	}
+
+	.big-body {
+		font-size: 22px;
+	}
+
+	.med-body {
+		font-size: 20px;
+	}
+
+	.large-text {
+		font-size: 35px;
+	}
+
+	/**
+	  *
+	  * Header
+	  *
+	  */
+
+	header {
+		padding: 12px 2.5%;
+
+		&.shrink {
+			padding: 8px 2.5%;
+		}
+	}
+
+	.header-logo a {
+		width: 170px;
+	}
+
+	.header-nav ul li {
+		margin: 0 15px;
+
+		a,
+		a:visited {
+			font-size: 20px;
+		}
+	}
+
+	/**
+	 *
+	 * Heros
+	 *
+	 */
+	.hero-ctn {
+		padding: 13rem 0 8rem;
+	}
+
+
+	/**
+	 *
+	 * spacer style
+	 *
+	 */
+	.s-270 {
+		height: 200px;
+	}
+
+	.s-200 {
+		height: 140px;
+	}
+
+	.s-160 {
+		height: 110px;
+	}
+
+	.s-140 {
+		height: 100px;
+	}
+
+	.s-120 {
+		height: 95px;
+	}
+
+	.s-100 {
+		height: 80px;
+	}
+
+	.s-80 {
+		height: 65px;
+	}
+
+	.s-60 {
+		height: 45px;
+	}
+
+	.s-50 {
+		height: 30px;
+	}
+
+	.s-40 {
+		height: 30px;
+	}
+
+	.s-30 {
+		height: 20px;
+	}
+
+	/**
+	 *
+	 * Style for two column text
+	 *
+	 */
+	.mb-70 {
+		margin-bottom: 50px;
+	}
+
+	/**
+	 *
+	 * Text Columns Block
+	 *
+	 */
+	.text-column {
+		padding: 0 3% 0 0;
+	}
+
+	/**
+	 *
+	 * Style for image collage blocks
+	 *
+	 */
+	.collage-image {
+		height: 380px;
+	}
+
+	.image-collage-ctn {
+		row-gap: 30px;
+	}
+
+
+	/**
+	 *
+	 * Style for services block
+	 *
+	 */
+	.service-icon {
+		width: 90px;
+		height: 90px;
+		border-width: 2px;
+		margin-bottom: 26px;
+
+		img {
+			margin: auto;
+			max-width: 45px;
+			max-height: 45px;
+		}
+	}
+
+	.service-desc h3 {
+		margin-bottom: 18px;
+	}
+
+	.services-area.three-cols .col:nth-child(n+4) {
+		margin-top: 50px;
+	}
+
+
+	/**
+	 *
+	 * Style for projects
+	 *
+	 */
+	a.project-image,
+	a.project-image:visited {
+		height: 330px;
+		margin-bottom: 26px;
+	}
+
+	.single-project {
+		width: 14%;
+		max-width: 450px;
+		float: left;
+		margin-right: 26px;
+	}
+
+	.project-desc h3 {
+		margin-bottom: 16px;
+	}
+
+	.projects-area {
+		width: 330%;
+	}
+
+	/**
+	 *
+	 * Testimonial Block
+	 *
+	 */
+	.single-testi {
+		max-width: 1020px;
+	}
+
+	blockquote {
+		margin-bottom: 4rem;
+
+		p {
+			font-size: 30px;
+		}
+	}
+
+	.owl-carousel.testi-ctn .owl-nav {
+		margin-top: 40px;
+	}
+
+	.testi-author-img {
+		width: 100px;
+		height: 100px;
+		margin-right: 20px;
+	}
+
+	/**
+	 *
+	 * Style for image alongside text
+	 *
+	 */
+	.iat-img-area {
+		height: 485px;
+	}
+
+	.iat-content-area p {
+		width: 90%;
+	}
+
+	/**
+	 *
+	 * Video Block
+	 *
+	 */
+	.video-ctn {
+		height: 700px;
+	}
+
+	a.video-btn {
+		width: 90px;
+		height: 90px;
+		background-position: left 34px center;
+		background-size: 30px;
+	}
+
+	/**
+	 *
+	 * Proccess bLock
+	 *
+	 */
+
+
+	.single-proccess {
+		padding: 20px 30px;
+		font-size: 28px;
+	}
+
+	.single-proccess:nth-child(even)::before {
+		top: 30px;
+		left: -121px;
+		line-height: 1;
+	}
+
+	.single-proccess:nth-child(n+3) {
+		margin-top: 40px;
+	}
+
+	.large-cta-title {
+		font-size: 200px;
+		margin-bottom: 60px;
+	}
+
+
+	/**
+	 *
+	 * Two column Text
+	 *
+	 */
+
+
+	.single-text-col {
+		padding: 40px;
+	}
+
+	.single-text-col:nth-child(2n+2) {
+		margin-top: -120px;
+	}
+
+	/**
+	 *
+	 * List Colunms
+	 *
+	 */
+	.list-column {
+		padding: 40px 35px;
+	}
 }
-@media only screen and (min-width: 1004px) and (max-width: 1345px) {
-}
+
 @media only screen and (min-width: 1004px) and (max-width: 1179px) {
+	// .header-nav ul li {
+	// 	margin: 0 5px;
+	// }
+
+	// .header-inner .logo {
+	// 	width: 181px;
+	// }
 }
+
 @media only screen and (max-width: 1003px) {
+	// code will be starts from here
 }
+
 @media only screen and (min-width: 748px) and (max-width: 1003px) {
+	// code will be starts from here
 }
+
+
 @media only screen and (max-width: 747px) {
+
+	/**
+	 * Spacers
+	 */
+	.s-270 {
+		height: 120px;
+	}
+
+	.s-200 {
+		height: 100px;
+	}
+
+	.s-160,
+	.ts-160 {
+		height: 86px;
+	}
+
+	.s-140,
+	.ts-140 {
+		height: 74px;
+	}
+
+	.s-120,
+	.ts-120 {
+		height: 64px;
+	}
+
+	.s-100,
+	.ts-100 {
+		height: 56px;
+	}
+
+	.s-80,
+	.ts-80 {
+		height: 46px;
+	}
+
+	.s-60,
+	.ts-60 {
+		height: 40px;
+	}
+
+	.s-50,
+	.ts-50 {
+		height: 36px;
+	}
+
+	.s-40,
+	.ts-40 {
+		height: 30px;
+	}
+
+	// headings
+	h1,
+	.heading-1 {
+		font-size: 40px;
+	}
+
+	h2,
+	.heading-2 {
+		font-size: 30px;
+	}
+
+	h3,
+	.heading-3 {
+		font-size: 26px;
+	}
+
+	h4,
+	.heading-4 {
+		font-size: 23px;
+	}
+
+	h5,
+	.heading-5 {
+		font-size: 21px;
+	}
+
+	h6,
+	.heading-6 {
+		font-size: 19px;
+	}
+
+	// masthead
+	.hero-single {
+		padding: 40px 0 30px;
+	}
+
+	// utility class
+	.rs-view-100 {
+		width: 100% !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	// block posts
+	.post-box-meta {
+		margin-bottom: 10px;
+	}
+
+	.featured-post {
+		margin-bottom: 0;
+
+		.post-image {
+			margin-bottom: 20px;
+			min-height: 250px;
+		}
+	}
+
+	.post-meta {
+		flex-wrap: wrap;
+
+		.post-cat {
+			margin-bottom: 20px;
+
+			a {
+				padding-bottom: 0px;
+				margin-bottom: 4px;
+				display: inline-block;
+			}
+		}
+
+		.post-shares a {
+			margin: 0 8px 0 0;
+		}
+	}
+
+	// columns
+	.two-columns,
+	.three-columns,
+	.four-columns,
+	.five-columns {
+
+		.column {
+			width: 100%;
+		}
+	}
+
+	// at block
+	.iat-image.column {
+		margin-top: 30px;
+	}
+
+	// lists
+	ul.children,
+	ol.children {
+
+		li {
+
+			&.depth-2,
+			&.depth-3,
+			&.depth-4,
+			&.depth-5 {
+				margin: 0 0 30px 20px !important;
+			}
+		}
+	}
+
+	// forms styling
+	.gfield.half-input-field,
+	.ginput_left,
+	.name_first,
+	.ginput_right,
+	.name_last {
+		width: 100%;
+		margin-right: 0;
+		display: block;
+	}
+
+	// Wp Table Block
+	figure {
+		overflow-x: scroll;
+
+		td,
+		th {
+			width: 140px;
+		}
+	}
+
+	// footer section styling
+	.footer-widgets {
+		flex-wrap: wrap;
+
+		.single-widget {
+			width: 43%;
+			margin-right: 20px;
+			margin-bottom: 50px;
+
+			&:nth-child(1) {
+				width: 100%;
+				margin-right: 0;
+			}
+
+			&:nth-child(2n+2) {
+				margin-right: 0;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.footer-logo {
+		max-width: 190px;
+	}
+
+	.footer-bottom {
+		flex-wrap: wrap;
+		padding: 30px 0;
+
+		.copy-right,
+		.menu-legal-nav {
+			width: 100%;
+		}
+
+		.legal-nav ul {
+			justify-content: left;
+
+			li {
+				margin: 10px 10px 0 0;
+			}
+		}
+
+		.legal-nav {
+			width: 100%;
+		}
+	}
 }
+
 @media only screen and (min-width: 460px) and (max-width: 747px) {
+	// code will be starts from here
 }
+
 @media only screen and (max-width: 459px) {
+
+	.footer-widgets .single-widget {
+		width: 100%;
+		margin-bottom: 30px;
+
+		&:first-child {
+			margin-bottom: 50px;
+		}
+	}
 }

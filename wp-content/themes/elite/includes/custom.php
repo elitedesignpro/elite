@@ -218,3 +218,14 @@ function glide_login_logo() {
 }
 
 add_action( 'login_head', 'glide_login_logo' );
+
+// removing parmalink from team cpt
+add_action('admin_head', 'wpds_custom_admin_post_css');
+function wpds_custom_admin_post_css() {
+
+    global $post_type;
+
+    if ($post_type == 'team') {
+        echo "<style>#edit-slug-box {display:none;}</style>";
+    }
+}

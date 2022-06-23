@@ -14,7 +14,6 @@
 if ( ! function_exists( 'glide_setup_function' ) ) {
 
 	function glide_setup_function() {
-
 		// Make theme available for translation.
 		load_theme_textdomain( 'basetheme_td' );
 
@@ -56,11 +55,11 @@ if ( ! function_exists( 'glide_setup_function' ) ) {
 				'header-nav'   => __( 'Header Nav', 'basetheme_td' ),
 				'footer-nav-one' => __( 'Footer Nav One', 'basetheme_td' ),
 				'footer-nav-two' => __( 'Footer Nav Two', 'basetheme_td' ),
+				'footer-nav-three' => __( 'Footer Nav Three', 'basetheme_td' ),
 				'legal-nav' => __( 'Legal Nav', 'basetheme_td' ),
 			)
 		);
 
-		// Fallback function for menus
 		// Fallback function for menus
 		function nav_fallback(){
 			if(is_user_logged_in()){

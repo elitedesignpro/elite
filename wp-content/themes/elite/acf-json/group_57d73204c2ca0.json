@@ -19,10 +19,10 @@
             "endpoint": 0
         },
         {
-            "key": "field_5ed4cfcc4548c",
-            "label": "Call To Action",
-            "name": "",
-            "type": "tab",
+            "key": "field_627944609e9f4",
+            "label": "Top bar",
+            "name": "basethemevar_tohdr_tbar",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -31,8 +31,41 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "left",
-            "endpoint": 0
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5ed4cfcc4548c",
+            "label": "Button",
+            "name": "basethemevar_tohdr_btn",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_62685c755920a",
+            "label": "Button Two",
+            "name": "basethemevar_tohdr_btn_two",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         },
         {
             "key": "field_5ed4d0274548d",
@@ -87,6 +120,45 @@
             "maxlength": ""
         },
         {
+            "key": "field_62669b7be5b29",
+            "label": "Text",
+            "name": "basethemevar_ftrop_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0,
+            "wysiwyg_height": ""
+        },
+        {
+            "key": "field_62683b44efa45",
+            "label": "Copyright",
+            "name": "basethemevar_ftrop_copyright",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5ed4d0794548f",
             "label": "Social Profiles",
             "name": "",
@@ -105,7 +177,7 @@
         {
             "key": "field_5efdbecbd7e5d",
             "label": "Facebook",
-            "name": "basthemevar_social_fb",
+            "name": "basethemevar_social_fb",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -124,7 +196,7 @@
         {
             "key": "field_5efdbe62d7e5c",
             "label": "Twitter",
-            "name": "basthemevar_social_tw",
+            "name": "basethemevar_social_tw",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -143,7 +215,7 @@
         {
             "key": "field_5efdbf23d7e60",
             "label": "LinkedIn",
-            "name": "basthemevar_social_li",
+            "name": "basethemevar_social_li",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -162,7 +234,7 @@
         {
             "key": "field_5fbe5285de720",
             "label": "Instagram",
-            "name": "basthemevar_social_in",
+            "name": "basethemevar_social_in",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -197,7 +269,7 @@
         {
             "key": "field_5f155870824c6",
             "label": "Headline",
-            "name": "basthemevar_error_headline",
+            "name": "basethemevar_error_headline",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -216,7 +288,7 @@
         {
             "key": "field_5ef592a177323",
             "label": "Sub Headline",
-            "name": "basthemevar_error_sub_headline",
+            "name": "basethemevar_error_sub_headline",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -235,7 +307,7 @@
         {
             "key": "field_5ef592de77324",
             "label": "Text",
-            "name": "basthemevar_error_text",
+            "name": "basethemevar_error_text",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -249,12 +321,13 @@
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
-            "delay": 0
+            "delay": 0,
+            "wysiwyg_height": ""
         },
         {
             "key": "field_5ef592f877325",
             "label": "Select Menu",
-            "name": "basthemevar_error_menu",
+            "name": "basethemevar_error_menu",
             "type": "nav_menu",
             "instructions": "",
             "required": 0,
@@ -271,7 +344,7 @@
         {
             "key": "field_5ef5934c77327",
             "label": "Menu Bottom Text",
-            "name": "basthemevar_error_menu_bottom_text",
+            "name": "basethemevar_error_menu_bottom_text",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -285,12 +358,13 @@
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
-            "delay": 0
+            "delay": 0,
+            "wysiwyg_height": ""
         },
         {
             "key": "field_5ef5930e77326",
             "label": "Hide Search",
-            "name": "basthemevar_error_search",
+            "name": "basethemevar_error_search",
             "type": "true_false",
             "instructions": "",
             "required": 0,
@@ -906,5 +980,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1647423364
+    "modified": 1652114713
 }

@@ -1,24 +1,24 @@
 .wp-caption {
 	max-width: 100%;
 	box-sizing: border-box;
-	margin-bottom: 5rem !important;
+	margin-bottom: 50px !important;
 
 	&.alignnone {
-		margin: 1.5rem 0 1.5rem 0;
+		margin: 15px 0;
 	}
 
 	&.alignleft {
-		margin: 5rem 2rem 1rem 0;
+		margin: 50px 20px 10px 0;
 	}
 
 	&.alignright {
-		margin: 0.5rem 0 1rem 2rem;
+		margin: 5px 0 10px 20px;
 	}
 
 	img {
 		border: 0 none;
 		height: auto;
-		margin: 0 0 0.8rem 0;
+		margin: 0 0 8px;
 		max-width: 100%;
 		padding: 0;
 		width: auto;
@@ -30,8 +30,10 @@
 	}
 
 	p.wp-caption-text {
+
 		@include font(bt, reg);
-		@include font-size(1.8);
+
+		font-size: 18px;
 		margin: 0;
 		text-transform: uppercase;
 		letter-spacing: 2.5px;

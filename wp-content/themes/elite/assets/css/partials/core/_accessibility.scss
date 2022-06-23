@@ -6,8 +6,8 @@
 
 .screen-reader-text {
 	border: 0;
-	clip: rect(1px, 1px, 1px, 1px);
-	clip-path: inset(50%);
+	clip: rect( 1px, 1px, 1px, 1px );
+	clip-path: inset( 50% );
 	height: 1px;
 	margin: -1px;
 	overflow: hidden;
@@ -19,23 +19,19 @@
 	&:hover,
 	&:active,
 	&:focus {
-		color: map-get($map: $base_colors, $key: acc-btn-color);
-		background-color: map-get($map: $base_colors, $key: acc-btn-bgcolor);
-		box-shadow: 0 0 2px 2px map-get($map: $base_colors, $key: acc-btn-shadow);
+		color: map-get( $map: $base_colors, $key: acc_btn_color );
+		background-color: map-get( $map: $base_colors, $key: acc_btn_bgcolor );
+		box-shadow: 0 0 2px 2px map-get( $map: $base_colors, $key: acc_btn_shadow );
 		clip: auto !important;
 		clip-path: none;
-
-		@include border-radius(0);
-
+		border-radius: 0;
 		display: block;
-
-		@include font-size(1.4);
-
+		font-size: 14px;
 		font-weight: bold;
 		height: auto;
 		left: 5px;
 		line-height: normal;
-		padding: 1.5rem 2.5rem;
+		padding: 15px 25px;
 		text-decoration: none;
 		top: 5px;
 		width: auto;

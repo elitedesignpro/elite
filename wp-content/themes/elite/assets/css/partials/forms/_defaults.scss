@@ -70,3 +70,16 @@ button:-moz-focusring,
 	appearance: button;
 	font: inherit;
 }
+
+.search-form {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+
+	input[type="submit"],
+	button,
+	input[type="button"],
+	input[type="reset"] {
+		margin: 0 0 10px 10px;
+	}
+}

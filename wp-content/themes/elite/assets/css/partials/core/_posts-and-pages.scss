@@ -10,21 +10,17 @@
 .sticky {
 
 	.post-title {
-		padding-left: 3rem;
-	}
-
-	.ac-post-title {
 		position: relative;
-		padding-left: 4rem;
+		padding-left: 30px;
 
 		&::before {
 			content: "";
-			background-image: url( ../img/pushpin.svg );
+			background-image: url( ../img/sticky-icon.svg );
 			background-repeat: no-repeat;
 			position: absolute;
-			top: 1px;
+			top: 5px;
 			left: 0;
-			height: 35px;
+			height: 30px;
 			width: 30px;
 		}
 	}
@@ -46,3 +42,24 @@
 ---------------------------------------------------
 >> Edit following styles or write your own
 ------------------------------------------------- */
+
+
+.post-shares {
+	display: flex;
+
+	a {
+		margin-left: 8px;
+		padding: 5px;
+		border: 1px solid map-get( $map: $colors, $key: pure_black );
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 30px;
+		height: 30px;
+
+		&:hover {
+			border: 1px solid map-get( $map: $colors, $key: l_gblack );
+		}
+	}
+}

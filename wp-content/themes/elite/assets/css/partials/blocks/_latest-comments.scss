@@ -5,12 +5,12 @@
 }
 
 .wp-block-latest-comments__comment-date {
-	margin: 0.5rem 0;
-	color: map-get($map: $base_colors, $key: widget-comments-meta-color);
+	margin: 5px 0;
+	color: map-get( $map: $base_colors, $key: widget_comments_meta_color );
 }
 
 .wp-block-latest-comments__comment-excerpt p {
 	font-size: 100%;
 	line-height: 1.5;
-	margin: 0.5rem 0;
+	margin: 5px 0;
 }

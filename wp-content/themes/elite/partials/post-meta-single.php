@@ -15,11 +15,11 @@ $author_id = $post->post_author;
 // Post ACf fields
 // Author profile image
 if (function_exists('get_field') ) {
-	$basthemevar_author_avatar = get_field('basthemevar_author_avatar', 'user_'.$author_id);
+	$basethemevar_author_avatar = get_field('basethemevar_author_avatar', 'user_'.$author_id);
 }
 
-if(!$basthemevar_author_avatar){
-	$basthemevar_author_avatar =  get_avatar_url($author_id);
+if(!$basethemevar_author_avatar){
+	$basethemevar_author_avatar =  get_avatar_url($author_id);
 }
 
 // Get author name with fallback to display name
@@ -33,17 +33,20 @@ if(!$basthemevar_author_avatar){
 $basethemevar_post_tags = get_the_tags($pID);
 $basethemevar_post_categories = get_categories($pID);
 
-?> <div class="post-meta-ctn">
-	<div class="post-date"><?php the_time( project_dtformat ); ?></div>
-	<div class="post-author">
-		<div class="post-author-img"
-			style="background-image: url(<?php echo $basthemevar_author_avatar; ?>); width:50px; height:50px; background-size:cover">
+?>
+
+	<div class="post-box-meta">
+		<div class="post-author-ctn d-flex">
+			<?php if($basethemevar_author_avatar){ ?>
+				<div class="post-author-img"
+					style="background-image: url(<?php echo $basethemevar_author_avatar; ?>); width:50px; height:50px; background-size:cover">
+				</div>
+			<?php } ?>
+			<div class="author-meta">
+				<?php if($basethemevar_author_name){ ?>
+					<div class="post-author-name">By: <?php echo $basethemevar_author_name; ?></div>
+				<?php } ?>
+				<div class="post-meta-date"><?php the_time( project_dtformat ); ?></div>
+			</div>
 		</div>
-		<div class="post-author-name">By: <?php echo $basethemevar_author_name; ?></div>
-	</div> <?php if($basethemevar_post_tags){ ?> <div class="post-tags"> <?php foreach ($basethemevar_post_tags as $tag ) { ?> <a
-			href="<?php echo get_tag_link($tag); ?>"><?php echo $tag->name; ?></a> <?php } ?> </div>
-	<!-- /.post-tags --> <?php } ?> <?php if($basethemevar_post_categories){ ?> <div class="post-cat">
-		<?php foreach ($basethemevar_post_categories as $category ) { ?> <a
-			href="<?php echo get_category_link($category); ?>"><?php echo $category->name; ?></a> <?php } ?> </div>
-	<!-- /.post-cat --> <?php } ?>
-</div>
+	</div>

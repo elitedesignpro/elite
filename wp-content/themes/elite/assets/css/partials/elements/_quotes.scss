@@ -17,6 +17,7 @@ blockquote {
 	p {
 		font-size: 40px;
 		margin-bottom: 0;
+
 		&::before {
 			content: " “ ";
 			margin-left: -26px;
@@ -28,9 +29,10 @@ blockquote {
 }
 
 .wp-block-quote {
+
 	&.has-text-align-right {
 		border-left: none;
-		border-right: 3px solid map-get($map: $base_colors, $key: blockquote-border-color);
+		border-right: 3px solid map-get( $map: $base_colors, $key: blockquote-border-color );
 		padding: 5px 20px 5px 0;
 
 		&.is-style-plain {
@@ -58,9 +60,10 @@ blockquote {
 }
 
 figure {
+
 	&.wp-block-pullquote {
-		border-top: 3px solid map-get($map: $base_colors, $key: blockquote-border-color);
-		border-bottom: 3px solid map-get($map: $base_colors, $key: blockquote-border-color);
+		border-top: 3px solid map-get( $map: $base_colors, $key: blockquote-border-color );
+		border-bottom: 3px solid map-get( $map: $base_colors, $key: blockquote-border-color );
 		padding-left: 1rem;
 		padding-right: 1rem;
 
@@ -79,7 +82,7 @@ figure {
 
 q {
 	quotes: "\201C""\201D";
-	color: map-get($map: $base_colors, $key: quote-color);
+	color: map-get( $map: $base_colors, $key: quote-color );
 	position: relative;
 }
 
@@ -89,8 +92,8 @@ cite {
 	font-size: 80%;
 	text-transform: uppercase;
 	font-weight: 500;
-	color: map-get($map: $base_colors, $key: blockqoute-cite-color);
-	font-family: "IBM Plex Mono", monospace;
+	color: map-get( $map: $base_colors, $key: blockqoute-cite-color );
+	font-family: "IBM Plex Mono" , monospace;
 	font-style: italic;
 	position: relative;
 

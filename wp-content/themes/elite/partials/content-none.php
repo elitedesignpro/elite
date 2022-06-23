@@ -14,7 +14,7 @@
 	<div class="page-header">
 		<h2 class="page-title"><?php _e( 'Nothing Found', 'basetheme_td' ); ?></h2>
 	</div><!-- .page-header -->
-	<div class="page-content">
+	<div class="inner-content">
 		<?php
 		if ( is_home() && current_user_can( 'publish_posts' ) ) :
 				printf(

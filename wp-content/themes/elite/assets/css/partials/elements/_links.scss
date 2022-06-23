@@ -34,3 +34,13 @@ a {
 		}
 	}
 }
+
+
+.post-image,
+.post-title {
+
+	a,
+	&:visited {
+		border-bottom: none;
+	}
+}

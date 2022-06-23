@@ -6,6 +6,7 @@
 
 header,
 footer {
+
 	ul,
 	ol {
 		list-style: none;
@@ -45,6 +46,7 @@ ol {
 
 ul li,
 ol li {
+
 	&::marker {
 	}
 
@@ -61,6 +63,7 @@ ol ul {
 
 .page-section,
 .hero-section {
+
 	ul {
 		list-style: none;
 		margin-left: 0;
@@ -79,9 +82,10 @@ ol ul {
 				width: 8px;
 				height: 8px;
 				position: absolute;
-				background-color: map-get($map: $colors, $key: red);
+				background-color: map-get( $map: $colors, $key: red );
 				left: 0px;
 				top: 9px;
+
 				@include border-radius(50%);
 			}
 		}
@@ -90,9 +94,10 @@ ol ul {
 			counter-reset: list1;
 
 			li {
+
 				&::before {
 					counter-increment: list1;
-					content: counters(list1, ".") ".";
+					content: counters( list1, "." ) ".";
 				}
 			}
 		}
@@ -117,11 +122,11 @@ ol ul {
 			}
 
 			&::before {
-				color: map-get($map: $colors, $key: red);
+				color: map-get( $map: $colors, $key: red );
 
 				@include font(bt, reg);
 
-				content: counters(list, ".") ".";
+				content: counters( list, "." ) ".";
 				counter-increment: list;
 				left: 0;
 				top: 0px;
@@ -131,16 +136,19 @@ ol ul {
 		}
 
 		ol {
+
 			li {
 				padding-left: 48px;
 			}
 
 			ol {
+
 				li {
 					padding-left: 64px;
 				}
 
 				ol {
+
 					li {
 						padding-left: 80px;
 					}
@@ -160,7 +168,7 @@ ol ul {
 					height: 6px;
 					background-position: left top;
 					position: absolute;
-					background-color: map-get($map: $base_colors, $key: list-before-bgcolor);
+					background-color: map-get( $map: $base_colors, $key: list-before-bgcolor );
 					left: 0;
 					top: 9px;
 				}

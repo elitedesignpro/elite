@@ -121,7 +121,10 @@
 	"eslint.alwaysShowStatus": true,
 	// "eslint.autoFixOnSave": true,
 	"javascript.validate.enable": false,
-	"terminal.integrated.shellArgs.windows": ["-ExecutionPolicy", "Bypass"],
+	"terminal.integrated.shellArgs.windows": [
+		"-ExecutionPolicy",
+		"Bypass"
+	],
 	"editor.codeActionsOnSave": {
 		"source.fixAll.eslint": true
 	}

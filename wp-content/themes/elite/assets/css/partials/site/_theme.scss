@@ -3,6 +3,9 @@
  * body
  *
 ****/
+.mystyle {
+	color: red;
+}
 
 .two-columns {
 	display: flex;
@@ -519,7 +522,7 @@ a.wp-block-button__link:visited,
 }
 
 .ma-800 {
-	max-width: 900px;
+	max-width: 800px;
 }
 
 .bg-cover {
@@ -543,4 +546,8 @@ a.wp-block-button__link:visited,
 
 .red-bg {
 	background-color: map-get( $map: $colors, $key: red );
+}
+
+main#main-section {
+	overflow-x: hidden;
 }

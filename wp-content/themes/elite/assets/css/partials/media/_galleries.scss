@@ -1,5 +1,5 @@
 .gallery {
-	margin-bottom: 2.4rem;
+	margin-bottom: 24px;
 }
 
 .gallery-item {
@@ -8,12 +8,12 @@
 	vertical-align: top;
 	width: 100%;
 
-	// Loops to enumerate the classes for gallery columns.
-	@for $i from 2 through 9 {
-		.gallery-columns-#{$i} & {
-			max-width: map-get($columns, $i);
-		}
-	}
+	// // Loops to enumerate the classes for gallery columns.
+	// @for $i from 2 through 9 {
+	// 	.gallery-columns-#{$i} & {
+	// 		max-width: map-get($columns, $i);
+	// 	}
+	// }
 }
 
 .gallery-caption {
@@ -26,5 +26,5 @@
 .size-medium,
 .size-thumbnail {
 	max-width: 100%;
-	height: auto
+	height: auto;
 }
