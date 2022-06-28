@@ -4048,6 +4048,9 @@ main#main-section {
   max-width: 862px;
   margin: 0 auto;
 }
+.leadparagraph_ctn p:last-child {
+  margin-bottom: 0;
+}
 
 /* -------------------------------------------------
 >> Basic styles for FAQ's Block
@@ -4441,8 +4444,9 @@ a.video-btn:hover {
   overflow: hidden;
 }
 
-.cta.large-heading-ctn {
+.cta-ctn.large-heading-ctn {
   margin-bottom: 0;
+  border-radius: 0;
 }
 
 .large-cta-title {

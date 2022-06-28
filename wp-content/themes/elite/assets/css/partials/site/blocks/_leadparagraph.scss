@@ -1,4 +1,8 @@
 .leadparagraph_ctn {
 	max-width: 862px;
 	margin: 0 auto;
+
+	p:last-child {
+		margin-bottom: 0;
+	}
 }

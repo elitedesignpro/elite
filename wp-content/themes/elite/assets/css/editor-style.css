@@ -2700,6 +2700,9 @@ Mixin for transition
   max-width: 862px;
   margin: 0 auto;
 }
+.acf-block-preview .leadparagraph_ctn p:last-child {
+  margin-bottom: 0;
+}
 .acf-block-preview .faq-block {
   max-width: 825px;
   margin: 0 auto;
@@ -3047,8 +3050,9 @@ Mixin for transition
   position: relative;
   overflow: hidden;
 }
-.acf-block-preview .cta.large-heading-ctn {
+.acf-block-preview .cta-ctn.large-heading-ctn {
   margin-bottom: 0;
+  border-radius: 0;
 }
 .acf-block-preview .large-cta-title {
   font-size: 272px;

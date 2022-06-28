@@ -1,12 +1,12 @@
 {
-    "key": "group_62148dcd5450c",
-    "title": "Options - Default Page Template",
+    "key": "group_62bb10727d7b6",
+    "title": "Block - Mid Page CTA",
     "fields": [
         {
-            "key": "field_62b9f362b0c85",
-            "label": "Kicker",
-            "name": "elitedesign_dflt_hero_kicker",
-            "type": "text",
+            "key": "field_62bb10b358d68",
+            "label": "<h2 style=\"text-align:center;\"> Mid Page CTA <\/h2>",
+            "name": "",
+            "type": "message",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,16 +15,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
         },
         {
-            "key": "field_62148df3095ba",
+            "key": "field_62bb1ca750b9e",
             "label": "Title",
-            "name": "elitedesign_dflt_hero_title",
+            "name": "elitedesign_mdcta_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -41,10 +39,27 @@
             "maxlength": ""
         },
         {
-            "key": "field_62b9f2e3b0c81",
-            "label": "Text",
-            "name": "elitedesign_dflt_hero_text",
-            "type": "textarea",
+            "key": "field_62bb1f547bd9f",
+            "label": "Expand For Options",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_62bb1cce50b9f",
+            "label": "Kicker",
+            "name": "elitedesign_mdcta_kicker",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -55,35 +70,40 @@
             },
             "default_value": "",
             "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
-            "key": "field_62b9f335b0c83",
-            "label": "Button #1",
-            "name": "elitedesign_dflt_hero_btn_one",
-            "type": "link",
+            "key": "field_62bb1cdf50ba0",
+            "label": "Text",
+            "name": "elitedesign_mdcta_text",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "",
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0,
+            "wysiwyg_height": ""
         },
         {
-            "key": "field_62b9f34db0c84",
-            "label": "Button #2",
-            "name": "elitedesign_dflt_hero_btn_two",
+            "key": "field_62bb1cf450ba1",
+            "label": "Button",
+            "name": "elitedesign_mdcta_button",
             "type": "link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "",
                 "class": "",
                 "id": ""
             },
@@ -93,9 +113,9 @@
     "location": [
         [
             {
-                "param": "page_template",
+                "param": "block",
                 "operator": "==",
-                "value": "default"
+                "value": "acf\/mid-page-cta"
             }
         ]
     ],
@@ -108,5 +128,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1656353899
+    "modified": 1656431210
 }

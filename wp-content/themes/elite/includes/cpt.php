@@ -72,6 +72,8 @@ function register_cpt_testimonials() {
     );
     register_post_type( $cpt_register_key, $args );
 }
+
+
 function register_cpt_resources() {
     //CPT Labels
     $cpt_singular_capital 		= 'Resource'; // Name of the post type shown in the menu
@@ -127,7 +129,7 @@ function register_cpt_resources() {
 		'capability_type'    => 'page', // Set this value for each CPT.
         'has_archive'        => false, // Set this value for each CPT.
         'hierarchical'       => true, // Set this value for each CPT.
-        'menu_icon'          => 'dashicons-groups', // Set this value for each CPT.
+        'menu_icon'          => 'dashicons-admin-generic', // Set this value for each CPT.
         'rewrite'            => array(
             'slug' 	    	 => $cpt_slug,
             'with_front' 	 => true, // If required only then set this value for each CPT.
@@ -137,6 +139,76 @@ function register_cpt_resources() {
     );
     register_post_type( $cpt_register_key, $args );
 }
+
+
+
+function register_cpt_services() {
+    //CPT Labels
+    $cpt_singular_capital 		= 'Service'; // Name of the post type shown in the menu
+    $cpt_plural_capital 		= 'Services';
+    $cpt_singular_lowercase 	= 'service';
+    $cpt_plural_lowercase 		= 'services';
+
+	//CPT Slug & Name
+    $cpt_register_key = 'service';  // This is the registering name of the single CPT post. (Try to keep it singular).
+    $cpt_slug 		  = 'service';  // This is the permalink slug of single CPT post. (Try to keep it singular).
+	// The slug will become - www.website.com/testimonial/single-testimonial-name
+
+    $labels = array(
+        'name'                  => _x( $cpt_plural_capital, 'Post type general name', 'elitedesign_td' ),
+        'singular_name'         => _x( $cpt_singular_capital, 'Post type singular name', 'elitedesign_td' ),
+        'menu_name'             => _x( $cpt_plural_capital, 'Admin Menu text', 'elitedesign_td' ),
+        'name_admin_bar'        => _x( $cpt_singular_capital, 'Add New on Toolbar', 'elitedesign_td' ),
+        'add_new'               => __( 'Add New ', 'elitedesign_td' ),
+        'add_new_item'          => __( 'Add New '.$cpt_singular_capital , 'elitedesign_td' ),
+        'new_item'              => __( 'New '.$cpt_singular_capital, 'elitedesign_td' ),
+        'edit_item'             => __( 'Edit '.$cpt_singular_capital, 'elitedesign_td' ),
+        'update_item'           => __( 'Update '.$cpt_singular_capital, 'elitedesign_td' ),
+        'view_item'             => __( 'View  '.$cpt_singular_capital, 'elitedesign_td' ),
+        'view_items'             => __( 'View  '.$cpt_plural_capital, 'elitedesign_td' ),
+        'all_items'             => __( 'All '.$cpt_plural_capital, 'elitedesign_td' ),
+        'search_items'          => __( 'Search '.$cpt_plural_capital, 'elitedesign_td' ),
+        'parent_item_colon'     => __( 'Parent: '.$cpt_singular_capital, 'elitedesign_td' ),
+        'not_found'             => __( 'No '.$cpt_plural_lowercase.' found.', 'elitedesign_td' ),
+        'not_found_in_trash'    => __( 'No '.$cpt_plural_lowercase.' found in Trash.', 'elitedesign_td' ),
+        'featured_image'        => _x( $cpt_singular_capital.' Featured Image', 'Overrides the “Featured Image” phrase.', 'elitedesign_td' ),
+        'set_featured_image'    => _x( 'Set featured image', 'Overrides the “Set featured image” phrase.', 'elitedesign_td' ),
+        'remove_featured_image' => _x( 'Remove '. $cpt_singular_lowercase . ' image', 'Overrides the “Remove featured image” phrase.', 'elitedesign_td' ),
+        'use_featured_image'    => _x( 'Use as '.$cpt_singular_lowercase.' image', 'Overrides the “Use as featured image” phrase.', 'elitedesign_td' ),
+        'archives'              => _x( $cpt_singular_capital . ' archives', 'The post type archive label used in nav menus.', 'elitedesign_td' ),
+        'attributes'            => _x( $cpt_singular_capital . ' attributes', 'The post type attributes label.', 'elitedesign_td' ),
+        'insert_into_item'      => _x( 'Insert into '.$cpt_singular_lowercase, 'Overrides the “Insert into post” phrase.', 'elitedesign_td' ),
+        'uploaded_to_this_item' => _x( 'Uploaded to this '.$cpt_singular_lowercase, 'Overrides the “Uploaded to this post” phrase.', 'elitedesign_td' ),
+        'filter_items_list'     => _x( 'Filter '.$cpt_plural_lowercase.' list', 'Screen reader text for the filter links.', 'elitedesign_td' ),
+        'items_list_navigation' => _x( $cpt_plural_capital . ' list navigation', 'Screen reader text for the pagination.', 'elitedesign_td' ),
+        'items_list'            => _x( $cpt_plural_capital . ' list', 'Screen reader text for the items list.', 'elitedesign_td' ),
+    );
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+		'menu_position'      => null,
+		'map_meta_cap'       => true,
+		'show_in_rest' 		 => true,
+		'supports'           => array('title', 'thumbnail', "excerpt" ),
+		'capability_type'    => 'page', // Set this value for each CPT.
+        'has_archive'        => false, // Set this value for each CPT.
+        'hierarchical'       => true, // Set this value for each CPT.
+        'menu_icon'          => 'dashicons-groups', // Set this value for each CPT.
+        'rewrite'            => array(
+            'slug' 	    	 => $cpt_slug,
+            'with_front' 	 => false, // If required only then set this value for each CPT.
+        ),
+
+
+    );
+    register_post_type( $cpt_register_key, $args );
+}
+
+
 function register_cpt_team() {
     //CPT Labels
     $cpt_singular_capital 		= 'Team'; // Name of the post type shown in the menu
@@ -207,10 +279,12 @@ function register_cpt_team() {
 add_action( 'init', 'register_cpt_team' );
 add_action( 'init', 'register_cpt_resources' );
 add_action( 'init', 'register_cpt_testimonials' );
+add_action( 'init', 'register_cpt_services' );
 
 /**
  * Register custom tags for Experiments cpt
  */
+
 function testimonials_taxonomy() {
 
 	//CPT Slug & Name

@@ -1,8 +1,8 @@
 <?php
 /**
- * Block Name: Image Alongside Text
+ * Block Name: Image Collage
  *
- * The template for displaying the custom gutenberg block named Image Alongside Text.
+ * The template for displaying the custom gutenberg block named Image Collage.
  *
  * @link https://www.advancedcustomfields.com/resources/blocks/
  *
@@ -10,12 +10,10 @@
  * @since 1.0.0
  */
 
-
 // Get all the fields from ACF for this block ID
 // $block_fields = get_fields( $block['id'] );
 $block_fields = get_fields_escaped( $block['id'] );
 // $block_fields = get_fields_escaped( $block['id'] ,'sanitize_text_field' ); // if want to remove all html
-
 
 // Set the block name for it's ID & class from it's file name
 $block_glide_name = $block['name'];
@@ -43,49 +41,38 @@ if($block['name']){
 }
 
 // Block variables
-
-$elitedesign_iat_title 	= $block_fields['elitedesign_iat_title'];
-$elitedesign_iat_text 		= html_entity_decode($block_fields['elitedesign_iat_text']);
-$elitedesign_iat_button	= $block_fields['elitedesign_iat_button'];
-$elitedesign_iat_img_location 	= $block_fields['elitedesign_iat_img_location'];
-$elitedesign_iat_image 	= $block_fields['elitedesign_iat_image'];
-
-
-
-
-if($elitedesign_iat_img_location == 'left'){
-	$elitedesign_iat_img_location = "image-at-left";
-}else{
-	$elitedesign_iat_img_location = "image-at-right";
-}
-
+$elitedesign_imgcollg_title = html_entity_decode($block_fields['elitedesign_imgcollg_title']); // for keeping html from input
+$elitedesign_collage_images = $block_fields['elitedesign_collage_images'];
 
 ?>
 <div id="<?php echo $id; ?>" class="<?php echo $align_class . ' ' . $class_name. ' ' . $name; ?> glide-block-<?php echo $block_glide_name; ?>">
 
-		<section>
-			<div class="wrapper">
-				<div class="iat-ctn flex <?php echo $elitedesign_iat_img_location; ?>">
-					<?php if($elitedesign_iat_image) { ?>
-						<div class="iat-img-area img-cover col-645 rd-10">
-							<img src="<?php echo $elitedesign_iat_image; ?>" alt="Image alongside text image" />
-						</div>
-					<?php } ?>
-					<div class="iat-content-area col-595">
-						<?php if($elitedesign_iat_title) { ?>
-							<h2><?php echo $elitedesign_iat_title; ?></h2>
-						<?php } ?>
-						<?php if($elitedesign_iat_text) { ?>
-							<div class="big-body">
-								<?php echo $elitedesign_iat_text; ?>
-							</div>
-						<?php } ?>
-						<?php if($elitedesign_iat_button) { ?>
-							<a href="<?php echo $elitedesign_iat_button['url'] ?>" target="<?php echo $elitedesign_iat_button['target'] ?>" class="button arrow-btn fill"><?php echo $elitedesign_iat_button['title']; ?></a>
-						<?php } ?>
-					</div>
-				</div>
+	<div class="wrapper">
+		<div class="section-head mb-800">
+			<?php if($elitedesign_imgcollg_title) { ?>
+				<h2><?php echo $elitedesign_imgcollg_title; ?></h2>
+				<?php } ?>
+				
 			</div>
-		</section>
+			
+			<?php if($elitedesign_collage_images) { ?>
+				<div class="image-collage-ctn three-cols flexarea">
+					<?php 
+					foreach ($elitedesign_collage_images as $image_collage) {
+
+						$image = $image_collage['image'];
+
+						?>
+						<div class="collage-image img-cover col">
+
+							<img src="<?php echo $image; ?>" alt="">
+							
+						</div>
+
+					<?php } ?>
+					
+				</div>
+			<?php } ?>
+	</div>
 
 </div>
