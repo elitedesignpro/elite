@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package BaseTheme Package
+ * @package ELITE Design
  * @since 1.0.0
  *
  */
@@ -34,9 +34,9 @@ $ccss 			= (isset($option_fields['custom_css'])) ? $option_fields['custom_css'] 
 $hscripts 			= (isset($option_fields['head_scripts'])) ? $option_fields['head_scripts'] : null;
 $bscripts 			= (isset($option_fields['body_scripts'])) ? $option_fields['body_scripts'] : null;
 
-$basethemevar_tohdr_btn = $option_fields["basethemevar_tohdr_btn"];
-$basethemevar_tohdr_btn_two = $option_fields["basethemevar_tohdr_btn_two"];
-$basethemevar_tohdr_tbar = $option_fields["basethemevar_tohdr_tbar"];
+$elitedesign_tohdr_btn = $option_fields["elitedesign_tohdr_btn"];
+$elitedesign_tohdr_btn_two = $option_fields["elitedesign_tohdr_btn_two"];
+$elitedesign_tohdr_tbar = $option_fields["elitedesign_tohdr_tbar"];
 // Page variables - Advanced custom fields variables
 ?>
 <!DOCTYPE html>
@@ -63,7 +63,7 @@ $basethemevar_tohdr_tbar = $option_fields["basethemevar_tohdr_tbar"];
 	<link rel="manifest" href="<?php echo esc_url( get_template_directory_uri()) ?>/assets/img/pwa/site.webmanifest">
 	<meta name="theme-color" content="#0047FE">
 	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="application-name" content="BaseTheme Package">
+	<meta name="application-name" content="ELITE Design">
 	<!-- Windows Phone -->
 	<meta name="msapplication-navbutton_color" content="#0047FE">
 	<meta name="msapplication-TileColor" content="#0047FE">
@@ -96,38 +96,25 @@ $basethemevar_tohdr_tbar = $option_fields["basethemevar_tohdr_tbar"];
 
 <body <?php body_class(); ?>> <?php wp_body_open(); ?> <?php if ( $bscripts != '' ) { ?> <div style="display: none;">
 		<?php echo html_entity_decode($bscripts,ENT_QUOTES); ?> </div> <?php } ?> <a class="skip-link screen-reader-text"
-		href="#page-section"><?php esc_html_e( 'Skip to content', 'basetheme_td' ); ?></a>
+		href="#page-section"><?php esc_html_e( 'Skip to content', 'elitedesign_td' ); ?></a>
 	<header id="header-section" class="header-section">
 		<!-- Header Start -->
-
-		<div class="header-wrapper header-inner d-flex align-items-center justify-content-between">
-			<div class="header-logo logo">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img
-						src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/site-logo.svg"
+		<div class="header-wrapper header-inner">
+			<div class="header-logo">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+					<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/site-logo.svg"
 						alt="Site Logo" /></a>
 			</div>
 			<div class="right-header header-navigation">
 				<div class="nav-overlay">
 					<div class="nav-container">
-						<div class="header-nav"> <?php wp_nav_menu(
+						<div class="header-nav animated-hover"> <?php wp_nav_menu(
 								array(
 									'theme_location' => 'header-nav',
 									'fallback_cb' => 'nav_fallback',
 								)
 							); ?> </div>
-							<?php if($basethemevar_tohdr_btn || $basethemevar_tohdr_btn_two){ ?>
-								<div class="header-btns desktop-hide">
-									<?php
-										if( $basethemevar_tohdr_btn ) {
-											echo glide_acf_button( $basethemevar_tohdr_btn, 'button' );
-										}
 
-										if( $basethemevar_tohdr_btn_two ){
-											echo glide_acf_button( $basethemevar_tohdr_btn_two, 'button' );
-										}
-									?>
-								</div>
-							<?php } ?>
 					</div>
 				</div>
 				<div class="menu-btn">
@@ -136,17 +123,11 @@ $basethemevar_tohdr_tbar = $option_fields["basethemevar_tohdr_tbar"];
 					<span class="bottom"></span>
 				</div>
 			</div>
-			<?php if($basethemevar_tohdr_btn || $basethemevar_tohdr_btn_two){ ?>
-				<div class="header-btns">
-					<?php
-						if( $basethemevar_tohdr_btn ) {
-							echo glide_acf_button( $basethemevar_tohdr_btn, 'button' );
-						}
-
-						if( $basethemevar_tohdr_btn_two ){
-							echo glide_acf_button( $basethemevar_tohdr_btn_two, 'button' );
-						}
-					?>
+			 <?php if($elitedesign_tohdr_btn){ ?>
+				 <div class="header-btns">
+					 <?php if( $elitedesign_tohdr_btn ) {
+							echo glide_acf_button( $elitedesign_tohdr_btn, 'button' );
+						} ?>
 				</div>
 			<?php } ?>
 			<!-- header buttons -->

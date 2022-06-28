@@ -32,7 +32,7 @@ basethemevar
 basethemefn
 
 * Theme Text Domain
-basetheme_td
+elitedesign_td
 
 * Theme gulp
 basetheme
@@ -51,7 +51,7 @@ basetheme
 Basetheme
 
 * Name
-Basetheme Package
+ELITE Design
 
 * Description
 Base theme for Glide Design projects.

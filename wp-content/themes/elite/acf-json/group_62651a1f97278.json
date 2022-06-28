@@ -5,7 +5,7 @@
         {
             "key": "field_62651a1fb45be",
             "label": "Title",
-            "name": "basethemevar_tblgho_title",
+            "name": "elitedesign_tblgho_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -24,7 +24,7 @@
         {
             "key": "field_62651a1fb81bf",
             "label": "Feature Post",
-            "name": "basethemevar_tblgho_feature_post",
+            "name": "elitedesign_tblgho_feature_post",
             "type": "relationship",
             "instructions": "",
             "required": 0,
@@ -67,5 +67,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1651010309
+    "modified": 16510103012
 }

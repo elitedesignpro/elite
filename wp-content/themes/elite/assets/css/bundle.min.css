@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-Theme Name: BaseTheme Package
+Theme Name: ELITE Design
 Theme URI: http://glidedesign.com
 Author: Team Glide
 Author URI: http://glidedesign.com/team
@@ -2628,7 +2628,7 @@ header.shrink {
           box-shadow: 0px -4px 16px rgba(18, 27, 32, 0.15);
 }
 header .header-wrapper {
-  max-width: 1600px;
+  max-width: 1350px;
   margin: 0 auto;
 }
 
@@ -2716,7 +2716,7 @@ body.logged-in.admin-bar header {
 .header-nav ul li a,
 .header-nav ul li a:visited {
   display: inline-block;
-  line-height: 1;
+  line-height: 1.6;
   border: 0;
   position: relative;
   font-size: 22px;
@@ -3183,7 +3183,7 @@ body.logged-in.admin-bar header {
 .footer-logo {
   line-height: 0.65;
   margin-bottom: 9.5rem;
-  max-width: 230px;
+  max-width: 202px;
 }
 .footer-logo a,
 .footer-logo a:visited {

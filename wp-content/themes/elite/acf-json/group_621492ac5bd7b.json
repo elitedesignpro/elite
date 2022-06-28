@@ -5,7 +5,7 @@
         {
             "key": "field_621492ba79cca",
             "label": "Testimonial",
-            "name": "basethemevar_cpt_testimonial_text",
+            "name": "elitedesign_cpt_testimonial_text",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -41,5 +41,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1645520333
+    "modified": 1645520339
 }

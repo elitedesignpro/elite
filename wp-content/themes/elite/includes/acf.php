@@ -4,7 +4,7 @@
  *
  * @link https://www.advancedcustomfields.com/resources/
  *
- * @package BaseTheme Package
+ * @package ELITE Design
  * @since 1.0.0
  *
  */
@@ -31,7 +31,7 @@ function glide_acf_block_callback( $block ) {
 function glide_blocks_category( $categories ) {
     $custom_block = array(
         'slug'  => 'glide-blocks',
-		'title' => __( 'Glide Blocks', 'basetheme_td' ),
+		'title' => __( 'Glide Blocks', 'elitedesign_td' ),
 		'icon'  => 'glide-blocks',
     );
 
@@ -52,8 +52,8 @@ add_filter( 'block_categories_all', 'glide_blocks_category', 10, 2);
  */
 if( function_exists('acf_add_options_page') ) {
   $option_page = acf_add_options_page(array(
-		'page_title' 	=> __( 'Theme Options', 'basetheme_td' ),
-		'menu_title' 	=> __( 'Theme Options', 'basetheme_td' ),
+		'page_title' 	=> __( 'Theme Options', 'elitedesign_td' ),
+		'menu_title' 	=> __( 'Theme Options', 'elitedesign_td' ),
 		'menu_slug' 	=> 'acf-options',
 		'capability' 	=> 'edit_posts',
 		'redirect' 		=> false,
@@ -172,8 +172,8 @@ function html_entity_remove($string){
 
 function wysiwyg_render_field_settings( $field ) {
 	acf_render_field_setting( $field, array(
-		'label'			=> __('Height of Editor', 'basetheme_td'),
-		'instructions'	=> __('Height of Editor after Init', 'basetheme_td'),
+		'label'			=> __('Height of Editor', 'elitedesign_td'),
+		'instructions'	=> __('Height of Editor after Init', 'elitedesign_td'),
 		'name'			=> 'wysiwyg_height',
 		'type'			=> 'number',
 	));

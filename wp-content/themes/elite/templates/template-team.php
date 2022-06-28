@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/
  *
- * @package BaseTheme Package
+ * @package ELITE Design
  * @since 1.0.0
  *
  */
@@ -20,7 +20,7 @@ global $option_fields;
 global $pID;
 global $fields;
 
-$basethemevar_trcho_feature_post = $fields['basethemevar_trcho_feature_post'];
+$elitedesign_trcho_feature_post = $fields['elitedesign_trcho_feature_post'];
 
 ?>
 

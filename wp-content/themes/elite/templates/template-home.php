@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/
  *
- * @package BaseTheme Package
+ * @package ELITE Design
  * @since 1.0.0
  *
  */
@@ -20,13 +20,13 @@ global $option_fields;
 global $pID;
 global $fields;
 
-$basethemevar_pagetitle = (isset($fields['basethemevar_pagetitle']) && $fields['basethemevar_pagetitle']!='' ) ? $fields['basethemevar_pagetitle'] : get_the_title();
+$elitedesign_pagetitle = (isset($fields['elitedesign_pagetitle']) && $fields['elitedesign_pagetitle']!='' ) ? $fields['elitedesign_pagetitle'] : get_the_title();
 
 ?> <section id="hero-section" class="hero-section">
 	<!-- Hero Start -->
 	<div class="hero-single">
 		<div class="wrapper">
-			<h1><?php echo $basethemevar_pagetitle; ?></h1>
+			<h1><?php echo $elitedesign_pagetitle; ?></h1>
 		</div>
 	</div>
 	<!-- Hero End -->

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package BaseTheme Package
+ * @package ELITE Design
  * @since 1.0.0
  */
 

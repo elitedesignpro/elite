@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/
  *
- * @package BaseTheme Package
+ * @package ELITE Design
  * @since 1.0.0
  *
  */
@@ -19,7 +19,7 @@ global $option_fields;
 global $pID;
 global $fields;
 
-$basethemevar_trcho_feature_post = $fields['basethemevar_trcho_feature_post']; ?>
+$elitedesign_trcho_feature_post = $fields['elitedesign_trcho_feature_post']; ?>
 
 <section id="hero-section" class="hero-section">
 	<div class="blog-hero">
@@ -30,7 +30,7 @@ $basethemevar_trcho_feature_post = $fields['basethemevar_trcho_feature_post']; ?
 			<div class="s-80"></div>
 			<?php
 			global $post;
-			if($basethemevar_trcho_feature_post){ ?> <?php foreach ($basethemevar_trcho_feature_post as $key => $feature_post) {
+			if($elitedesign_trcho_feature_post){ ?> <?php foreach ($elitedesign_trcho_feature_post as $key => $feature_post) {
 				$post 			= $feature_post;
 				setup_postdata( $post );
 				$pID         	= $post->ID;
@@ -76,12 +76,12 @@ $basethemevar_trcho_feature_post = $fields['basethemevar_trcho_feature_post']; ?
 			global $paged;
 			$args = array(
 				'post_type'              => array( 'resource' ),
-				// 'meta_key' => 'basethemevar_trcho_feature_post',
+				// 'meta_key' => 'elitedesign_trcho_feature_post',
 				'posts_per_page'         => 9, //how many posts you need
 				'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
 				// 'meta_query' => array(
 				// 	array(
-				// 		'key'     => 'basethemevar_trcho_feature_post',
+				// 		'key'     => 'elitedesign_trcho_feature_post',
 				// 		'value'   => '1',
 				// 		'compare' => '!=',
 				// 	)

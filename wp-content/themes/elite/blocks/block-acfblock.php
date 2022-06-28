@@ -6,7 +6,7 @@
  *
  * @link https://www.advancedcustomfields.com/resources/blocks/
  *
- * @package BaseTheme Package
+ * @package ELITE Design
  * @since 1.0.0
  */
 

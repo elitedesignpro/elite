@@ -4,7 +4,7 @@
  *
  * @link https://www.advancedcustomfields.com/resources/blocks/
  *
- * @package BaseTheme Package
+ * @package ELITE Design
  * @since 1.0.0
  *
  */
@@ -21,8 +21,8 @@ function glide_theme_acf_init() {
 		acf_register_block(
 			array(
 				'name'            => 'spacer',
-				'title'           => __( 'Theme Spacer', 'basetheme_td' ),
-				'description'     => __( 'A custom spacer block for theme.', 'basetheme_td' ),
+				'title'           => __( 'Theme Spacer', 'elitedesign_td' ),
+				'description'     => __( 'A custom spacer block for theme.', 'elitedesign_td' ),
 				'render_callback' => 'glide_acf_block_callback',
 				'category'        => 'glide-blocks',
 				'icon'            => '<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -67,8 +67,8 @@ function glide_theme_acf_init() {
 		acf_register_block(
 			array(
 				'name'            => 'button',
-				'title'           => __( 'Theme Buttons', 'basetheme_td' ),
-				'description'     => __( 'A custom button block with theme styles.', 'basetheme_td' ),
+				'title'           => __( 'Theme Buttons', 'elitedesign_td' ),
+				'description'     => __( 'A custom button block with theme styles.', 'elitedesign_td' ),
 				'render_callback' => 'glide_acf_block_callback',
 				'category'        => 'glide-blocks',
 				'icon'            => '<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -118,8 +118,8 @@ function glide_theme_acf_init() {
 		acf_register_block(
 			array(
 				'name'            => 'acfblock',
-				'title'           => __( 'ACFBlock', 'basetheme_td' ),
-				'description'     => __( 'A custom ACFBlock.', 'basetheme_td' ),
+				'title'           => __( 'ACFBlock', 'elitedesign_td' ),
+				'description'     => __( 'A custom ACFBlock.', 'elitedesign_td' ),
 				'render_callback' => 'glide_acf_block_callback',
 				'category'        => 'glide-blocks',
 				'icon'            => 'images-alt2',
@@ -148,8 +148,8 @@ function glide_theme_acf_init() {
 		acf_register_block(
 			array(
 				'name'            => 'image-alongside-text',
-				'title'           => __( 'Image Alongside Text', 'basetheme_td' ),
-				'description'     => __( 'A custom image alongside text.', 'basetheme_td' ),
+				'title'           => __( 'Image Alongside Text', 'elitedesign_td' ),
+				'description'     => __( 'A custom image alongside text.', 'elitedesign_td' ),
 				'render_callback' => 'glide_acf_block_callback',
 				'category'        => 'glide-blocks',
 				'icon'            => '<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -198,8 +198,8 @@ function glide_theme_acf_init() {
 		acf_register_block(
 			array(
 				'name'            => 'image-alongside-text',
-				'title'           => __( 'AKJSD HGAJHD', 'basetheme_td' ),
-				'description'     => __( 'A custom AKJSD HGAJHD.', 'basetheme_td' ),
+				'title'           => __( 'AKJSD HGAJHD', 'elitedesign_td' ),
+				'description'     => __( 'A custom AKJSD HGAJHD.', 'elitedesign_td' ),
 				'render_callback' => 'glide_acf_block_callback',
 				'category'        => 'glide-blocks',
 				'icon'            => '<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">

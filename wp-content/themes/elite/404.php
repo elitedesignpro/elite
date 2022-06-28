@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package BaseTheme Package
+ * @package ELITE Design
  * @since 1.0.0
  */
 
@@ -17,22 +17,22 @@ global $pID;
 global $fields;
 
 // 404 Page - Advanced custom fields variables
-$basethemevar_error_headline		 	= html_entity_decode($option_fields['basethemevar_error_headline']);
-$basethemevar_error_sub_headline 		= html_entity_decode($option_fields['basethemevar_error_sub_headline']);
+$elitedesign_error_headline		 	= html_entity_decode($option_fields['elitedesign_error_headline']);
+$elitedesign_error_sub_headline 		= html_entity_decode($option_fields['elitedesign_error_sub_headline']);
 
-$basethemevar_error_text 				= html_entity_decode($option_fields['basethemevar_error_text']);
-$basethemevar_error_menu 				= html_entity_decode($option_fields['basethemevar_error_menu']);
-$basethemevar_error_menu_bottom_text 	= html_entity_decode($option_fields['basethemevar_error_menu_bottom_text']);
-$basethemevar_error_search 				= html_entity_decode($option_fields['basethemevar_error_search']);
+$elitedesign_error_text 				= html_entity_decode($option_fields['elitedesign_error_text']);
+$elitedesign_error_menu 				= html_entity_decode($option_fields['elitedesign_error_menu']);
+$elitedesign_error_menu_bottom_text 	= html_entity_decode($option_fields['elitedesign_error_menu_bottom_text']);
+$elitedesign_error_search 				= html_entity_decode($option_fields['elitedesign_error_search']);
 
 ?> <section id="hero-section" class="hero-section">
 	<!-- Hero Start -->
 	<section class="m-section">
 		<div class="hero-single center-align error-page-hero">
 			<div class="wrapper">
-				<h1><?php echo $basethemevar_error_headline; ?></h1>
+				<h1><?php echo $elitedesign_error_headline; ?></h1>
 				<div class="banner-text">
-					<p><?php echo $basethemevar_error_sub_headline; ?></p>
+					<p><?php echo $elitedesign_error_sub_headline; ?></p>
 				</div>
 			</div>
 		</div>
@@ -44,12 +44,12 @@ $basethemevar_error_search 				= html_entity_decode($option_fields['basethemevar
 	<div class="m-section">
 		<div class="wrapper">
 			<section class="error-404 not-found">
-				<div class="inner-content"> <?php if ( $basethemevar_error_text ) { ?> <?php echo $basethemevar_error_text; ?>
-					<?php } ?> <?php if ( $basethemevar_error_menu ) { ?> <div class="error">
-						<?php echo $basethemevar_error_menu; ?> </div> <?php } ?> <div class="clear"></div>
-					<div class="form-404"> <?php if ( $basethemevar_error_menu_bottom_text ) { ?>
-						<?php echo $basethemevar_error_menu_bottom_text; ?> <?php } ?>
-						<?php if ( $basethemevar_error_search != 1 ) { ?> <?php get_search_form(); ?> <?php } ?> </div>
+				<div class="inner-content"> <?php if ( $elitedesign_error_text ) { ?> <?php echo $elitedesign_error_text; ?>
+					<?php } ?> <?php if ( $elitedesign_error_menu ) { ?> <div class="error">
+						<?php echo $elitedesign_error_menu; ?> </div> <?php } ?> <div class="clear"></div>
+					<div class="form-404"> <?php if ( $elitedesign_error_menu_bottom_text ) { ?>
+						<?php echo $elitedesign_error_menu_bottom_text; ?> <?php } ?>
+						<?php if ( $elitedesign_error_search != 1 ) { ?> <?php get_search_form(); ?> <?php } ?> </div>
 					<!--404-form-->
 				</div><!-- .inner-content -->
 			</section><!-- .error-404 -->

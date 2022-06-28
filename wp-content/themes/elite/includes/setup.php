@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package BaseTheme Package
+ * @package ELITE Design
  * @since 1.0.0
  */
 
@@ -15,7 +15,7 @@ if ( ! function_exists( 'glide_setup_function' ) ) {
 
 	function glide_setup_function() {
 		// Make theme available for translation.
-		load_theme_textdomain( 'basetheme_td' );
+		load_theme_textdomain( 'elitedesign_td' );
 
 		// Let WordPress manage the document title.
 		add_theme_support( 'title-tag' );
@@ -52,11 +52,11 @@ if ( ! function_exists( 'glide_setup_function' ) ) {
 		// Register wp_nav_menu() menus
 		register_nav_menus(
 			array(
-				'header-nav'   => __( 'Header Nav', 'basetheme_td' ),
-				'footer-nav-one' => __( 'Footer Nav One', 'basetheme_td' ),
-				'footer-nav-two' => __( 'Footer Nav Two', 'basetheme_td' ),
-				'footer-nav-three' => __( 'Footer Nav Three', 'basetheme_td' ),
-				'legal-nav' => __( 'Legal Nav', 'basetheme_td' ),
+				'header-nav'   => __( 'Header Nav', 'elitedesign_td' ),
+				'footer-nav-one' => __( 'Footer Nav One', 'elitedesign_td' ),
+				'footer-nav-two' => __( 'Footer Nav Two', 'elitedesign_td' ),
+				'footer-nav-three' => __( 'Footer Nav Three', 'elitedesign_td' ),
+				'legal-nav' => __( 'Legal Nav', 'elitedesign_td' ),
 			)
 		);
 
@@ -180,10 +180,10 @@ function glide_register_required_plugins() {
         'is_automatic' => false,                   // Automatically activate plugins after installation or not.
         'message'      => '',                      // Message to output right before the plugins table.
         'strings'      => array(
-            'page_title'                      => __( 'Install Required Plugins', 'basetheme_td' ),
-            'menu_title'                      => __( 'Plugin Installer', 'basetheme_td' ),
-            'installing'                      => __( 'Installing Plugin: %s', 'basetheme_td' ), // %s = plugin name.
-            'oops'                            => __( 'Something went wrong with the plugin API.', 'basetheme_td' ),
+            'page_title'                      => __( 'Install Required Plugins', 'elitedesign_td' ),
+            'menu_title'                      => __( 'Plugin Installer', 'elitedesign_td' ),
+            'installing'                      => __( 'Installing Plugin: %s', 'elitedesign_td' ), // %s = plugin name.
+            'oops'                            => __( 'Something went wrong with the plugin API.', 'elitedesign_td' ),
             'notice_can_install_required'     => _n_noop( 'This theme requires the following plugin: %1$s.', 'This theme requires the following plugins: %1$s.' ), // %1$s = plugin name(s).
             'notice_can_install_recommended'  => _n_noop( 'This theme recommends the following plugin: %1$s.', 'This theme recommends the following plugins: %1$s.' ), // %1$s = plugin name(s).
             'notice_cannot_install'           => _n_noop( 'Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.' ), // %1$s = plugin name(s).
@@ -194,9 +194,9 @@ function glide_register_required_plugins() {
             'notice_cannot_update'            => _n_noop( 'Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.' ), // %1$s = plugin name(s).
             'install_link'                    => _n_noop( 'Begin installing plugin', 'Begin installing plugins' ),
             'activate_link'                   => _n_noop( 'Begin activating plugin', 'Begin activating plugins' ),
-            'return'                          => __( 'Return to Required Plugins Installer', 'basetheme_td' ),
-            'plugin_activated'                => __( 'Plugin activated successfully.', 'basetheme_td' ),
-            'complete'                        => __( 'All plugins installed and activated successfully. %s', 'basetheme_td' ), // %s = dashboard link.
+            'return'                          => __( 'Return to Required Plugins Installer', 'elitedesign_td' ),
+            'plugin_activated'                => __( 'Plugin activated successfully.', 'elitedesign_td' ),
+            'complete'                        => __( 'All plugins installed and activated successfully. %s', 'elitedesign_td' ), // %s = dashboard link.
             'nag_type'                        => 'updated' // Determines admin notice type - can only be 'updated', 'update-nag' or 'error'.
         )
     );

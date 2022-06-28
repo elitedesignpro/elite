@@ -5,7 +5,7 @@
         {
             "key": "field_617007cdbe35b",
             "label": "Custom Author Avatar",
-            "name": "basethemevar_author_avatar",
+            "name": "elitedesign_author_avatar",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -45,5 +45,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1651010603
+    "modified": 1651010609
 }

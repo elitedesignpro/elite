@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package BaseTheme Package
+ * @package ELITE Design
  * @since 1.0.0
  */
 
@@ -16,10 +16,10 @@ if (function_exists('get_fields') && function_exists('get_fields_escaped')) {
 }
 
 // Post Tags & Categories
-// $basethemevar_post_tags = get_the_tags($pID);
-$basethemevar_post_categories = get_categories($pID);
+// $elitedesign_post_tags = get_the_tags($pID);
+$elitedesign_post_categories = get_categories($pID);
 
-$basethemevar_posttitle=glide_page_title('basethemevar_posttitle');
+$elitedesign_posttitle=glide_page_title('elitedesign_posttitle');
 
 ?>
 
@@ -38,9 +38,9 @@ $basethemevar_posttitle=glide_page_title('basethemevar_posttitle');
 		</div><!-- .post-image -->
 		<div class="post-meta d-flex justify-content-between align-items-center">
 			<!-- /.post-tags -->
-			<?php if($basethemevar_post_categories){ ?>
+			<?php if($elitedesign_post_categories){ ?>
 				<div class="post-cat">
-					<?php foreach ($basethemevar_post_categories as $category ) { ?>
+					<?php foreach ($elitedesign_post_categories as $category ) { ?>
 						<a href="<?php echo get_category_link($category); ?>"><?php echo $category->name; ?></a>
 					<?php } ?>
 				</div>
@@ -87,8 +87,8 @@ $basethemevar_posttitle=glide_page_title('basethemevar_posttitle');
 			wp_reset_query();
 			wp_reset_postdata();
 
-			$basethemevar_rp_selection_criteria = isset($fields['basethemevar_rp_selection_criteria']) ? $fields['basethemevar_rp_selection_criteria'] : null;
-			if($basethemevar_rp_selection_criteria == 'random'){
+			$elitedesign_rp_selection_criteria = isset($fields['elitedesign_rp_selection_criteria']) ? $fields['elitedesign_rp_selection_criteria'] : null;
+			if($elitedesign_rp_selection_criteria == 'random'){
 
 				$args = array(
 					'posts_per_page' => 3,
@@ -110,12 +110,12 @@ $basethemevar_posttitle=glide_page_title('basethemevar_posttitle');
 			}
 			else {
 				global $post;
-				$basethemevar_selected_posts = array();
-				$basethemevar_selected_posts = isset($fields['basethemevar_rp_selected_posts']) ? $fields['basethemevar_rp_selected_posts'] : null;
-				if ( $basethemevar_selected_posts ) { ?> <div class="related-posts ">
-				<h3><?php _e( 'Related Posts', 'basetheme_td' ) ?></h3> <?php
-								foreach ( $basethemevar_selected_posts as $basethemevar_post ) {
-									$post = $basethemevar_post;
+				$elitedesign_selected_posts = array();
+				$elitedesign_selected_posts = isset($fields['elitedesign_rp_selected_posts']) ? $fields['elitedesign_rp_selected_posts'] : null;
+				if ( $elitedesign_selected_posts ) { ?> <div class="related-posts ">
+				<h3><?php _e( 'Related Posts', 'elitedesign_td' ) ?></h3> <?php
+								foreach ( $elitedesign_selected_posts as $elitedesign_post ) {
+									$post = $elitedesign_post;
 									setup_postdata( $post );
 									$pID         = $post->ID;
 									$post_fields = get_fields( $pID );

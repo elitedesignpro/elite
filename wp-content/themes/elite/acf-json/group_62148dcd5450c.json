@@ -3,9 +3,9 @@
     "title": "Options - Default Page Template",
     "fields": [
         {
-            "key": "field_62148df3095ba",
-            "label": "Title",
-            "name": "basethemevar_pagetitle",
+            "key": "field_62b9f362b0c85",
+            "label": "Kicker",
+            "name": "elitedesign_dflt_hero_kicker",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -20,6 +20,74 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_62148df3095ba",
+            "label": "Title",
+            "name": "elitedesign_dflt_hero_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62b9f2e3b0c81",
+            "label": "Text",
+            "name": "elitedesign_dflt_hero_text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_62b9f335b0c83",
+            "label": "Button #1",
+            "name": "elitedesign_dflt_hero_btn_one",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_62b9f34db0c84",
+            "label": "Button #2",
+            "name": "elitedesign_dflt_hero_btn_two",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         }
     ],
     "location": [
@@ -40,5 +108,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1645514598
+    "modified": 16563538992
 }

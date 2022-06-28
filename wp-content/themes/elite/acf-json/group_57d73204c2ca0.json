@@ -19,9 +19,40 @@
             "endpoint": 0
         },
         {
-            "key": "field_627944609e9f4",
-            "label": "Top bar",
-            "name": "basethemevar_tohdr_tbar",
+            "key": "field_5ed4cfcc4548c",
+            "label": "Button",
+            "name": "elitedesign_tohdr_btn",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_62b9d08fdf42c",
+            "label": "Footer CTA",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_62b9d0acdf42d",
+            "label": "Title",
+            "name": "elitedesign_ftrcta_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -38,24 +69,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_5ed4cfcc4548c",
+            "key": "field_62b9d5e787a82",
             "label": "Button",
-            "name": "basethemevar_tohdr_btn",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array"
-        },
-        {
-            "key": "field_62685c755920a",
-            "label": "Button Two",
-            "name": "basethemevar_tohdr_btn_two",
+            "name": "elitedesign_ftrcta_button",
             "type": "link",
             "instructions": "",
             "required": 0,
@@ -101,15 +117,15 @@
             "esc_html": 0
         },
         {
-            "key": "field_6231ae11e61b4",
-            "label": "Title",
-            "name": "basethemevar_ftrop_title",
-            "type": "text",
+            "key": "field_62b9dfe518527",
+            "label": "Phone",
+            "name": "elitedesign_ftr_phone",
+            "type": "number",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -117,32 +133,32 @@
             "placeholder": "",
             "prepend": "",
             "append": "",
-            "maxlength": ""
+            "min": "",
+            "max": "",
+            "step": ""
         },
         {
-            "key": "field_62669b7be5b29",
-            "label": "Text",
-            "name": "basethemevar_ftrop_text",
-            "type": "wysiwyg",
+            "key": "field_62b9e08518528",
+            "label": "Email",
+            "name": "elitedesign_ftr_email",
+            "type": "email",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 0,
-            "delay": 0,
-            "wysiwyg_height": ""
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
-            "key": "field_62683b44efa45",
+            "key": "field_62b9f93e46662",
             "label": "Copyright",
-            "name": "basethemevar_ftrop_copyright",
+            "name": "elitedesign_ftr_copyright_text",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -177,7 +193,7 @@
         {
             "key": "field_5efdbecbd7e5d",
             "label": "Facebook",
-            "name": "basethemevar_social_fb",
+            "name": "elitedesign_social_fb",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -196,7 +212,7 @@
         {
             "key": "field_5efdbe62d7e5c",
             "label": "Twitter",
-            "name": "basethemevar_social_tw",
+            "name": "elitedesign_social_tw",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -215,7 +231,7 @@
         {
             "key": "field_5efdbf23d7e60",
             "label": "LinkedIn",
-            "name": "basethemevar_social_li",
+            "name": "elitedesign_social_li",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -234,7 +250,7 @@
         {
             "key": "field_5fbe5285de720",
             "label": "Instagram",
-            "name": "basethemevar_social_in",
+            "name": "elitedesign_social_in",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -269,7 +285,7 @@
         {
             "key": "field_5f155870824c6",
             "label": "Headline",
-            "name": "basethemevar_error_headline",
+            "name": "elitedesign_error_headline",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -288,7 +304,7 @@
         {
             "key": "field_5ef592a177323",
             "label": "Sub Headline",
-            "name": "basethemevar_error_sub_headline",
+            "name": "elitedesign_error_sub_headline",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -307,7 +323,7 @@
         {
             "key": "field_5ef592de77324",
             "label": "Text",
-            "name": "basethemevar_error_text",
+            "name": "elitedesign_error_text",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -327,7 +343,7 @@
         {
             "key": "field_5ef592f877325",
             "label": "Select Menu",
-            "name": "basethemevar_error_menu",
+            "name": "elitedesign_error_menu",
             "type": "nav_menu",
             "instructions": "",
             "required": 0,
@@ -344,7 +360,7 @@
         {
             "key": "field_5ef5934c77327",
             "label": "Menu Bottom Text",
-            "name": "basethemevar_error_menu_bottom_text",
+            "name": "elitedesign_error_menu_bottom_text",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -364,7 +380,7 @@
         {
             "key": "field_5ef5930e77326",
             "label": "Hide Search",
-            "name": "basethemevar_error_search",
+            "name": "elitedesign_error_search",
             "type": "true_false",
             "instructions": "",
             "required": 0,
@@ -510,7 +526,7 @@
         {
             "key": "field_617802fe272ed",
             "label": "Schema Markup",
-            "name": "basethemevar_schema_check",
+            "name": "elitedesign_schema_check",
             "type": "true_false",
             "instructions": "",
             "required": 0,
@@ -554,7 +570,7 @@
         {
             "key": "field_5b05557b16c16",
             "label": "Business Name",
-            "name": "basethemevar_schema_business_name",
+            "name": "elitedesign_schema_business_name",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -581,7 +597,7 @@
         {
             "key": "field_5b05572916c17",
             "label": "Business Legal Name",
-            "name": "basethemevar_schema_business_legal_name",
+            "name": "elitedesign_schema_business_legal_name",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -608,7 +624,7 @@
         {
             "key": "field_6178ddeab7b2c",
             "label": "Type",
-            "name": "basethemevar_schema_type",
+            "name": "elitedesign_schema_type",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -635,7 +651,7 @@
         {
             "key": "field_5b05579116c18",
             "label": "Street Address",
-            "name": "basethemevar_schema_street_address",
+            "name": "elitedesign_schema_street_address",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -662,7 +678,7 @@
         {
             "key": "field_5b0557ae16c19",
             "label": "Locality",
-            "name": "basethemevar_schema_locality",
+            "name": "elitedesign_schema_locality",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -689,7 +705,7 @@
         {
             "key": "field_5b0557c016c1a",
             "label": "Region",
-            "name": "basethemevar_schema_region",
+            "name": "elitedesign_schema_region",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -716,7 +732,7 @@
         {
             "key": "field_5b0557d016c1b",
             "label": "Postal Code",
-            "name": "basethemevar_schema_postal_code",
+            "name": "elitedesign_schema_postal_code",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -743,7 +759,7 @@
         {
             "key": "field_5b0d6805332ab",
             "label": "Map Short Link",
-            "name": "basethemevar_schema_map_short_link",
+            "name": "elitedesign_schema_map_short_link",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -770,7 +786,7 @@
         {
             "key": "field_5b0557fb16c1c",
             "label": "Latitude",
-            "name": "basethemevar_schema_latitude",
+            "name": "elitedesign_schema_latitude",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -797,7 +813,7 @@
         {
             "key": "field_5b05580b16c1d",
             "label": "Longitude",
-            "name": "basethemevar_schema_longitude",
+            "name": "elitedesign_schema_longitude",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -824,7 +840,7 @@
         {
             "key": "field_5b05582016c1e",
             "label": "Opening Hours",
-            "name": "basethemevar_schema_opening_hours",
+            "name": "elitedesign_schema_opening_hours",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -851,7 +867,7 @@
         {
             "key": "field_5b05584616c1f",
             "label": "Telephone",
-            "name": "basethemevar_schema_telephone",
+            "name": "elitedesign_schema_telephone",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -878,7 +894,7 @@
         {
             "key": "field_5b05587516c20",
             "label": "Business Email",
-            "name": "basethemevar_schema_business_email",
+            "name": "elitedesign_schema_business_email",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -905,7 +921,7 @@
         {
             "key": "field_5b0558dd16c21",
             "label": "Business Image \/ Logo",
-            "name": "basethemevar_schema_business_logo",
+            "name": "elitedesign_schema_business_logo",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -937,7 +953,7 @@
         {
             "key": "field_5b0562f5ca9f8",
             "label": "Price Range",
-            "name": "basethemevar_schema_price_range",
+            "name": "elitedesign_schema_price_range",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -980,5 +996,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1652114713
+    "modified": 1656355179
 }

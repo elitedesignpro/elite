@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/
  *
- * @package BaseTheme Package
+ * @package ELITE Design
  * @since 1.0.0
  *
  */
@@ -21,16 +21,16 @@ global $pID;
 global $fields;
 
 
-$basethemevar_tblgho_feature_post 	= $fields['basethemevar_tblgho_feature_post'];
-$basethemevar_author_avatar 		= $fields['basethemevar_author_avatar'];
-$basethemevar_pagetitle = (isset($fields['basethemevar_tblgho_title']) && $fields['basethemevar_tblgho_title']!='' ) ? $fields['basethemevar_tblgho_title'] : get_the_title();
+$elitedesign_tblgho_feature_post 	= $fields['elitedesign_tblgho_feature_post'];
+$elitedesign_author_avatar 		= $fields['elitedesign_author_avatar'];
+$elitedesign_pagetitle = (isset($fields['elitedesign_tblgho_title']) && $fields['elitedesign_tblgho_title']!='' ) ? $fields['elitedesign_tblgho_title'] : get_the_title();
 
 // $categories=get_categories(array(
 // 	'hide_empty' 	=> false,
 // ));
 
-$basethemevar_post_catagories = get_categories($pID);
-// var_dump($basethemevar_post_catagories);
+$elitedesign_post_catagories = get_categories($pID);
+// var_dump($elitedesign_post_catagories);
 
 
 
@@ -38,14 +38,14 @@ $basethemevar_post_catagories = get_categories($pID);
 <div class="blog-hero">
 	<div class="wrapper">
 		<div class="banner-content">
-			<h1><?php echo $basethemevar_pagetitle; ?></h1>
+			<h1><?php echo $elitedesign_pagetitle; ?></h1>
 		</div>
 		<div class="s-50"></div>
 		<div class="blog-nav">
 			<div class="nav-ctn d-flex justify-content-center flex-wrap">
-				<?php if($basethemevar_post_catagories){ ?>
+				<?php if($elitedesign_post_catagories){ ?>
 					<ul>
-						<?php foreach ($basethemevar_post_catagories as $category ) { ?>
+						<?php foreach ($elitedesign_post_catagories as $category ) { ?>
 							<li><a href="<?php echo get_category_link($category); ?>"><?php echo $category->name; ?></a></li>
 						<?php } ?>
 					</ul>
@@ -76,7 +76,7 @@ $basethemevar_post_catagories = get_categories($pID);
 		<div class="s-80"></div>
 		<?php
 		global $post;
-		if($basethemevar_tblgho_feature_post){ ?> <?php foreach ($basethemevar_tblgho_feature_post as $key => $feature_post) {
+		if($elitedesign_tblgho_feature_post){ ?> <?php foreach ($elitedesign_tblgho_feature_post as $key => $feature_post) {
 			$post = $feature_post;
 			setup_postdata( $post );
 			$pID         = $post->ID;
@@ -86,7 +86,7 @@ $basethemevar_post_catagories = get_categories($pID);
 			$parmalink = get_the_permalink($pID );
 			$post_tags=get_the_tags($feature_post->ID);
 			$author_name = get_the_author($pID);
-			$author_avatar = ($basethemevar_author_avatar)? $basethemevar_author_avatar : get_avatar_url($pID);
+			$author_avatar = ($elitedesign_author_avatar)? $elitedesign_author_avatar : get_avatar_url($pID);
 			// var_dump($author_avatar);
 
 			$image = get_the_post_thumbnail_url( $feature_post->ID,'full');

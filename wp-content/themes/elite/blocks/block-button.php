@@ -6,7 +6,7 @@
  *
  * @link https://www.advancedcustomfields.com/resources/blocks/
  *
- * @package BaseTheme Package
+ * @package ELITE Design
  * @since 1.0.0
  */
 
@@ -42,32 +42,32 @@ if($block['name']){
 }
 
 // Block variables
-// $basethemevar_blk_btn_variation = (isset($block_fields['basethemevar_blk_btn_variation'])) ? $block_fields['basethemevar_blk_btn_variation'] : null;
-$basethemevar_blk_btn_variation		 = html_entity_remove($block_fields['basethemevar_blk_btn_variation']);
-if($basethemevar_blk_btn_variation 	== 'single'){
-	$basethemevar_blk_button 		= html_entity_remove($block_fields['basethemevar_blk_button']);
-	$basethemevar_blk_btn_style 	= html_entity_remove($block_fields['basethemevar_blk_btn_style']);
-	if($basethemevar_blk_btn_style == 'de(fault'){
+// $elitedesign_blk_btn_variation = (isset($block_fields['elitedesign_blk_btn_variation'])) ? $block_fields['elitedesign_blk_btn_variation'] : null;
+$elitedesign_blk_btn_variation		 = html_entity_remove($block_fields['elitedesign_blk_btn_variation']);
+if($elitedesign_blk_btn_variation 	== 'single'){
+	$elitedesign_blk_button 		= html_entity_remove($block_fields['elitedesign_blk_button']);
+	$elitedesign_blk_btn_style 	= html_entity_remove($block_fields['elitedesign_blk_btn_style']);
+	if($elitedesign_blk_btn_style == 'de(fault'){
 		$block_btn_class = ' button ';
-	} else if($basethemevar_blk_btn_style == 'boxed') {
+	} else if($elitedesign_blk_btn_style == 'boxed') {
 		$block_btn_class = ' boxed button ';
 	}
 } else {
-	$basethemevar_blk_buttons 		= html_entity_remove( $block_fields['basethemevar_blk_buttons']);
+	$elitedesign_blk_buttons 		= html_entity_remove( $block_fields['elitedesign_blk_buttons']);
 }
 
 ?>
 <div id="<?php echo $id; ?>" class="<?php echo $align_class . ' ' . $class_name. ' ' . $name; ?> glide-block-<?php echo $block_glide_name; ?>">
 
 	<?php
-		if($basethemevar_blk_btn_variation == 'single'){
-			if( $basethemevar_blk_button ) :
-				echo glide_acf_button( $basethemevar_blk_button, $block_btn_class );
+		if($elitedesign_blk_btn_variation == 'single'){
+			if( $elitedesign_blk_button ) :
+				echo glide_acf_button( $elitedesign_blk_button, $block_btn_class );
 			endif;
 		} else {
 
-			if($basethemevar_blk_buttons){
-				foreach ($basethemevar_blk_buttons as $button ) {
+			if($elitedesign_blk_buttons){
+				foreach ($elitedesign_blk_buttons as $button ) {
 					$button_link = $button['button'];
 					$button_style = $button['style'];
 					if($button_style == 'default'){

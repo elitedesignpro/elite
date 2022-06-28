@@ -39,7 +39,7 @@
         {
             "key": "field_6178f0675c647",
             "label": "Select Variation",
-            "name": "basethemevar_blk_btn_variation",
+            "name": "elitedesign_blk_btn_variation",
             "type": "button_group",
             "instructions": "",
             "required": 0,
@@ -61,7 +61,7 @@
         {
             "key": "field_611938c557c59",
             "label": "Buttons",
-            "name": "basethemevar_blk_buttons",
+            "name": "elitedesign_blk_buttons",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -129,7 +129,7 @@
         {
             "key": "field_6178f214fa99f",
             "label": "Button",
-            "name": "basethemevar_blk_button",
+            "name": "elitedesign_blk_button",
             "type": "link",
             "instructions": "",
             "required": 0,
@@ -152,7 +152,7 @@
         {
             "key": "field_6178f22cfa9a0",
             "label": "Style",
-            "name": "basethemevar_blk_btn_style",
+            "name": "elitedesign_blk_btn_style",
             "type": "radio",
             "instructions": "",
             "required": 0,
@@ -199,5 +199,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1635319215
+    "modified": 1635319219
 }

@@ -1496,7 +1496,7 @@ Mixin for transition
           box-shadow: 0px -4px 16px rgba(18, 27, 32, 0.15);
 }
 .acf-block-preview header .header-wrapper {
-  max-width: 1600px;
+  max-width: 1350px;
   margin: 0 auto;
 }
 .acf-block-preview .logo {
@@ -1573,7 +1573,7 @@ Mixin for transition
 .acf-block-preview .header-nav ul li a,
 .acf-block-preview .header-nav ul li a:visited {
   display: inline-block;
-  line-height: 1;
+  line-height: 1.6;
   border: 0;
   position: relative;
   font-size: 22px;
@@ -1994,7 +1994,7 @@ Mixin for transition
 .acf-block-preview .footer-logo {
   line-height: 0.65;
   margin-bottom: 9.5rem;
-  max-width: 230px;
+  max-width: 202px;
 }
 .acf-block-preview .footer-logo a,
 .acf-block-preview .footer-logo a:visited {

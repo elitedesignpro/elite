@@ -5,7 +5,7 @@
         {
             "key": "field_6264575927105",
             "label": "Title",
-            "name": "basethemevar_trcho_title",
+            "name": "elitedesign_trcho_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -24,7 +24,7 @@
         {
             "key": "field_6264579727106",
             "label": "Feature Post",
-            "name": "basethemevar_trcho_feature_post",
+            "name": "elitedesign_trcho_feature_post",
             "type": "relationship",
             "instructions": "",
             "required": 0,
@@ -67,5 +67,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1651010753
+    "modified": 1651010759
 }

@@ -6,7 +6,7 @@
  *
  * @link https://www.advancedcustomfields.com/resources/blocks/
  *
- * @package BaseTheme Package
+ * @package ELITE Design
  * @since 1.0.0
  */
 
@@ -44,42 +44,46 @@ if($block['name']){
 
 // Block variables
 
-$basethemevar_iat_title 	= $block_fields['basethemevar_iat_title'];
-$basethemevar_iat_text 		= html_entity_decode($block_fields['basethemevar_iat_text']);
-$basethemevar_iat_button	= $block_fields['basethemevar_iat_button'];
-$basethemevar_iat_img_location 	= $block_fields['basethemevar_iat_img_location'];
-$basethemevar_iat_image 	= $block_fields['basethemevar_iat_image'];
+$elitedesign_iat_title 	= $block_fields['elitedesign_iat_title'];
+$elitedesign_iat_text 		= html_entity_decode($block_fields['elitedesign_iat_text']);
+$elitedesign_iat_button	= $block_fields['elitedesign_iat_button'];
+$elitedesign_iat_img_location 	= $block_fields['elitedesign_iat_img_location'];
+$elitedesign_iat_image 	= $block_fields['elitedesign_iat_image'];
 
 
-if($basethemevar_iat_img_location == 'left'){
-	$basethemevar_iat_img_location = "image-at-left";
+
+
+if($elitedesign_iat_img_location == 'left'){
+	$elitedesign_iat_img_location = "image-at-left";
 }else{
-	$basethemevar_iat_img_location = "image-at-right";
+	$elitedesign_iat_img_location = "image-at-right";
 }
 
 
 ?>
 <div id="<?php echo $id; ?>" class="<?php echo $align_class . ' ' . $class_name. ' ' . $name; ?> glide-block-<?php echo $block_glide_name; ?>">
 
-	<div class="iat-section two-columns justify-content-between align-items-center <?php echo $basethemevar_iat_img_location; ?>">
-		<div class="iat-text column">
-			<?php if($basethemevar_iat_title){ ?>
-				<h2><?php echo $basethemevar_iat_title; ?></h2>
-			<?php } ?>
-			<?php if ( $basethemevar_iat_text ) { ?>
-				<?php echo $basethemevar_iat_text; ?>
-			<?php } ?>
-			<?php if($basethemevar_iat_button){ ?>
-				<div class="iat-button">
-					<?php echo glide_acf_button($basethemevar_iat_button,'button'); ?>
+		<section>
+			<div class="wrapper">
+				<div class="iat-ctn flex <?php echo $elitedesign_iat_img_location; ?>">
+					<?php if($elitedesign_iat_image) { ?>
+						<div class="iat-img-area img-cover col-645 rd-10">
+							<img src="<?php echo $elitedesign_iat_image; ?>" alt="Image alongside text image" />
+						</div>
+					<?php } ?>
+					<div class="iat-content-area col-595">
+						<?php if($elitedesign_iat_title) { ?>
+							<h2><?php echo $elitedesign_iat_title; ?></h2>
+						<?php } ?>
+						<div class="big-body">
+							<?php echo $elitedesign_iat_text; ?>
+						</div>
+						<?php if($elitedesign_iat_button) { ?>
+						<a href="<?php echo $elitedesign_iat_button['url'] ?>" target="<?php echo $elitedesign_iat_button['target'] ?>" class="button arrow-btn fill"><?php echo $elitedesign_iat_button['title']; ?></a>
+						<?php } ?>
+					</div>
 				</div>
-			<?php } ?>
-		</div>
-		<?php if($basethemevar_iat_image){ ?>
-			<div class="iat-image column">
-				<img src="<?php echo wp_get_attachment_image_url( $basethemevar_iat_image, 'full' ); ?>" alt="">
 			</div>
-		<?php } ?>
-	</div>
+		</section>
 
 </div>

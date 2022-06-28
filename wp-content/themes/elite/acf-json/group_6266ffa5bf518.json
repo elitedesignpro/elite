@@ -5,7 +5,7 @@
         {
             "key": "field_6266ffadbf2f3",
             "label": "Designation",
-            "name": "basethemevar_cpt_team_designation",
+            "name": "elitedesign_cpt_team_designation",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -24,7 +24,7 @@
         {
             "key": "field_6266ffc1bf2f4",
             "label": "Text",
-            "name": "basethemevar_cpt_team_text",
+            "name": "elitedesign_cpt_team_text",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -60,5 +60,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1651143622
+    "modified": 1651143629
 }

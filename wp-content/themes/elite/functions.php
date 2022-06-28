@@ -6,7 +6,7 @@
  *
  * Please note that missing files will produce a fatal error.
  *
- * @package BaseTheme Package
+ * @package ELITE Design
  * @since 1.0.0
  */
 
@@ -30,7 +30,7 @@ $file_includes = array(
  */
 foreach ( $file_includes as $file ) {
 	if ( ! $filepath = locate_template( $file ) ) {
-		trigger_error( sprintf( __( 'Error locating %s for inclusion', 'basetheme_td' ), $file ), E_USER_ERROR );
+		trigger_error( sprintf( __( 'Error locating %s for inclusion', 'elitedesign_td' ), $file ), E_USER_ERROR );
 	}
 	require_once $filepath;
 }
