@@ -40,6 +40,30 @@
             "media_upload": 0,
             "delay": 0,
             "wysiwyg_height": ""
+        },
+        {
+            "key": "field_62debfbe5b7a4",
+            "label": "Image",
+            "name": "elitedesign_cpt_team_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -60,5 +84,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1651143629
+    "modified": 1658765983
 }

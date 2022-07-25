@@ -3,10 +3,13 @@
 	@include padding(55px);
 	@include border-radius(10px);
 
+	background-color: map-get( $map: $colors, $key: pink );
+
 	ul {
-		margin-bottom: 0;
+		margin: 40px 0 0;
 
 		li {
+			font-size: 20px;
 
 			&:last-child {
 				margin-bottom: 0;
@@ -15,10 +18,10 @@
 	}
 
 	&:nth-child(n + 3) {
-		margin-top: 36px;
+		margin-top: 20px;
 	}
-}
 
-.list-text {
-	margin-bottom: 4rem;
+	// &:nth-child(1n + 2) {
+	// 	background-color: map-get( $map: $colors, $key: lyellow );
+	// }
 }

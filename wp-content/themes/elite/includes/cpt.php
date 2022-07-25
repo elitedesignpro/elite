@@ -73,7 +73,6 @@ function register_cpt_testimonials() {
     register_post_type( $cpt_register_key, $args );
 }
 
-
 function register_cpt_resources() {
     //CPT Labels
     $cpt_singular_capital 		= 'Resource'; // Name of the post type shown in the menu
@@ -139,8 +138,6 @@ function register_cpt_resources() {
     );
     register_post_type( $cpt_register_key, $args );
 }
-
-
 
 function register_cpt_services() {
     //CPT Labels

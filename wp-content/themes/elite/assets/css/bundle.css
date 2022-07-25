@@ -4601,19 +4601,19 @@ a.video-btn:hover {
   border-radius: 10px;
   border-radius: 10px;
   border-radius: 10px;
+  background-color: #f3c8c8;
 }
 .list-column ul {
-  margin-bottom: 0;
+  margin: 40px 0 0;
+}
+.list-column ul li {
+  font-size: 20px;
 }
 .list-column ul li:last-child {
   margin-bottom: 0;
 }
 .list-column:nth-child(n+3) {
-  margin-top: 36px;
-}
-
-.list-text {
-  margin-bottom: 4rem;
+  margin-top: 20px;
 }
 
 /* -------------------------------------------------
@@ -4744,7 +4744,7 @@ a.video-btn:hover {
 }
 
 .plan-desc {
-  margin-top: 35px;
+  margin: 35px 0;
 }
 
 .pricing-cols.flexarea {

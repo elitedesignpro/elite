@@ -1,9 +1,9 @@
 {
-  "name": "basethemevar",
-  "description": "basetheme",
+  "name": "elitedesign",
+  "description": "ELITE Design Project ",
   "version": "1.0.0",
   "main": "gulpfile.js",
-  "author": "Glide Design (https://glidedesign.com)",
+  "author": "ELITE Design (https://elitedesignpro.com)",
   "license": "MIT",
   "directories": {
     "doc": "docs"

@@ -54,7 +54,7 @@ $elitedesign_blk_proccess = $block_fields['elitedesign_blk_proccess'];
 	<div class="wrapper">
 		<div class="design-proccess-ctn">
 
-		<?php if($elitedesign_blk_proccess_title) { ?>
+		<?php if( $elitedesign_blk_proccess_title ) { ?>
 			
 			<div class="section-head mb-70">
 				
@@ -62,26 +62,23 @@ $elitedesign_blk_proccess = $block_fields['elitedesign_blk_proccess'];
 				
 			</div>
 			
-			<?php } ?>
+		<?php } ?>
 			
 			<?php if($elitedesign_blk_proccess) { ?>
 
 				<div class="proccess-area flex">
 
-				<?php 
-
-					 foreach ($elitedesign_blk_proccess as $proccess) {
+				<?php  foreach ($elitedesign_blk_proccess as $proccess) {
 
 						$title = $proccess['title'];
 
 
-						if($title) {
+						if($title) { ?>
 
-					?>
+							<div class="single-proccess col-538"><?php echo $title; ?></div>
 
-					<div class="single-proccess col-538"><?php echo $title; ?></div>
-
-					<?php } } ?>
+						<?php }
+				} ?>
 
 				</div>
 

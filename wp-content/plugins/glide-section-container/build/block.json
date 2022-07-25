@@ -1,0 +1,40 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/glide-section-container",
+	"version": "0.1.0",
+	"title": "Glide Section Container",
+	"category": "widgets",
+	"icon": "align-center",
+	"description": "Glide Block to Manager Avaliable Sections",
+	"supports": {
+		"html": false,
+		"align": ["wide", "full"]
+	},
+	"attributes": {
+		"tagName": {
+			"type": "string",
+			"default": "section"
+		},
+		"bgDesignType": {
+			"type": "string",
+			"default": ""
+		},
+		"bgWidth": {
+			"type": "string",
+			"default": "ctn"
+		},
+		"overflow": {
+			"type": "string",
+			"default": ""
+		},
+		"bgColorTiles": {
+			"type": "string",
+			"default": "#eeeeee"
+		}
+	},
+	"textdomain": "glide-section-container",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

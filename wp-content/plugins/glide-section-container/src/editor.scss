@@ -1,0 +1,209 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-glide-section-container {
+	position: relative;
+	.section-bg {
+		&.bg__fixed {
+			background-position: 0 -100%;
+		}
+	}
+	.editor-block-list__block & .editor-block-list__layout {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+.edit-post-visual-editor
+	.editor-block-list__block[data-type="mkl/section-block"] {
+	/* Clearfix */
+	section.wp-block-mkl-section-block::before,
+	section.wp-block-mkl-section-block::after {
+		content: " ";
+		display: table;
+	}
+}
+.edit-post-visual-editor
+	.editor-block-list__block[data-type="mkl/section-block"].is-selected {
+	.core-blocks-spacer__resize-handler-bottom {
+		bottom: calc(50% - 8px) !important;
+		transform: translateX(1px);
+		z-index: 400;
+	}
+
+	.spacing-box {
+		padding-bottom: 1px;
+
+		&::before {
+			content: " ";
+			display: block;
+			height: 50%;
+			width: 1px;
+			border-left: 1px dotted rgba(255, 255, 255, 0.5);
+			position: absolute;
+			top: 0;
+			left: 50%;
+			visibility: hidden;
+		}
+		&::after {
+			content: " ";
+			display: block;
+			height: 8px;
+			width: 8px;
+			border-left: 1px solid rgba(255, 255, 255, 0.5);
+			border-top: 1px solid rgba(255, 255, 255, 0.5);
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-3.5px) translateY(1px) rotate(45deg);
+			visibility: hidden;
+		}
+		& > span {
+			&::before {
+				content: " ";
+				display: block;
+				height: 50%;
+				width: 1px;
+				border-left: 1px dotted rgba(255, 255, 255, 0.5);
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				visibility: hidden;
+			}
+			&::after {
+				content: " ";
+				display: block;
+				height: 8px;
+				width: 8px;
+				border-left: 1px solid rgba(255, 255, 255, 0.5);
+				border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+				position: absolute;
+				bottom: 0;
+				left: calc(50% - 1px);
+				transform: translateX(-2px) translateY(-1px) rotate(-45deg);
+				visibility: hidden;
+			}
+		}
+		&:hover {
+			.core-blocks-spacer__resize-handler-bottom {
+				display: block;
+			}
+			&::before,
+			&::after,
+			& > span::before,
+			& > span::after {
+				visibility: visible;
+			}
+			.components-resizable-box__handle::before {
+				position: absolute;
+				left: calc(50% - 8px);
+				top: -6px;
+			}
+		}
+	}
+
+	.resizing {
+		background: rgba(2, 133, 186, 0.2);
+	}
+}
+
+.editor-bg-image {
+	margin-bottom: 1em;
+	.components-button + .components-button {
+		margin-top: 1em;
+		margin-right: 8px;
+	}
+}
+
+.dc-design-style {
+	.components-circular-option-picker
+		.components-circular-option-picker__swatches {
+		margin-right: 0;
+		.components-circular-option-picker__option {
+			display: block;
+			width: 100%;
+			background-image: url(../src/img/no-design.jpg);
+			background-size: cover !important;
+			border-radius: unset;
+			background-color: #ffffff !important;
+			// color: transparent !important;
+			// width: 285px;
+			// height: 83px;
+			box-shadow: none !important;
+			background-position: center;
+			&.active {
+				width: calc(100% - 10px);
+				height: calc(100% - 10px);
+				margin: 0 auto;
+				&:before {
+					top: -5px;
+				}
+			}
+			&:hover {
+				background-image: url(../src/img/no-design.jpg);
+			}
+		}
+
+		.components-circular-option-picker__option-wrapper {
+			&:nth-child(1) {
+				button,
+				&:hover {
+					background-image: url(../src/img/black-ctn.png);
+				}
+			}
+			&:nth-child(2) {
+				button,
+				&:hover {
+					background-image: url(../src/img/lp-ctn.png);
+				}
+			}
+			&:nth-child(3) {
+				button,
+				&:hover {
+					background-image: url(../src/img/bp-ctn.png);
+				}
+			}
+			&:nth-child(4) {
+				button,
+				&:hover {
+					background-image: url(../src/img/aq-ctn.png);
+				}
+			}
+		}
+	}
+
+	.components-circular-option-picker__option:after {
+		// display: none;
+	}
+
+	.components-circular-option-picker__option-wrapper {
+		display: block;
+		width: 100%;
+		border-radius: unset;
+		margin-bottom: 12px;
+		transform: scale(1);
+		height: 83px;
+	}
+
+	.components-circular-option-picker__option-wrapper:before {
+		border-radius: 0;
+		width: 100%;
+		height: 100%;
+		border: 2px solid #767676;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: none !important;
+	}
+	.components-circular-option-picker__option-wrapper:hover {
+		transform: scale(1);
+	}
+	.components-circular-option-picker__option:after {
+		border-radius: 0;
+		border: unset;
+		display: none;
+	}
+}

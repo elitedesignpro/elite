@@ -189,7 +189,7 @@ jQuery(document).ready(function (jQuery) {
 	 *
 	 **/
 
-		if(jQuery(window).width() <= 748){
+		if(jQuery(window).width() >= 748){
 
 			//Create new scrollmagic controller
 			var controller = new ScrollMagic.Controller();

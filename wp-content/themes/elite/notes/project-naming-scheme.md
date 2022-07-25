@@ -26,7 +26,7 @@ Base Theme
 Base Theme
 
 * Variable Prefix
-basethemevar
+elitedesign
 
 * Theme Functions Prefix
 basethemefn

@@ -3186,18 +3186,19 @@ Mixin for transition
   border-radius: 10px;
   border-radius: 10px;
   border-radius: 10px;
+  background-color: #f3c8c8;
 }
 .acf-block-preview .list-column ul {
-  margin-bottom: 0;
+  margin: 40px 0 0;
+}
+.acf-block-preview .list-column ul li {
+  font-size: 20px;
 }
 .acf-block-preview .list-column ul li:last-child {
   margin-bottom: 0;
 }
 .acf-block-preview .list-column:nth-child(n+3) {
-  margin-top: 36px;
-}
-.acf-block-preview .list-text {
-  margin-bottom: 4rem;
+  margin-top: 20px;
 }
 .acf-block-preview .gallrey-images {
   display: -webkit-box;
@@ -3300,7 +3301,7 @@ Mixin for transition
   color: #0b090a;
 }
 .acf-block-preview .plan-desc {
-  margin-top: 35px;
+  margin: 35px 0;
 }
 .acf-block-preview .pricing-cols.flexarea {
   -webkit-box-align: center;

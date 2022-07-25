@@ -1,8 +1,8 @@
 <?php
 /**
- * Block Name: BlockName
+ * Block Name: ACF Block
  *
- * The template for displaying the custom gutenberg block named BlockName.
+ * The template for displaying the custom gutenberg block named ACF Block.
  *
  * @link https://www.advancedcustomfields.com/resources/blocks/
  *
@@ -41,10 +41,14 @@ if($block['name']){
 }
 
 // Block variables
-// $custom_field_of_block = html_entity_decode($block_fields['custom_field_of_block']); // for keeping html from input
-// $custom_field_of_block = html_entity_remove($block_fields['custom_field_of_block']); // for removing html from input
+$custom_field_of_block = html_entity_decode($block_fields['custom_field_of_block']); // for keeping html from input
+
+$custom_field_of_block = html_entity_remove($block_fields['custom_field_of_block']); // for removing html from input
 
 ?>
+
 <div id="<?php echo $id; ?>" class="<?php echo $align_class . ' ' . $class_name. ' ' . $name; ?> glide-block-<?php echo $block_glide_name; ?>">
+
+	
 
 </div>
