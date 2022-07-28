@@ -1,7 +1,7 @@
 /****
- *
- * body
- *
+*
+* body
+*
 ****/
 .mystyle {
 	color: red;
@@ -12,7 +12,7 @@
 	flex-wrap: wrap;
 
 	.column {
-		width: calc( 50% - 16px );
+		width: calc(50% - 16px);
 		margin-right: 3.2rem;
 
 		&:nth-child(2) {
@@ -25,7 +25,7 @@
 
 	.column {
 		display: inline-block;
-		width: calc( 33.33% - 20px );
+		width: calc(33.33% - 20px);
 		margin-right: 25px;
 
 		&:nth-child(3n + 3) {
@@ -35,19 +35,19 @@
 }
 
 /****
- *
- * Valign-wrapper Style
- *
- ****/
+*
+* Valign-wrapper Style
+*
+****/
 .valign-wrapper {
 	display: flex;
 	align-items: center;
 }
 
 /****
- *
- * helper classes
- *
+*
+* helper classes
+*
 ****/
 
 .center {
@@ -68,12 +68,12 @@
 }
 
 /****
- *
- * breadcrumbs
- *
+*
+* breadcrumbs
+*
 ****/
 #breadcrumbs {
-	color: map-get( $map: $base_colors, $key: breadcrumb-color );
+	color: map-get($map: $base_colors, $key: breadcrumb-color);
 	text-transform: uppercase;
 	margin-bottom: 23px;
 
@@ -94,25 +94,25 @@
 
 	a,
 	&:visited {
-		color: map-get( $map: $base_colors, $key: breadcrumb-link-color );
+		color: map-get($map: $base_colors, $key: breadcrumb-link-color);
 		font-weight: 700;
 		margin: 0 10px;
-		border-bottom: 1px solid map-get( $map: $base_colors, $key: breadcrumb-border-color );
+		border-bottom: 1px solid map-get($map: $base_colors, $key: breadcrumb-border-color);
 
 		@include font-size(1.4);
 
 		&:hover {
-			border-bottom: 1px solid map-get( $map: $base_colors, $key: breadcrumb-border-color-hover );
+			border-bottom: 1px solid map-get($map: $base_colors, $key: breadcrumb-border-color-hover);
 		}
 	}
 }
 
 .single-post #breadcrumbs span span span span span span {
-	color: map-get( $map: $base_colors, $key: breadcrumb-span-color );
+	color: map-get($map: $base_colors, $key: breadcrumb-span-color);
 }
 
 .single-post #breadcrumbs span span span span span span a {
-	color: map-get( $map: $base_colors, $key: breadcrumb-link-color );
+	color: map-get($map: $base_colors, $key: breadcrumb-link-color);
 }
 
 .single-post #breadcrumbs {
@@ -123,9 +123,9 @@
 }
 
 /****
- *
- * buttons
- *
+*
+* buttons
+*
 ****/
 
 a.button,
@@ -136,8 +136,8 @@ a.button:visited {
 	overflow: hidden;
 	padding: 12px 34px;
 	text-decoration: none;
-	color: map-get( $map: $colors, $key: white );
-	background-color: map-get( $map: $colors, $key: red );
+	color: map-get($map: $colors, $key: white);
+	background-color: map-get($map: $colors, $key: red);
 	border: 0;
 	transition: all 0.35s ease-in-out;
 
@@ -153,7 +153,7 @@ a.button:visited {
 	}
 
 	&:hover {
-		background-color: map-get( $map: $colors, $key: bwhale );
+		background-color: map-get($map: $colors, $key: bwhale);
 	}
 
 	&.big {
@@ -163,10 +163,10 @@ a.button:visited {
 	}
 
 	&.blue-btn {
-		background-color: map-get( $map: $colors, $key: bwhale );
+		background-color: map-get($map: $colors, $key: bwhale);
 
 		&:hover {
-			background-color: map-get( $map: $colors, $key: red );
+			background-color: map-get($map: $colors, $key: red);
 		}
 	}
 
@@ -174,8 +174,8 @@ a.button:visited {
 		background-color: transparent;
 		font-size: 22px;
 		padding: 7px 63px 7px 13px;
-		color: map-get( $map: $colors, $key: bwhale );
-		background-image: url( ../img/blue-right-arrow.svg );
+		color: map-get($map: $colors, $key: bwhale);
+		background-image: url(../img/blue-right-arrow.svg);
 		background-repeat: no-repeat;
 		background-position: center right 15px;
 
@@ -185,7 +185,7 @@ a.button:visited {
 			content: "";
 			width: 48px;
 			height: 100%;
-			border: 2px solid map-get( $map: $colors, $key: bwhale );
+			border: 2px solid map-get($map: $colors, $key: bwhale);
 			position: absolute;
 			right: 0;
 			top: 0;
@@ -201,17 +201,17 @@ a.button:visited {
 		}
 
 		&.fill {
-			background-image: url( ../img/white-right-arrow.svg );
-			color: map-get( $map: $colors, $key: white );
+			background-image: url(../img/white-right-arrow.svg);
+			color: map-get($map: $colors, $key: white);
 
 			&::after {
-				background-color: map-get( $map: $colors, $key: bwhale );
+				background-color: map-get($map: $colors, $key: bwhale);
 				width: 100%;
 				z-index: -1;
 			}
 
 			&:hover {
-				color: map-get( $map: $colors, $key: bwhale );
+				color: map-get($map: $colors, $key: bwhale);
 
 				&::after {
 					width: 48px;
@@ -272,22 +272,22 @@ a.button:visited {
 	}
 
 	&.red {
-		color: map-get( $map: $colors, $key: red );
-		border-color: map-get( $map: $colors, $key: red );
+		color: map-get($map: $colors, $key: red);
+		border-color: map-get($map: $colors, $key: red);
 
 		&:hover {
-			background-color: map-get( $map: $colors, $key: red );
-			color: map-get( $map: $colors, $key: white );
+			background-color: map-get($map: $colors, $key: red);
+			color: map-get($map: $colors, $key: white);
 		}
 	}
 
 	&.blue {
-		color: map-get( $map: $colors, $key: bwhale );
-		border-color: map-get( $map: $colors, $key: bwhale );
+		color: map-get($map: $colors, $key: bwhale);
+		border-color: map-get($map: $colors, $key: bwhale);
 
 		&:hover {
-			background-color: map-get( $map: $colors, $key: bwhale );
-			color: map-get( $map: $colors, $key: white );
+			background-color: map-get($map: $colors, $key: bwhale);
+			color: map-get($map: $colors, $key: white);
 		}
 	}
 }
@@ -301,9 +301,9 @@ a.wp-block-button__link {
 	overflow: hidden;
 	padding: 11px 30px;
 	text-decoration: none;
-	color: map-get( $map: $base_colors, $key: theme-btn-color );
-	background-color: map-get( $map: $base_colors, $key: theme-btn-bgcolor );
-	border: 2px solid map-get( $map: $base_colors, $key: theme-btn-border-color );
+	color: map-get($map: $base_colors, $key: theme-btn-color);
+	background-color: map-get($map: $base_colors, $key: theme-btn-bgcolor);
+	border: 2px solid map-get($map: $base_colors, $key: theme-btn-border-color);
 	transition: all 0.35s ease-in-out;
 	margin-right: 9px;
 
@@ -312,9 +312,9 @@ a.wp-block-button__link {
 	@include border-radius(100px);
 
 	&:hover {
-		background-color: map-get( $map: $base_colors, $key: theme-btn-bgcolor-hover );
-		border: 2px solid map-get( $map: $base_colors, $key: theme-btn-border-color-hover );
-		color: map-get( $map: $base_colors, $key: theme-btn-color-hover );
+		background-color: map-get($map: $base_colors, $key: theme-btn-bgcolor-hover);
+		border: 2px solid map-get($map: $base_colors, $key: theme-btn-border-color-hover);
+		color: map-get($map: $base_colors, $key: theme-btn-color-hover);
 	}
 
 	&.has-background {
@@ -336,9 +336,9 @@ a.wp-block-button__link {
 }
 
 /****
- *
- * WordPress buttons
- *
+*
+* WordPress buttons
+*
 ****/
 
 a.wp-block-button__link,
@@ -356,11 +356,11 @@ a.wp-block-button__link:visited,
 
 	a.wp-block-button__link,
 	a.wp-block-button__link:visited {
-		border: 2px solid map-get( $map: $base_colors, $key: wp-outline-btn-border-color );
+		border: 2px solid map-get($map: $base_colors, $key: wp-outline-btn-border-color);
 
 		&:hover {
-			background-color: map-get( $map: $base_colors, $key: wp-outline-btn-bgcolor );
-			color: map-get( $map: $base_colors, $key: wp-outline-btn-color );
+			background-color: map-get($map: $base_colors, $key: wp-outline-btn-bgcolor);
+			color: map-get($map: $base_colors, $key: wp-outline-btn-color);
 		}
 
 		&.has-text-color,
@@ -387,9 +387,9 @@ a.wp-block-button__link:visited,
 }
 
 /****
- *
- * 404 page
- *
+*
+* 404 page
+*
 ****/
 .not-found {
 	text-align: center;
@@ -417,10 +417,10 @@ a.wp-block-button__link:visited,
 
 		a {
 			padding: 1rem;
-			border-bottom: 0px;
+			border-bottom: 0;
 
 			&:hover {
-				color: map-get( $map: $base_colors, $key: error-menu-color );
+				color: map-get($map: $base_colors, $key: error-menu-color);
 			}
 		}
 
@@ -483,10 +483,10 @@ a.wp-block-button__link:visited,
 }
 
 /**
- *
- * Background
- *
- */
+*
+* Background
+*
+*/
 .reset-bg {
 	background-repeat: no-repeat;
 	background-position: center;
@@ -494,10 +494,10 @@ a.wp-block-button__link:visited,
 }
 
 /**
- *
- * Helper Classess
- *
- */
+*
+* Helper Classess
+*
+*/
 .section-head {
 
 	h2 {
@@ -541,11 +541,11 @@ a.wp-block-button__link:visited,
 }
 
 .red {
-	color: map-get( $map: $colors, $key: red );
+	color: map-get($map: $colors, $key: red);
 }
 
 .red-bg {
-	background-color: map-get( $map: $colors, $key: red );
+	background-color: map-get($map: $colors, $key: red);
 }
 
 main#main-section {

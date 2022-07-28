@@ -118,10 +118,10 @@ jQuery(document).ready(function (jQuery) {
 		loop:false,
 		nav:true,
 		dots: false,
-		margin: 30,
+		margin: 0,
 		responsive:{
 			0:{
-				items:1
+				items:1 
 			}
 		}
 	});
@@ -142,6 +142,7 @@ jQuery(document).ready(function (jQuery) {
 		slideTransition: "linear",
 		autoplayTimeout: 10000,
 		autoplaySpeed: 10000,
+		margin: 0,
 		responsive:{
 			0:{
 				items:1,
@@ -217,7 +218,6 @@ jQuery(document).ready(function (jQuery) {
 			})
 			.setPin(".horizontal-scroll-container")
 			.setTween(horizontalSlide)
-			.addIndicators() // add indicators (requires scrollmagic indicators plugin)
 			.addTo(controller);
 
 		}

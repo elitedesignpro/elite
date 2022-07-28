@@ -49,6 +49,5 @@ $custom_field_of_block = html_entity_remove($block_fields['custom_field_of_block
 
 <div id="<?php echo $id; ?>" class="<?php echo $align_class . ' ' . $class_name. ' ' . $name; ?> glide-block-<?php echo $block_glide_name; ?>">
 
-	
-
+		
 </div>

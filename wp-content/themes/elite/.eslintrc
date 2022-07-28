@@ -1,41 +1,8 @@
 {
 	"extends": [
-		"plugin:@wordpress/eslint-plugin/custom",
-		"plugin:@wordpress/eslint-plugin/es5",
-		"plugin:@wordpress/eslint-plugin/jsdoc"
+		"plugin:@wordpress/eslint-plugin/recommended-with-formatting"
 	],
-
-	"globals": {
-		"document": "readonly",
-		"location": "readonly",
-		"window": "readonly",
-		"navigator": "readonly",
-		"wp": "readonly",
-		"_": "readonly",
-		"NodeList": "readonly",
-		"Element": "readonly"
-	},
-
-	"rules": {
-		"comma-dangle": "off",
-		"no-var": "warn",
-		"no-undef": "warn",
-		"no-console": "error",
-		"no-unused-vars": [
-			"warn",
-			{
-				"vars": "all",
-				"args": "after-used",
-				"ignoreRestSiblings": false
-			}
-		]
-	},
-
-	"parserOptions": {
-		"ecmaVersion": 2018
-	},
-
-	"env": {
-		"es6": true
-	}
+	"plugins": [
+		"eslint-plugin-html"
+	]
 }

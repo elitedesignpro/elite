@@ -58,7 +58,7 @@
         {
             "key": "field_62debba14d667",
             "label": "Select Variation",
-            "name": "_copy",
+            "name": "elitedesign_tmmmbrs_sl_vari",
             "type": "button_group",
             "instructions": "",
             "required": 0,
@@ -94,7 +94,9 @@
                 "team"
             ],
             "taxonomy": "",
-            "filters": "",
+            "filters": [
+                "search"
+            ],
             "elements": [
                 "featured_image"
             ],
@@ -147,7 +149,7 @@
                 ]
             ],
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -170,7 +172,7 @@
                 ]
             ],
             "wrapper": {
-                "width": "",
+                "width": "51",
                 "class": "",
                 "id": ""
             },
@@ -195,5 +197,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1658767176
+    "modified": 1659020214
 }

@@ -73,17 +73,17 @@ function register_cpt_testimonials() {
     register_post_type( $cpt_register_key, $args );
 }
 
-function register_cpt_resources() {
+function register_cpt_projects() {
     //CPT Labels
-    $cpt_singular_capital 		= 'Resource'; // Name of the post type shown in the menu
-    $cpt_plural_capital 		= 'Resources';
-    $cpt_singular_lowercase 	= 'resource';
-    $cpt_plural_lowercase 		= 'resources';
+    $cpt_singular_capital 		= 'Project'; // Name of the post type shown in the menu
+    $cpt_plural_capital 		= 'Projects';
+    $cpt_singular_lowercase 	= 'project';
+    $cpt_plural_lowercase 		= 'projects';
 
 	//CPT Slug & Name
-    $cpt_register_key = 'resource';  // This is the registering name of the single CPT post. (Try to keep it singular).
-    $cpt_slug = 'resource';  // This is the permalink slug of single CPT post. (Try to keep it singular).
-	// The slug will become - www.website.com/testimonial/single-testimonial-name
+    $cpt_register_key = 'project';  // This is the registering name of the single CPT post. (Try to keep it singular).
+    $cpt_slug = 'project';  // This is the permalink slug of single CPT post. (Try to keep it singular).
+	// The slug will become - www.website.com/project/single-project-name
 
     $labels = array(
         'name'                  => _x( $cpt_plural_capital, 'Post type general name', 'elitedesign_td' ),
@@ -128,7 +128,7 @@ function register_cpt_resources() {
 		'capability_type'    => 'page', // Set this value for each CPT.
         'has_archive'        => false, // Set this value for each CPT.
         'hierarchical'       => true, // Set this value for each CPT.
-        'menu_icon'          => 'dashicons-admin-generic', // Set this value for each CPT.
+        'menu_icon'          => 'dashicons-portfolio', // Set this value for each CPT.
         'rewrite'            => array(
             'slug' 	    	 => $cpt_slug,
             'with_front' 	 => true, // If required only then set this value for each CPT.
@@ -190,7 +190,7 @@ function register_cpt_services() {
 		'menu_position'      => null,
 		'map_meta_cap'       => true,
 		'show_in_rest' 		 => true,
-		'supports'           => array('title', 'thumbnail', "excerpt" ),
+		'supports'           => array('title', 'thumbnail', "excerpt", "edditor" ),
 		'capability_type'    => 'page', // Set this value for each CPT.
         'has_archive'        => false, // Set this value for each CPT.
         'hierarchical'       => true, // Set this value for each CPT.
@@ -274,7 +274,7 @@ function register_cpt_team() {
 }
 
 add_action( 'init', 'register_cpt_team' );
-add_action( 'init', 'register_cpt_resources' );
+add_action( 'init', 'register_cpt_projects' );
 add_action( 'init', 'register_cpt_testimonials' );
 add_action( 'init', 'register_cpt_services' );
 

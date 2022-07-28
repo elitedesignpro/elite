@@ -192,11 +192,11 @@ Mixin for transition
   background-image: url(../img/spacer.jpg);
 }
 .editor-styles-wrapper .editor-navy-container {
-  background-color: #213641;
+  background-color: rgb(33, 54, 65);
   border: 3px dashed #364648 !important;
 }
 .editor-styles-wrapper .editor-green-container {
-  background-color: #96d396;
+  background-color: rgb(150, 211, 150);
   border: 3px dashed #0d4818 !important;
 }
 .editor-styles-wrapper .editor-ctn {
@@ -1183,50 +1183,50 @@ Mixin for transition
   >> Basic styles for theme
   -------------------------------------------------*/
   /****
-   *
-   * body
-   *
+  *
+  * body
+  *
   ****/
   /****
-   *
-   * Valign-wrapper Style
-   *
-   ****/
-  /****
-   *
-   * helper classes
-   *
+  *
+  * Valign-wrapper Style
+  *
   ****/
   /****
-   *
-   * breadcrumbs
-   *
+  *
+  * helper classes
+  *
   ****/
   /****
-   *
-   * buttons
-   *
+  *
+  * breadcrumbs
+  *
   ****/
   /****
-   *
-   * WordPress buttons
-   *
+  *
+  * buttons
+  *
   ****/
   /****
-   *
-   * 404 page
-   *
+  *
+  * WordPress buttons
+  *
+  ****/
+  /****
+  *
+  * 404 page
+  *
   ****/
   /**
-   *
-   * Background
-   *
-   */
+  *
+  * Background
+  *
+  */
   /**
-   *
-   * Helper Classess
-   *
-   */
+  *
+  * Helper Classess
+  *
+  */
   /*-------------------------------------------------
   >> Styles for Website Blocks
   -------------------------------------------------*/
@@ -2587,7 +2587,7 @@ Mixin for transition
 }
 .acf-block-preview .error ul li a {
   padding: 1rem;
-  border-bottom: 0px;
+  border-bottom: 0;
 }
 .acf-block-preview .error ul li a:hover {
   color: #0b090a;
@@ -3062,6 +3062,7 @@ Mixin for transition
   line-height: 1;
 }
 .acf-block-preview .cta-bottom-text {
+  max-width: 1920px;
   font-size: 600px;
   text-transform: uppercase;
   opacity: 0.2;
@@ -3079,7 +3080,7 @@ Mixin for transition
 }
 .acf-block-preview .cta-ctn a.button:hover,
 .acf-block-preview .cta-ctn a.button:visited:hover {
-  background-color: #e00000;
+  background-color: rgb(224, 0, 0);
 }
 .acf-block-preview .mid-page-cta {
   padding: 70px 160px;
@@ -3097,7 +3098,7 @@ Mixin for transition
 }
 .acf-block-preview .mid-page-cta a.button:hover,
 .acf-block-preview .mid-page-cta a.button:visited:hover {
-  background-color: #e00000;
+  background-color: rgb(224, 0, 0);
 }
 .acf-block-preview .job-cta p {
   max-width: 80%;

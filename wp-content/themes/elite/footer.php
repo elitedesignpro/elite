@@ -201,6 +201,10 @@ $elitedesign_ftr_copyright_text = ( isset( $option_fields['elitedesign_ftr_copyr
 		"priceRange": "<?php echo $elitedesign_schema_price_range; ?>"
 	}
 	</script> <?php } ?>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js'></script>
 </footer> <?php wp_footer(); ?> <?php if ( $footer_scripts != '' ) { ?> <div style="display: none;">
 	<?php echo html_entity_decode($footer_scripts,ENT_QUOTES ); ?> </div> <?php } ?> </body>
 

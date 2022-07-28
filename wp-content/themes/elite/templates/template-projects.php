@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Resources
+ * Template Name: Projects
  * Template Post Type: page
  *
  * This template is for displaying resource page.
@@ -75,7 +75,7 @@ $elitedesign_trcho_feature_post = $fields['elitedesign_trcho_feature_post']; ?>
 			// WP_Query arguments
 			global $paged;
 			$args = array(
-				'post_type'              => array( 'resource' ),
+				'post_type'              => array( 'project' ),
 				// 'meta_key' => 'elitedesign_trcho_feature_post',
 				'posts_per_page'         => 9, //how many posts you need
 				'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
@@ -94,7 +94,7 @@ $elitedesign_trcho_feature_post = $fields['elitedesign_trcho_feature_post']; ?>
 				while ( $query->have_posts() ) {
 					$query->the_post();
 				//Include specific template for the content.
-				get_template_part( 'partials/content', 'archive-resource' );
+				get_template_part( 'partials/content', 'archive-project' );
 				}
 			} else {
 				// If no content, include the "No posts found" template.

@@ -1,10 +1,10 @@
 {
-    "key": "group_621492ac5bd7b",
-    "title": "Block - Testimonials",
+    "key": "group_62e2cfd128198",
+    "title": "Block - Projects",
     "fields": [
         {
-            "key": "field_621492ba79cca",
-            "label": "<h2 style=\"text-align:center;\"> Testimonial <\/h2>",
+            "key": "field_62e2d19708b2e",
+            "label": "<h2 style=\"text-align:center;\"> Projects <\/h2>",
             "name": "",
             "type": "message",
             "instructions": "",
@@ -20,9 +20,9 @@
             "esc_html": 0
         },
         {
-            "key": "field_62e2b43c28254",
+            "key": "field_62e2d22108b30",
             "label": "Title",
-            "name": "elitedesign_blk_testi_title",
+            "name": "elitedesign_blk_prjt_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -39,7 +39,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_62e2b37c2227a",
+            "key": "field_62e2d1bd08b2f",
             "label": "Expand For Options",
             "name": "",
             "type": "accordion",
@@ -56,9 +56,28 @@
             "endpoint": 0
         },
         {
-            "key": "field_62e2b3efd6b13",
-            "label": "Select Testimonial",
-            "name": "elitedesign_blk_slct_testi",
+            "key": "field_62e2d25308b31",
+            "label": "Kicker Text",
+            "name": "elitedesign_blk_prjt_tkicker_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62e2d27b08b32",
+            "label": "Select Projects",
+            "name": "elitedesign_blk_prjt_slct_projects",
             "type": "relationship",
             "instructions": "",
             "required": 0,
@@ -69,7 +88,7 @@
                 "id": ""
             },
             "post_type": [
-                "testimonial"
+                "project"
             ],
             "taxonomy": "",
             "filters": [
@@ -88,7 +107,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/testimonial"
+                "value": "acf\/projects"
             }
         ]
     ],
@@ -101,5 +120,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1659025889
+    "modified": 1659032520
 }

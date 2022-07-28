@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying single resource
+ * Template part for displaying single project
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
